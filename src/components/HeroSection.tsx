@@ -9,10 +9,10 @@ const HeroSection = () => {
         </p>
         <div className="w-12 h-[2px] bg-primary mx-auto mb-10" />
         <h1 className="font-heading text-5xl md:text-7xl font-light text-foreground leading-tight mb-8">
-          Justiça com <em className="text-gold-light italic">fé</em>,
+          Justiça com <em className="italic" style={{ color: '#FFD700', textShadow: '0 0 8px rgba(255,215,0,0.6), 0 0 20px rgba(255,215,0,0.3)' }}>fé</em>,
           <br />
-          <span className="text-gold-light">acolhimento</span> e{" "}
-          <span className="text-gold-light underline decoration-1 underline-offset-8">propósito</span>.
+          <span style={{ color: '#FFD700', textShadow: '0 0 8px rgba(255,215,0,0.6), 0 0 20px rgba(255,215,0,0.3)' }}>acolhimento</span> e{" "}
+          <span className="underline decoration-1 underline-offset-8" style={{ color: '#FFD700', textShadow: '0 0 8px rgba(255,215,0,0.6), 0 0 20px rgba(255,215,0,0.3)' }}>propósito</span>.
         </h1>
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-light">
           +13 anos de experiência em Família e Sucessões, Previdenciário e Bancário. 
