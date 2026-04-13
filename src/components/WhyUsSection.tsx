@@ -13,7 +13,7 @@ const WhyUsSection = () => {
   return (
     <section id="diferenciais" className="py-24 px-6 bg-secondary">
       <div className="max-w-6xl mx-auto text-center mb-16">
-        <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Por que nos escolher</p>
+        <p className="text-base tracking-[0.3em] uppercase text-muted-foreground mb-4">Por que nos escolher</p>
         <h2 className="font-heading text-4xl md:text-5xl text-foreground">O que nos torna diferentes</h2>
       </div>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -21,8 +21,8 @@ const WhyUsSection = () => {
           <div key={r.title} className="flex gap-4 items-start p-6 bg-card rounded-sm border border-border hover:border-primary/40 transition-colors">
             <r.icon className="w-8 h-8 text-primary flex-shrink-0 mt-1" strokeWidth={1.5} />
             <div>
-              <h3 className="font-heading text-xl text-foreground mb-2">{r.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{r.desc}</p>
+              <h3 className="font-heading text-xl md:text-2xl text-foreground mb-2">{r.title}</h3>
+              <p className="text-muted-foreground text-base leading-relaxed">{r.desc}</p>
             </div>
           </div>
         ))}

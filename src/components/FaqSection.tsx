@@ -36,7 +36,7 @@ const FaqSection = () => {
   return (
     <section id="duvidas" className="py-24 px-6">
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Dúvidas Frequentes</p>
+        <p className="text-base tracking-[0.3em] uppercase text-muted-foreground mb-4">Dúvidas Frequentes</p>
         <h2 className="font-heading text-4xl md:text-5xl text-foreground">Tire suas dúvidas</h2>
       </div>
       <div className="max-w-3xl mx-auto">
@@ -47,10 +47,10 @@ const FaqSection = () => {
               value={`item-${i}`}
               className="bg-card border border-border rounded-sm px-6 data-[state=open]:border-primary/40"
             >
-              <AccordionTrigger className="font-heading text-lg text-foreground hover:text-primary hover:no-underline py-5">
+              <AccordionTrigger className="font-heading text-xl md:text-2xl text-foreground hover:text-primary hover:no-underline py-5">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5 text-base">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

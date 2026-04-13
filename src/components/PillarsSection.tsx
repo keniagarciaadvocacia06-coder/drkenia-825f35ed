@@ -22,7 +22,7 @@ const PillarsSection = () => {
   return (
     <section className="py-24 px-6 bg-secondary">
       <div className="max-w-6xl mx-auto text-center">
-        <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Nossos Pilares</p>
+        <p className="text-base tracking-[0.3em] uppercase text-muted-foreground mb-4">Nossos Pilares</p>
         <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-16">
           Compromisso com a defesa dos seus direitos
         </h2>
@@ -33,8 +33,8 @@ const PillarsSection = () => {
               className="bg-card p-8 rounded-sm border border-border hover:border-primary/40 transition-colors duration-300"
             >
               <pillar.icon className="w-10 h-10 text-primary mx-auto mb-6" strokeWidth={1.5} />
-              <h3 className="font-heading text-2xl text-foreground mb-4">{pillar.title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">{pillar.description}</p>
+              <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{pillar.title}</h3>
+              <p className="text-muted-foreground leading-relaxed text-base">{pillar.description}</p>
             </div>
           ))}
         </div>

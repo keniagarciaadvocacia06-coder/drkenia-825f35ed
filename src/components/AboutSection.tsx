@@ -18,21 +18,21 @@ const AboutSection = () => {
           <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-8 leading-tight">
             Justiça com fé, acolhimento e propósito
           </h2>
-          <p className="text-muted-foreground leading-relaxed mb-6">
+          <p className="text-muted-foreground leading-relaxed mb-6 text-base md:text-lg">
             Com <strong className="text-foreground">13 anos de experiência</strong> no mercado jurídico, 
-            a Dra. Kênia Garcia construiu sua carreira sobre um pilar fundamental: a crença de que cada 
+            a Dra. Kênia Garcia construiu sua carreira sobre um pilar fundamental: a crença de que cada
             pessoa merece ser tratada com dignidade, respeito e empatia.
           </p>
-          <blockquote className="border-l-2 border-primary pl-6 italic text-cream-muted mb-6 leading-relaxed">
+          <blockquote className="border-l-2 border-primary pl-6 italic text-cream-muted mb-6 leading-relaxed text-base md:text-lg">
             "A minha missão sempre foi proporcionar um atendimento humanizado, onde o cliente se sinta 
             acolhido e compreendido. Acredito que cada caso é único e que, mais do que oferecer soluções 
             jurídicas, é essencial estar ao lado do meu cliente em cada passo do processo."
           </blockquote>
-          <p className="text-muted-foreground leading-relaxed mb-8">
+          <p className="text-muted-foreground leading-relaxed mb-8 text-base md:text-lg">
             Guiada pela fé e pelos princípios cristãos, a Dra. Kênia enxerga no exercício da advocacia 
             um chamado divino — uma oportunidade de servir ao próximo e levar justiça àqueles que mais precisam.
           </p>
-          <p className="font-heading text-lg text-primary italic">
+          <p className="font-heading text-xl md:text-2xl text-primary italic">
             "Bem-aventurados os que têm fome e sede de justiça, porque serão fartos." — Mateus 5:6
           </p>
         </div>
