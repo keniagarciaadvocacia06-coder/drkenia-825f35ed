@@ -1,4 +1,4 @@
-import draKenia from "@/assets/dra-kenia-enhanced.jpg";
+import draKeniaAbout from "@/assets/dra-kenia-about.jpg";
 
 const AboutSection = () => {
   return (
@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="relative">
           <div className="absolute -inset-4 border border-primary/20 rounded-sm" />
           <img
-            src={draKenia}
+            src={draKeniaAbout}
             alt="Dra. Kênia Garcia - Advogada"
             className="w-full max-w-md mx-auto rounded-sm object-cover aspect-[3/4]"
             loading="lazy"
