@@ -3,13 +3,10 @@ import draKenia from "@/assets/dra-kenia-enhanced.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Dark overlay background */}
-      <div className="absolute inset-0 bg-brown-dark" />
-      
-      <div className="relative z-10 w-full max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-8">
+    <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-brown-dark">
+      <div className="relative z-10 w-full max-w-7xl mx-auto grid md:grid-cols-2 items-end gap-0">
         {/* Left - Text Content */}
-        <div className="px-6 md:px-12 lg:px-16 py-12">
+        <div className="px-6 md:px-12 lg:px-16 py-12 md:py-24 flex flex-col justify-center min-h-[70vh]">
           <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light text-cream leading-tight mb-6">
             Justiça com{" "}
             <em className="italic text-gold-gradient not-italic">fé</em>,
@@ -36,20 +33,17 @@ const HeroSection = () => {
         </div>
 
         {/* Right - Photo */}
-        <div className="relative h-full flex items-end justify-center md:justify-end">
-          <div className="relative">
-            {/* Gold accent line */}
-            <div className="absolute -left-4 top-8 bottom-8 w-[2px] bg-gradient-to-b from-transparent via-primary to-transparent hidden md:block" />
-            <img
-              src={draKenia}
-              alt="Dra. Kênia Garcia - Advogada"
-              className="w-full max-w-md lg:max-w-lg xl:max-w-xl object-cover object-top rounded-sm"
-              style={{ maxHeight: '85vh' }}
-              loading="eager"
-            />
-            {/* Gold glow behind photo */}
-            <div className="absolute -inset-4 bg-primary/5 rounded-sm -z-10 blur-2xl" />
-          </div>
+        <div className="relative flex items-end justify-center md:justify-end">
+          <img
+            src={draKenia}
+            alt="Dra. Kênia Garcia - Advogada"
+            className="w-auto h-[75vh] object-cover object-top"
+            loading="eager"
+          />
+          {/* Gradient fade at bottom to blend with background */}
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-brown-dark to-transparent" />
+          {/* Gradient fade on left edge to blend */}
+          <div className="absolute top-0 bottom-0 left-0 w-24 bg-gradient-to-r from-brown-dark to-transparent" />
         </div>
       </div>
 
