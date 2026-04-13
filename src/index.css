@@ -6,53 +6,53 @@
 
 @layer base {
   :root {
-    --background: 30 28% 38%;
-    --foreground: 43 80% 78%;
+    --background: 28 25% 32%;
+    --foreground: 48 95% 72%;
 
-    --card: 30 22% 30%;
-    --card-foreground: 43 80% 78%;
+    --card: 28 20% 26%;
+    --card-foreground: 48 95% 72%;
 
-    --popover: 30 22% 30%;
-    --popover-foreground: 43 80% 78%;
+    --popover: 28 20% 26%;
+    --popover-foreground: 48 95% 72%;
 
-    --primary: 43 85% 55%;
-    --primary-foreground: 30 40% 10%;
+    --primary: 48 100% 50%;
+    --primary-foreground: 28 40% 8%;
 
-    --secondary: 30 22% 28%;
-    --secondary-foreground: 43 80% 78%;
+    --secondary: 28 20% 24%;
+    --secondary-foreground: 48 95% 72%;
 
-    --muted: 30 18% 30%;
-    --muted-foreground: 40 40% 60%;
+    --muted: 28 16% 28%;
+    --muted-foreground: 45 50% 58%;
 
-    --accent: 45 90% 60%;
-    --accent-foreground: 30 40% 10%;
+    --accent: 50 100% 55%;
+    --accent-foreground: 28 40% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 43 50% 50%;
-    --input: 43 50% 50%;
-    --ring: 43 85% 55%;
+    --border: 48 70% 48%;
+    --input: 48 70% 48%;
+    --ring: 48 100% 50%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 30 25% 22%;
-    --sidebar-foreground: 43 80% 78%;
-    --sidebar-primary: 43 85% 55%;
-    --sidebar-primary-foreground: 30 40% 10%;
-    --sidebar-accent: 30 22% 28%;
-    --sidebar-accent-foreground: 43 80% 78%;
-    --sidebar-border: 43 50% 50%;
-    --sidebar-ring: 43 85% 55%;
+    --sidebar-background: 28 22% 18%;
+    --sidebar-foreground: 48 95% 72%;
+    --sidebar-primary: 48 100% 50%;
+    --sidebar-primary-foreground: 28 40% 8%;
+    --sidebar-accent: 28 20% 24%;
+    --sidebar-accent-foreground: 48 95% 72%;
+    --sidebar-border: 48 70% 48%;
+    --sidebar-ring: 48 100% 50%;
 
     /* Custom tokens */
-    --gold: 43 85% 55%;
-    --gold-light: 45 90% 68%;
-    --gold-dark: 40 70% 40%;
-    --brown-dark: 30 28% 12%;
-    --brown-medium: 30 22% 30%;
-    --cream: 43 60% 88%;
-    --cream-muted: 40 30% 62%;
+    --gold: 48 100% 50%;
+    --gold-light: 50 100% 65%;
+    --gold-dark: 45 80% 38%;
+    --brown-dark: 28 25% 10%;
+    --brown-medium: 28 20% 26%;
+    --cream: 48 70% 88%;
+    --cream-muted: 45 35% 60%;
 
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'Inter', sans-serif;
