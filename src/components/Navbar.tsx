@@ -15,7 +15,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#66503d]/95 backdrop-blur-md border-b border-border/30">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#66503d] to-[#c4a882]/95 backdrop-blur-md border-b border-border/30">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#inicio" className="block">
           <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-24 w-auto" />
