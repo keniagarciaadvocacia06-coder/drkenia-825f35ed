@@ -25,7 +25,7 @@ const HeroSection = () => {
             <img
               src={draKenia}
               alt="Dra. Kênia Garcia - Advogada"
-              className="w-full h-full object-cover object-top brightness-110"
+              className="w-full h-full object-contain object-top brightness-110 md:object-cover"
               loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/65 via-transparent to-transparent" />
