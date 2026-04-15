@@ -10,13 +10,13 @@ const HeroSection = () => {
           <img
             src={draKenia}
             alt="Dra. Kênia Garcia - Advogada"
-            className="w-full h-full object-cover object-top scale-90 origin-center md:object-contain md:scale-100 lg:object-cover lg:scale-90"
+            className="w-full h-full object-cover object-top scale-90 origin-center md:object-contain md:scale-100 lg:object-cover lg:scale-90 brightness-110"
             loading="eager"
           />
-          {/* Gradient overlay from left to blend with dark bg */}
-          <div className="absolute inset-0 bg-gradient-to-r from-brown-dark via-brown-dark/40 to-transparent" />
+          {/* Gradient overlay - only left side to keep face clear */}
+          <div className="absolute inset-0 bg-gradient-to-r from-brown-dark via-brown-dark/20 to-transparent" />
           {/* Bottom gradient */}
-          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-brown-dark to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brown-dark/80 to-transparent" />
         </div>
       </div>
 
