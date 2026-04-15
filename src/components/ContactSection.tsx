@@ -49,7 +49,7 @@ const ContactSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Formulário */}
-          <div className="bg-primary rounded-sm p-8 md:p-10 order-1 lg:order-2">
+          <div className="bg-[#fbe074] rounded-sm p-8 md:p-10 order-1 lg:order-2">
             <h3 className="font-heading text-2xl md:text-3xl text-primary-foreground text-center mb-2">
               Entre em Contato Agora Mesmo
             </h3>
