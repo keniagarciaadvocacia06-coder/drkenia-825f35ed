@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoKg from "@/assets/logo-kg.png";
 
 const navLinks = [
   { label: "Início", href: "#inicio" },
@@ -16,11 +17,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#inicio" className="font-heading text-2xl font-bold text-primary tracking-wider">
-          KG
-          <span className="block text-[10px] font-body font-normal tracking-[0.3em] text-muted-foreground uppercase">
-            Kênia Garcia
-          </span>
+        <a href="#inicio" className="block">
+          <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-12 w-auto" />
         </a>
 
         {/* Desktop nav */}
