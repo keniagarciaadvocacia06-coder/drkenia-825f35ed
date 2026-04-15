@@ -21,11 +21,11 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         {/* Mobile & tablet hero image */}
         <div className="-mx-6 md:-mx-12 mb-10 overflow-hidden bg-brown-dark lg:hidden">
-          <div className="relative h-[360px] md:h-[600px]">
+          <div className="relative h-[520px] md:h-[640px]">
             <img
               src={draKenia}
               alt="Dra. Kênia Garcia - Advogada"
-              className="w-full h-full object-contain object-top brightness-110 md:object-cover md:object-[center_15%]"
+              className="w-full h-full object-cover object-[center_10%] brightness-110 md:object-[center_15%]"
               loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/65 via-transparent to-transparent" />
