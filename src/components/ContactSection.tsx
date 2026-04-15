@@ -2,7 +2,7 @@ import { MessageCircle, Mail, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-24 px-6 bg-secondary">
+    <section id="contato" className="py-12 md:py-16 lg:py-24 px-6 bg-secondary">
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-base tracking-[0.3em] uppercase text-muted-foreground mb-4">Contato</p>
         <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">

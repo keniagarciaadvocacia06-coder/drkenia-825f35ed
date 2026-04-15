@@ -20,7 +20,7 @@ const pillars = [
 
 const PillarsSection = () => {
   return (
-    <section className="py-24 px-6 bg-secondary">
+    <section className="py-12 md:py-16 lg:py-24 px-6 bg-secondary">
       <div className="max-w-6xl mx-auto text-center">
         <p className="text-base tracking-[0.3em] uppercase text-muted-foreground mb-4">Nossos Pilares</p>
         <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-16">

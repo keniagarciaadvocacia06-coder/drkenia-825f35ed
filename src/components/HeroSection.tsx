@@ -31,7 +31,7 @@ const HeroSection = () => {
             <span className="text-gold-gradient underline decoration-1 underline-offset-8">propósito</span>.
           </h1>
           <p className="text-cream-muted text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
-            +15 anos de experiência em Família e Sucessões, Previdenciário e Bancário. em Família e Sucessões, Previdenciário e Bancário.
+            +15 anos de experiência em Família e Sucessões, Previdenciário e Bancário.
             Atendimento humanizado em todo o Brasil.
           </p>
           <a

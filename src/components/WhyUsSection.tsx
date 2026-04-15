@@ -11,8 +11,8 @@ const reasons = [
 
 const WhyUsSection = () => {
   return (
-    <section id="diferenciais" className="py-24 px-6 bg-secondary">
-      <div className="max-w-6xl mx-auto text-center mb-16">
+    <section id="diferenciais" className="py-12 md:py-16 lg:py-24 px-6 bg-secondary">
+      <div className="max-w-6xl mx-auto text-center mb-8 md:mb-12 lg:mb-16">
         <p className="text-base tracking-[0.3em] uppercase text-muted-foreground mb-4">Por que nos escolher</p>
         <h2 className="font-heading text-4xl md:text-5xl text-foreground">O que nos torna diferentes</h2>
       </div>

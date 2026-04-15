@@ -2,8 +2,8 @@ import draKeniaAbout from "@/assets/dra-kenia-about.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <section id="sobre" className="py-12 md:py-16 lg:py-24 px-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
         <div className="relative">
           <div className="absolute -inset-4 border border-primary/20 rounded-sm" />
           <img
@@ -19,7 +19,7 @@ const AboutSection = () => {
             Justiça com fé, acolhimento e propósito
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6 text-base md:text-lg">
-            Com <strong className="text-foreground">Com <strong className="text-foreground">15 anos de experiência</strong> no mercado jurídico,</strong> no mercado jurídico, 
+            Com <strong className="text-foreground">15 anos de experiência</strong> no mercado jurídico, 
             a Dra. Kênia Garcia construiu sua carreira sobre um pilar fundamental: a crença de que cada
             pessoa merece ser tratada com dignidade, respeito e empatia.
           </p>
