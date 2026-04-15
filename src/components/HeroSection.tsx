@@ -10,7 +10,7 @@ const HeroSection = () => {
           <img
             src={draKenia}
             alt="Dra. Kênia Garcia - Advogada"
-            className="w-full h-full object-cover object-[center_10%]"
+            className="w-full h-full object-cover object-top"
             loading="eager"
           />
           {/* Gradient overlay from left to blend with dark bg */}
