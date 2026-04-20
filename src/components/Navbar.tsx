@@ -3,7 +3,7 @@ import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import logoKg from "@/assets/logo-kg.png";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { openWhatsApp } from "@/lib/whatsapp";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +19,7 @@ const Navbar = () => {
   ];
 
   const waMessage = t("hero.wa_message");
-  const handleWhatsAppClick = () => {
-    setIsOpen(false);
-    openWhatsApp(waMessage);
-  };
+  const waHref = buildWhatsAppUrl(waMessage);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/30 bg-gradient-to-r from-[#d4b896] to-[#66503d] backdrop-blur-md">
@@ -45,13 +42,14 @@ const Navbar = () => {
 
         <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitcher />
-          <button
-            type="button"
-            onClick={handleWhatsAppClick}
+          <a
+            href={waHref}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex cursor-pointer rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-6 py-2.5 text-sm font-medium tracking-wide text-primary-foreground transition-all duration-300 hover:from-[#7a5c10] hover:to-[#d4bc7c]"
           >
             {t("nav.cta")}
-          </button>
+          </a>
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
@@ -87,13 +85,15 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <button
-            type="button"
-            onClick={handleWhatsAppClick}
+          <a
+            href={waHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
             className="block w-full cursor-pointer rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-6 py-3 text-center text-sm font-medium text-primary-foreground transition-all duration-300 hover:from-[#7a5c10] hover:to-[#d4bc7c]"
           >
             {t("nav.cta")}
-          </button>
+          </a>
         </div>
       )}
     </nav>
