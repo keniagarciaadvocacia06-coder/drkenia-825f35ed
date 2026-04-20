@@ -35,7 +35,6 @@ const LanguageSwitcher = ({ variant = "desktop" }: Props) => {
                 : "text-cream/80 hover:text-cream"
             }`}
           >
-            <span className="mr-1">{lng.flag}</span>
             {lng.label}
           </button>
         );
