@@ -51,9 +51,8 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile: language selector always visible + toggle */}
+        {/* Mobile: apenas o toggle */}
         <div className="flex items-center gap-2 lg:hidden">
-          <LanguageSwitcher />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-cream p-1"
