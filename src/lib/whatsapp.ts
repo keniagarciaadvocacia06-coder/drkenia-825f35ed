@@ -14,14 +14,6 @@ const isEmbeddedPreview = () => {
 };
 
 const openInNewTab = (url: string) => {
-  const popup = window.open("", "_blank");
-
-  if (popup) {
-    popup.opener = null;
-    popup.location.replace(url);
-    return true;
-  }
-
   const link = document.createElement("a");
   link.href = url;
   link.target = "_blank";
@@ -30,15 +22,13 @@ const openInNewTab = (url: string) => {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-
-  return false;
 };
 
 export const openWhatsApp = (message?: string) => {
   const webUrl = buildWhatsAppUrl(message);
-  const opened = openInNewTab(webUrl);
+  openInNewTab(webUrl);
 
-  if (!opened && !isEmbeddedPreview()) {
-    window.location.assign(webUrl);
+  if (!isEmbeddedPreview()) {
+    return;
   }
 };
