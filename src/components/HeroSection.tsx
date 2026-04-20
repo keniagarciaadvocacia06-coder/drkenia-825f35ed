@@ -46,7 +46,7 @@ const HeroSection = () => {
               Atendimento humanizado em todo o Brasil.
             </p>
             <a
-              href="https://wa.me/5564999881043?text=Olá, gostaria de agendar uma consulta."
+              href="https://wa.me/5564999881043?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground font-medium rounded-sm hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 tracking-wide text-sm"
