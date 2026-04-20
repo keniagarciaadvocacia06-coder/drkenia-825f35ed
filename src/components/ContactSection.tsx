@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MessageCircle, Mail, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useToast } from "@/hooks/use-toast";
-import { openWhatsApp } from "@/lib/whatsapp";
+import { buildWhatsAppRelayUrl, openWhatsApp } from "@/lib/whatsapp";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -38,25 +38,25 @@ const ContactSection = () => {
   const waMessage = t("hero.wa_message");
 
   return (
-    <section id="contato" className="py-12 md:py-16 lg:py-24 px-6 bg-secondary">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12">
-          <p className="text-base tracking-[0.3em] uppercase text-muted-foreground mb-4">{t("contact.kicker")}</p>
-          <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">
+    <section id="contato" className="bg-secondary px-6 py-12 md:py-16 lg:py-24">
+      <div className="mx-auto max-w-5xl">
+        <div className="mb-12 text-center">
+          <p className="mb-4 text-base uppercase tracking-[0.3em] text-muted-foreground">{t("contact.kicker")}</p>
+          <h2 className="mb-6 font-heading text-4xl text-foreground md:text-5xl">
             {t("contact.heading")}
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto text-base md:text-lg">
+          <p className="mx-auto max-w-xl text-base text-muted-foreground md:text-lg">
             {t("contact.subtitle")}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Formulário */}
-          <div className="bg-[#fbe074] rounded-sm p-8 md:p-10 order-1 lg:order-2">
-            <h3 className="font-heading text-2xl md:text-3xl text-primary-foreground text-center mb-2">
+          <div className="order-1 rounded-sm bg-[#fbe074] p-8 md:p-10 lg:order-2">
+            <h3 className="mb-2 text-center font-heading text-2xl text-primary-foreground md:text-3xl">
               {t("contact.form_title")}
             </h3>
-            <p className="text-primary-foreground/80 text-center mb-8">
+            <p className="mb-8 text-center text-primary-foreground/80">
               {t("contact.form_subtitle")}
             </p>
 
@@ -69,7 +69,7 @@ const ContactSection = () => {
                 maxLength={100}
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-background text-foreground border border-border rounded-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
+                className="w-full rounded-sm border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
               />
               <input
                 type="email"
@@ -79,7 +79,7 @@ const ContactSection = () => {
                 maxLength={255}
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-background text-foreground border border-border rounded-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
+                className="w-full rounded-sm border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
               />
               <input
                 type="tel"
@@ -89,7 +89,7 @@ const ContactSection = () => {
                 maxLength={20}
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-background text-foreground border border-border rounded-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
+                className="w-full rounded-sm border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
               />
               <textarea
                 name="message"
@@ -98,12 +98,12 @@ const ContactSection = () => {
                 maxLength={1000}
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-background text-foreground border border-border rounded-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-foreground/30 resize-y"
+                className="w-full resize-y rounded-sm border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
               />
               <button
                 type="submit"
                 disabled={sending}
-                className="w-full py-4 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground font-bold uppercase tracking-widest rounded-sm hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all text-base"
+                className="w-full rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] py-4 text-base font-bold uppercase tracking-widest text-primary-foreground transition-all hover:from-[#7a5c10] hover:to-[#d4bc7c]"
               >
                 {t("contact.submit")}
               </button>
@@ -111,35 +111,36 @@ const ContactSection = () => {
           </div>
 
           {/* Cards de contato */}
-          <div className="space-y-4 order-2 lg:order-1">
-            <button
-              type="button"
-              onClick={() => openWhatsApp(waMessage)}
-              className="flex w-full items-center gap-4 bg-card border border-border rounded-sm p-6 hover:border-primary/40 transition-colors group cursor-pointer text-left"
+          <div className="order-2 space-y-4 lg:order-1">
+            <a
+              href={buildWhatsAppRelayUrl(waMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex w-full cursor-pointer items-center gap-4 rounded-sm border border-border bg-card p-6 text-left transition-colors hover:border-primary/40"
             >
-              <MessageCircle className="w-8 h-8 text-primary shrink-0 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+              <MessageCircle className="h-8 w-8 shrink-0 text-primary transition-transform group-hover:scale-110" strokeWidth={1.5} />
               <div>
                 <h3 className="font-heading text-xl text-foreground">{t("contact.card_wa")}</h3>
-                <p className="text-muted-foreground text-base">(64) 99988-1043</p>
-              </div>
-            </button>
-
-            <a
-              href="mailto:keniagarcia.advocacia@gmail.com"
-              className="flex items-center gap-4 bg-card border border-border rounded-sm p-6 hover:border-primary/40 transition-colors group"
-            >
-              <Mail className="w-8 h-8 text-primary shrink-0 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-              <div>
-                <h3 className="font-heading text-xl text-foreground">{t("contact.card_email")}</h3>
-                <p className="text-muted-foreground text-sm break-all">keniagarcia.advocacia@gmail.com</p>
+                <p className="text-base text-muted-foreground">(64) 99988-1043</p>
               </div>
             </a>
 
-            <div className="flex items-center gap-4 bg-card border border-border rounded-sm p-6">
-              <MapPin className="w-8 h-8 text-primary shrink-0" strokeWidth={1.5} />
+            <a
+              href="mailto:keniagarcia.advocacia@gmail.com"
+              className="group flex items-center gap-4 rounded-sm border border-border bg-card p-6 transition-colors hover:border-primary/40"
+            >
+              <Mail className="h-8 w-8 shrink-0 text-primary transition-transform group-hover:scale-110" strokeWidth={1.5} />
+              <div>
+                <h3 className="font-heading text-xl text-foreground">{t("contact.card_email")}</h3>
+                <p className="break-all text-sm text-muted-foreground">keniagarcia.advocacia@gmail.com</p>
+              </div>
+            </a>
+
+            <div className="flex items-center gap-4 rounded-sm border border-border bg-card p-6">
+              <MapPin className="h-8 w-8 shrink-0 text-primary" strokeWidth={1.5} />
               <div>
                 <h3 className="font-heading text-xl text-foreground">{t("contact.card_service")}</h3>
-                <p className="text-muted-foreground text-base">{t("contact.card_service_desc")}</p>
+                <p className="text-base text-muted-foreground">{t("contact.card_service_desc")}</p>
               </div>
             </div>
           </div>

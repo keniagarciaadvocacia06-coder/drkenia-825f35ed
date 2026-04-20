@@ -17,5 +17,19 @@ export const buildWhatsAppRelayUrl = (message?: string) => {
  */
 export const openWhatsApp = (message?: string) => {
   const relayUrl = buildWhatsAppRelayUrl(message);
-  window.open(relayUrl, "_blank", "noopener,noreferrer");
+  const newWindow = window.open("about:blank", "_blank", "noopener,noreferrer");
+
+  if (newWindow) {
+    newWindow.opener = null;
+    newWindow.location.replace(relayUrl);
+    return;
+  }
+
+  const link = document.createElement("a");
+  link.href = relayUrl;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 };

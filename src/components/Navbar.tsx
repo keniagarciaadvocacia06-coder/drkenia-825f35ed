@@ -3,7 +3,7 @@ import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import logoKg from "@/assets/logo-kg.png";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { openWhatsApp } from "@/lib/whatsapp";
+import { buildWhatsAppRelayUrl, openWhatsApp } from "@/lib/whatsapp";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,41 +21,42 @@ const Navbar = () => {
   const waMessage = t("hero.wa_message");
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#d4b896] to-[#66503d] backdrop-blur-md border-b border-border/30">
-      <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/30 bg-gradient-to-r from-[#d4b896] to-[#66503d] backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
         <a href="#inicio" className="block">
           <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-40 w-auto" />
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-base font-medium text-cream hover:text-primary transition-colors duration-300 tracking-wide drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]"
+              className="text-base font-medium tracking-wide text-cream transition-colors duration-300 hover:text-primary drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]"
             >
               {link.label}
             </a>
           ))}
         </div>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitcher />
-          <button
-            type="button"
-            onClick={() => openWhatsApp(waMessage)}
-            className="inline-flex px-6 py-2.5 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground text-sm font-medium rounded-sm hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 tracking-wide cursor-pointer"
+          <a
+            href={buildWhatsAppRelayUrl(waMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex cursor-pointer rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-6 py-2.5 text-sm font-medium tracking-wide text-primary-foreground transition-all duration-300 hover:from-[#7a5c10] hover:to-[#d4bc7c]"
           >
             {t("nav.cta")}
-          </button>
+          </a>
         </div>
 
         {/* Mobile: apenas o toggle */}
         <div className="flex items-center gap-2 lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-cream p-1"
+            className="p-1 text-cream"
             aria-label="Menu"
           >
             {isOpen ? <X size={26} /> : <Menu size={26} />}
@@ -65,12 +66,12 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="lg:hidden bg-background border-t border-border px-6 py-6 space-y-4">
+        <div className="space-y-4 border-t border-border bg-background px-6 py-6 lg:hidden">
           {/* Language section at top */}
-          <div className="pb-4 border-b border-border">
-            <div className="flex items-center gap-2 mb-3 text-muted-foreground">
+          <div className="border-b border-border pb-4">
+            <div className="mb-3 flex items-center gap-2 text-muted-foreground">
               <Globe size={16} />
-              <span className="text-xs uppercase tracking-widest font-semibold">
+              <span className="text-xs font-semibold uppercase tracking-widest">
                 {t("nav.language", { defaultValue: "Idioma / Language" })}
               </span>
             </div>
@@ -82,7 +83,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block text-base font-medium text-foreground hover:text-primary transition-colors"
+              className="block text-base font-medium text-foreground transition-colors hover:text-primary"
             >
               {link.label}
             </a>
@@ -93,7 +94,7 @@ const Navbar = () => {
               setIsOpen(false);
               openWhatsApp(waMessage);
             }}
-            className="block w-full px-6 py-3 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground text-sm font-medium rounded-sm text-center hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 cursor-pointer"
+            className="block w-full cursor-pointer rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-6 py-3 text-center text-sm font-medium text-primary-foreground transition-all duration-300 hover:from-[#7a5c10] hover:to-[#d4bc7c]"
           >
             {t("nav.cta")}
           </button>

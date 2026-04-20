@@ -2,7 +2,7 @@ import { MessageCircle, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import draKenia from "@/assets/dra-kenia-enhanced.jpg";
 
-import { openWhatsApp } from "@/lib/whatsapp";
+import { buildWhatsAppRelayUrl } from "@/lib/whatsapp";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -50,21 +50,22 @@ const HeroSection = () => {
             <p className="text-cream-muted text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
               {t("hero.subtitle")}
             </p>
-            <button
-              type="button"
-              onClick={() => openWhatsApp(waMessage)}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground font-medium rounded-sm hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 tracking-wide text-sm cursor-pointer"
+            <a
+              href={buildWhatsAppRelayUrl(waMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex cursor-pointer items-center gap-2 rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-8 py-4 text-sm font-medium tracking-wide text-primary-foreground transition-all duration-300 hover:from-[#7a5c10] hover:to-[#d4bc7c]"
             >
               <MessageCircle size={18} />
               {t("hero.cta")}
               <ArrowRight size={16} />
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
       {/* Bottom fade to next section */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10" />
+      <div className="absolute bottom-0 left-0 right-0 z-10 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 };
