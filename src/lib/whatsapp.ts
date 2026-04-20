@@ -12,24 +12,17 @@ export const buildWhatsAppRelayUrl = (message?: string) => {
 };
 
 /**
- * Opens an internal relay page in a new tab first, then that page redirects to WhatsApp.
- * This avoids iframe blocking in the Lovable preview.
+ * Opens an internal relay page first, then that page redirects to WhatsApp.
+ * If popups are blocked, it falls back to navigating the current page.
  */
 export const openWhatsApp = (message?: string) => {
   const relayUrl = buildWhatsAppRelayUrl(message);
-  const newWindow = window.open("about:blank", "_blank", "noopener,noreferrer");
+  const newWindow = window.open(relayUrl, "_blank", "noopener,noreferrer");
 
   if (newWindow) {
     newWindow.opener = null;
-    newWindow.location.replace(relayUrl);
     return;
   }
 
-  const link = document.createElement("a");
-  link.href = relayUrl;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  window.location.href = relayUrl;
 };

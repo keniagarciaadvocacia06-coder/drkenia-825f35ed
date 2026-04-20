@@ -8,7 +8,21 @@ const OpenWhatsApp = () => {
   const targetUrl = buildWhatsAppUrl(message);
 
   useEffect(() => {
-    window.location.replace(targetUrl);
+    const redirectToWhatsApp = () => {
+      try {
+        if (window.top && window.top !== window.self) {
+          window.top.location.href = targetUrl;
+          return;
+        }
+      } catch {
+        // Fallback to same-window navigation below.
+      }
+
+      window.location.href = targetUrl;
+    };
+
+    const timeoutId = window.setTimeout(redirectToWhatsApp, 120);
+    return () => window.clearTimeout(timeoutId);
   }, [targetUrl]);
 
   return (
@@ -20,6 +34,8 @@ const OpenWhatsApp = () => {
         </p>
         <a
           href={targetUrl}
+          target="_top"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-sm bg-primary px-6 py-3 text-primary-foreground transition-opacity hover:opacity-90"
         >
           Abrir WhatsApp
