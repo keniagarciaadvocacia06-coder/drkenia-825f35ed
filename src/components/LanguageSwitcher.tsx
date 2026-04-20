@@ -4,6 +4,7 @@ const languages = [
   { code: "pt", label: "PT", flag: "🇧🇷" },
   { code: "en", label: "EN", flag: "🇺🇸" },
   { code: "es", label: "ES", flag: "🇪🇸" },
+  { code: "fr", label: "FR", flag: "🇫🇷" },
 ];
 
 interface Props {
