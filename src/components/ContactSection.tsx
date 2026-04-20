@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MessageCircle, Mail, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useToast } from "@/hooks/use-toast";
-import { buildWhatsAppUrl, openWhatsApp } from "@/lib/whatsapp";
+import { openWhatsApp } from "@/lib/whatsapp";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -110,10 +110,9 @@ const ContactSection = () => {
           </div>
 
           <div className="order-2 space-y-4 lg:order-1">
-            <a
-              href={buildWhatsAppUrl(waMessage)}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => openWhatsApp(waMessage)}
               className="group flex w-full cursor-pointer items-center gap-4 rounded-sm border border-border bg-card p-6 text-left transition-colors hover:border-primary/40"
             >
               <MessageCircle className="h-8 w-8 shrink-0 text-primary transition-transform group-hover:scale-110" strokeWidth={1.5} />
@@ -121,7 +120,7 @@ const ContactSection = () => {
                 <h3 className="font-heading text-xl text-foreground">{t("contact.card_wa")}</h3>
                 <p className="text-base text-muted-foreground">(64) 99988-1043</p>
               </div>
-            </a>
+            </button>
 
             <a
               href="mailto:keniagarcia.advocacia@gmail.com"
