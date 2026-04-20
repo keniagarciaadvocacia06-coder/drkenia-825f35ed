@@ -18,7 +18,8 @@ const Navbar = () => {
     { label: t("nav.contact"), href: "#contato" },
   ];
 
-  const waHref = `https://wa.me/5564999881043?text=${encodeURIComponent(t("hero.wa_message"))}`;
+  const waMessage = t("hero.wa_message");
+  const waHref = buildWhatsAppUrl(waMessage);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#d4b896] to-[#66503d] backdrop-blur-md border-b border-border/30">
@@ -46,7 +47,11 @@ const Navbar = () => {
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex px-6 py-2.5 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground text-sm font-medium rounded-sm hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 tracking-wide"
+            onClick={(e) => {
+              e.preventDefault();
+              openWhatsApp(waMessage);
+            }}
+            className="inline-flex px-6 py-2.5 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground text-sm font-medium rounded-sm hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 tracking-wide cursor-pointer"
           >
             {t("nav.cta")}
           </a>
@@ -92,7 +97,12 @@ const Navbar = () => {
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-6 py-3 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground text-sm font-medium rounded-sm text-center hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300"
+            onClick={(e) => {
+              e.preventDefault();
+              setIsOpen(false);
+              openWhatsApp(waMessage);
+            }}
+            className="block px-6 py-3 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground text-sm font-medium rounded-sm text-center hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 cursor-pointer"
           >
             {t("nav.cta")}
           </a>
