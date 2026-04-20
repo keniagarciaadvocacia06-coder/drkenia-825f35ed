@@ -11,6 +11,9 @@ const AboutSection = () => {
             alt="Dra. Kênia Garcia - Advogada"
             className="w-full rounded-sm object-cover aspect-[3/4]"
             loading="lazy"
+            decoding="async"
+            width="900"
+            height="1200"
           />
           <p className="text-center mt-6 font-heading text-2xl text-primary">Dra. Kênia Garcia</p>
         </div>
