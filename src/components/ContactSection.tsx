@@ -23,10 +23,8 @@ const ContactSection = () => {
     e.preventDefault();
     setSending(true);
 
-    const text = encodeURIComponent(
-      `${t("contact.wa_intro")} ${formData.name}.\n${t("contact.wa_email")}: ${formData.email}\n${t("contact.wa_phone")}: ${formData.phone}\n${t("contact.wa_message")}: ${formData.message}`
-    );
-    window.open(`https://wa.me/5564999881043?text=${text}`, "_blank");
+    const text = `${t("contact.wa_intro")} ${formData.name}.\n${t("contact.wa_email")}: ${formData.email}\n${t("contact.wa_phone")}: ${formData.phone}\n${t("contact.wa_message")}: ${formData.message}`;
+    openWhatsApp(text);
 
     toast({
       title: t("contact.toast_title"),
