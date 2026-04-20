@@ -5,25 +5,17 @@ export const buildWhatsAppUrl = (message?: string) => {
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 };
 
+export const buildWhatsAppRelayUrl = (message?: string) => {
+  const params = new URLSearchParams();
+  if (message) params.set("text", message);
+  return `/open-whatsapp${params.toString() ? `?${params.toString()}` : ""}`;
+};
+
 /**
- * Opens WhatsApp in a separate tab without letting the preview iframe navigate to wa.me.
+ * Opens an internal relay page in a new tab first, then that page redirects to WhatsApp.
+ * This avoids iframe blocking in the Lovable preview.
  */
 export const openWhatsApp = (message?: string) => {
-  const url = buildWhatsAppUrl(message);
-
-  const popup = window.open("", "_blank", "noopener,noreferrer");
-  if (popup) {
-    popup.opener = null;
-    popup.location.replace(url);
-    return;
-  }
-
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.target = "_blank";
-  anchor.rel = "noopener noreferrer";
-  anchor.style.display = "none";
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
+  const relayUrl = buildWhatsAppRelayUrl(message);
+  window.open(relayUrl, "_blank", "noopener,noreferrer");
 };
