@@ -54,18 +54,13 @@ const AreasSection = () => {
               <div className="p-8 bg-secondary border-t border-border">
                 <p className="text-sm text-muted-foreground mb-2 font-medium uppercase tracking-wide">{t("areas.investment_label")}</p>
                 <p className="text-muted-foreground text-base mb-4">{t(`areas.${area.key}.investment`)}</p>
-                <a
-                  href={buildWhatsAppUrl(waText)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    openWhatsApp(waText);
-                  }}
+                <button
+                  type="button"
+                  onClick={() => openWhatsApp(waText)}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground text-sm font-medium rounded-sm hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 w-full justify-center cursor-pointer"
                 >
                   {t(`areas.${area.key}.cta`)}
-                </a>
+                </button>
               </div>
             </div>
           );

@@ -113,22 +113,17 @@ const ContactSection = () => {
 
           {/* Cards de contato */}
           <div className="space-y-4 order-2 lg:order-1">
-            <a
-              href={waHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => {
-                e.preventDefault();
-                openWhatsApp(waMessage);
-              }}
-              className="flex items-center gap-4 bg-card border border-border rounded-sm p-6 hover:border-primary/40 transition-colors group cursor-pointer"
+            <button
+              type="button"
+              onClick={() => openWhatsApp(waMessage)}
+              className="flex w-full items-center gap-4 bg-card border border-border rounded-sm p-6 hover:border-primary/40 transition-colors group cursor-pointer text-left"
             >
               <MessageCircle className="w-8 h-8 text-primary shrink-0 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
               <div>
                 <h3 className="font-heading text-xl text-foreground">{t("contact.card_wa")}</h3>
                 <p className="text-muted-foreground text-base">(64) 99988-1043</p>
               </div>
-            </a>
+            </button>
 
             <a
               href="mailto:keniagarcia.advocacia@gmail.com"
