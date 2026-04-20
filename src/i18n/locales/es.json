@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "areas": "Áreas de Actuación",
+    "differentials": "Diferenciales",
+    "faq": "Dudas",
+    "contact": "Contacto",
+    "cta": "CONTÁCTENOS"
+  },
+  "hero": {
+    "title_1": "Justicia con",
+    "title_faith": "fe",
+    "title_welcoming": "acogida",
+    "title_and": "y",
+    "title_purpose": "propósito",
+    "subtitle": "+15 años de experiencia en Familia y Sucesiones, Previsional y Bancario. Atención humanizada en todo Brasil.",
+    "cta": "HABLE CON UN ESPECIALISTA",
+    "wa_message": "Hola, me gustaría agendar una consulta."
+  },
+  "about": {
+    "heading": "Justicia con fe, acogida y propósito",
+    "p1_pre": "Con",
+    "p1_strong": "15 años de experiencia",
+    "p1_post": "en el mercado jurídico, la Dra. Kênia Garcia construyó su carrera sobre un pilar fundamental: la creencia de que cada persona merece ser tratada con dignidad, respeto y empatía.",
+    "quote": "\"Mi misión siempre fue brindar una atención humanizada, donde el cliente se sienta acogido y comprendido. Creo que cada caso es único y que, más que ofrecer soluciones jurídicas, es esencial estar al lado de mi cliente en cada paso del proceso.\"",
+    "p2": "Guiada por la fe y los principios cristianos, la Dra. Kênia ve en el ejercicio de la abogacía un llamado divino — una oportunidad de servir al prójimo y llevar justicia a quienes más lo necesitan.",
+    "verse": "\"Bienaventurados los que tienen hambre y sed de justicia, porque ellos serán saciados.\" — Mateo 5:6",
+    "name": "Dra. Kênia Garcia"
+  },
+  "areas": {
+    "kicker": "Áreas de Actuación",
+    "heading": "Soluciones jurídicas para cada momento de su vida",
+    "subtitle": "Conozca nuestras áreas de actuación y entienda cómo podemos ayudar.",
+    "investment_label": "Sobre la inversión",
+    "family": {
+      "title": "Derecho de Familia y Sucesiones",
+      "subtitle": "Protección para su patrimonio y su familia",
+      "description": "Actuación en cuestiones que involucran relaciones familiares y planificación sucesoria, con sensibilidad y estrategia.",
+      "investment": "La inversión se define tras análisis individual del caso, considerando complejidad, urgencia y modalidad de atención.",
+      "wa": "Hola, me gustaría saber más sobre Derecho de Familia.",
+      "cta": "Consultar sobre Familia",
+      "services": [
+        { "name": "Divorcio Consensual y Litigioso", "desc": "Disolución del matrimonio con partición de bienes y custodia" },
+        { "name": "Inventario y Partición", "desc": "Regularización patrimonial de forma ágil y segura" },
+        { "name": "Pensión Alimenticia", "desc": "Fijación, revisión o exoneración de alimentos" },
+        { "name": "Planificación Sucesoria", "desc": "Protección patrimonial con testamento, donación y holding familiar" },
+        { "name": "Custodia y Régimen de Visitas", "desc": "Definición del mejor interés del niño o adolescente" },
+        { "name": "Unión de Hecho", "desc": "Reconocimiento, disolución y conversión en matrimonio" }
+      ]
+    },
+    "banking": {
+      "title": "Derecho Bancario",
+      "subtitle": "Defensa contra abusos de instituciones financieras",
+      "description": "Protección de sus derechos como consumidor bancario, con análisis técnico de contratos y cobros indebidos.",
+      "investment": "Honorarios adecuados a la naturaleza de la demanda — consulta inicial para evaluación del caso sin compromiso.",
+      "wa": "Hola, me gustaría saber más sobre Derecho Bancario.",
+      "cta": "Consultar sobre Derecho Bancario",
+      "services": [
+        { "name": "Revisión de Contratos Bancarios", "desc": "Identificación de cláusulas abusivas e intereses excesivos" },
+        { "name": "Fraudes Bancarios", "desc": "Acción contra préstamos no autorizados y estafas" },
+        { "name": "Inscripción Indebida en Buró", "desc": "Eliminación del nombre de registros de deudores + indemnización" },
+        { "name": "Sobreendeudamiento", "desc": "Renegociación y plan de pago según la Ley 14.181/21" },
+        { "name": "Acción de Repetición de lo Indebido", "desc": "Restitución de valores cobrados indebidamente" }
+      ]
+    },
+    "social_security": {
+      "title": "Derecho Previsional",
+      "subtitle": "Conquiste el beneficio que merece",
+      "description": "Asistencia completa en beneficios del INSS, desde el requerimiento administrativo hasta la esfera judicial.",
+      "investment": "Cada situación previsional es única — los honorarios se discuten con total transparencia tras evaluación del caso.",
+      "wa": "Hola, me gustaría saber más sobre Derecho Previsional.",
+      "cta": "Consultar sobre Previsional",
+      "services": [
+        { "name": "Jubilación", "desc": "Por edad, tiempo de contribución, especial y por invalidez" },
+        { "name": "Subsidio por Enfermedad y Asistencial", "desc": "Beneficios por incapacidad y asistencia social" },
+        { "name": "Pensión por Fallecimiento", "desc": "Para dependientes del asegurado fallecido" },
+        { "name": "Revisión de Beneficios", "desc": "Corrección de valores y tesis revisionales" },
+        { "name": "Planificación Previsional", "desc": "Simulación y mejor estrategia para su jubilación" }
+      ]
+    }
+  },
+  "pillars": {
+    "kicker": "Nuestros Pilares",
+    "heading": "Compromiso con la defensa de sus derechos",
+    "items": [
+      { "title": "Actuación Técnica", "desc": "Estrategia jurídica sólida, fundamentada en la legislación y jurisprudencia actualizada." },
+      { "title": "Atención Humanizada", "desc": "Acogida y empatía en momentos delicados, con escucha activa y acompañamiento cercano." },
+      { "title": "Seguridad Jurídica", "desc": "Transparencia en las orientaciones y defensa firme de sus derechos en todas las instancias." }
+    ]
+  },
+  "why": {
+    "kicker": "Por qué elegirnos",
+    "heading": "Lo que nos hace diferentes",
+    "items": [
+      { "title": "+15 Años de Experiencia", "desc": "Trayectoria consolidada con cientos de casos resueltos con éxito." },
+      { "title": "Atención Personalizada", "desc": "Cada caso se trata con atención individual y estrategia a medida." },
+      { "title": "Acompañamiento Cercano", "desc": "Comunicación constante sobre el avance de su proceso." },
+      { "title": "Atención en Todo Brasil", "desc": "Presencial y online — donde usted esté, estamos a su lado." },
+      { "title": "Transparencia Total", "desc": "Orientaciones claras sobre costos, plazos y posibilidades desde el inicio." },
+      { "title": "Agilidad en las Soluciones", "desc": "Procesos conducidos con eficiencia, buscando la mejor resolución en el menor tiempo." }
+    ]
+  },
+  "faq": {
+    "kicker": "Preguntas Frecuentes",
+    "heading": "Aclare sus dudas",
+    "items": [
+      { "q": "¿Cuánto cuesta una consulta?", "a": "Cada caso es único y los honorarios se definen tras un análisis individual, respetando la tabla del Colegio de Abogados y la complejidad de la demanda. Contáctenos para una evaluación inicial." },
+      { "q": "¿Los procesos judiciales son muy demorados?", "a": "El tiempo varía según la complejidad y el tipo de acción. Trabajamos para agilizar al máximo, buscando soluciones extrajudiciales cuando sea posible y acompañando de cerca el avance procesal." },
+      { "q": "¿Puedo tener certeza del resultado de mi caso?", "a": "Ningún abogado puede garantizar resultados. Lo que garantizamos es un análisis honesto, estrategia sólida y dedicación total para alcanzar el mejor resultado posible." },
+      { "q": "No sé si tengo derecho. ¿Cómo saberlo?", "a": "El primer paso es una consulta para evaluar su situación. Muchas personas descubren que poseen derechos que desconocían. Contáctenos y analizaremos su caso." },
+      { "q": "Tengo miedo de ir a la justicia y empeorar la situación.", "a": "Es un temor común. Por eso, ofrecemos una orientación transparente sobre los riesgos y beneficios de cada camino, para que usted tome la mejor decisión con seguridad." },
+      { "q": "¿Atienden online?", "a": "¡Sí! Atendemos de forma presencial y online, en todo Brasil. Puede agendar una consulta por videoconferencia con total comodidad y seguridad." }
+    ]
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "heading": "Conversemos sobre su caso",
+    "subtitle": "El primer paso para resolver su asunto jurídico es una conversación. Contáctenos y agende su consulta.",
+    "form_title": "Contáctenos Ahora Mismo",
+    "form_subtitle": "Realice una Consulta",
+    "name": "Nombre Completo",
+    "email": "Su Mejor Correo",
+    "phone": "Teléfono/WhatsApp",
+    "message": "Mensaje",
+    "submit": "Solicitar Atención",
+    "toast_title": "Redirigiendo a WhatsApp",
+    "toast_desc": "Será redirigido para enviar su mensaje.",
+    "wa_intro": "Hola, mi nombre es",
+    "wa_email": "Correo",
+    "wa_phone": "Teléfono",
+    "wa_message": "Mensaje",
+    "card_wa": "WhatsApp",
+    "card_email": "Correo",
+    "card_service": "Atención",
+    "card_service_desc": "Presencial y Online — Todo Brasil"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import draKeniaAbout from "@/assets/dra-kenia-about.jpg";
 
 const AboutSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="sobre" className="scroll-mt-24 py-12 md:py-16 lg:py-24 px-6">
       <div className="max-w-6xl mx-auto grid gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
@@ -15,28 +17,23 @@ const AboutSection = () => {
             width="900"
             height="1200"
           />
-          <p className="text-center mt-6 font-heading text-2xl text-primary">Dra. Kênia Garcia</p>
+          <p className="text-center mt-6 font-heading text-2xl text-primary">{t("about.name")}</p>
         </div>
         <div>
           <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-8 leading-tight">
-            Justiça com fé, acolhimento e propósito
+            {t("about.heading")}
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6 text-base md:text-lg">
-            Com <strong className="text-foreground">15 anos de experiência</strong> no mercado jurídico, 
-            a Dra. Kênia Garcia construiu sua carreira sobre um pilar fundamental: a crença de que cada
-            pessoa merece ser tratada com dignidade, respeito e empatia.
+            {t("about.p1_pre")} <strong className="text-foreground">{t("about.p1_strong")}</strong> {t("about.p1_post")}
           </p>
           <blockquote className="border-l-2 border-primary pl-6 italic text-cream-muted mb-6 leading-relaxed text-base md:text-lg">
-            "A minha missão sempre foi proporcionar um atendimento humanizado, onde o cliente se sinta 
-            acolhido e compreendido. Acredito que cada caso é único e que, mais do que oferecer soluções 
-            jurídicas, é essencial estar ao lado do meu cliente em cada passo do processo."
+            {t("about.quote")}
           </blockquote>
           <p className="text-muted-foreground leading-relaxed mb-8 text-base md:text-lg">
-            Guiada pela fé e pelos princípios cristãos, a Dra. Kênia enxerga no exercício da advocacia 
-            um chamado divino — uma oportunidade de servir ao próximo e levar justiça àqueles que mais precisam.
+            {t("about.p2")}
           </p>
           <p className="font-heading text-xl md:text-2xl text-primary italic">
-            "Bem-aventurados os que têm fome e sede de justiça, porque serão fartos." — Mateus 5:6
+            {t("about.verse")}
           </p>
         </div>
       </div>

@@ -1,7 +1,11 @@
 import { MessageCircle, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import draKenia from "@/assets/dra-kenia-enhanced.jpg";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  const waHref = `https://wa.me/5564999881043?text=${encodeURIComponent(t("hero.wa_message"))}`;
+
   return (
     <section id="inicio" className="relative overflow-hidden bg-brown-dark pt-36 pb-16 xl:min-h-screen">
       {/* Desktop background image - right side */}
@@ -35,24 +39,23 @@ const HeroSection = () => {
         <div className="flex items-start xl:min-h-screen xl:items-center">
           <div className="max-w-xl">
             <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light text-cream leading-tight mb-6">
-              Justiça com{" "}
-              <em className="italic text-gold-gradient not-italic">fé</em>,
+              {t("hero.title_1")}{" "}
+              <em className="italic text-gold-gradient not-italic">{t("hero.title_faith")}</em>,
               <br />
-              <span className="text-gold-gradient">acolhimento</span> e{" "}
-              <span className="text-gold-gradient underline decoration-1 underline-offset-8">propósito</span>.
+              <span className="text-gold-gradient">{t("hero.title_welcoming")}</span> {t("hero.title_and")}{" "}
+              <span className="text-gold-gradient underline decoration-1 underline-offset-8">{t("hero.title_purpose")}</span>.
             </h1>
             <p className="text-cream-muted text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
-              +15 anos de experiência em Família e Sucessões, Previdenciário e Bancário.
-              Atendimento humanizado em todo o Brasil.
+              {t("hero.subtitle")}
             </p>
             <a
-              href="https://wa.me/5564999881043?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta."
+              href={waHref}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#8b6914] to-[#e8d090] text-primary-foreground font-medium rounded-sm hover:from-[#7a5c10] hover:to-[#d4bc7c] transition-all duration-300 tracking-wide text-sm"
             >
               <MessageCircle size={18} />
-              FALE COM UM ESPECIALISTA
+              {t("hero.cta")}
               <ArrowRight size={16} />
             </a>
           </div>
