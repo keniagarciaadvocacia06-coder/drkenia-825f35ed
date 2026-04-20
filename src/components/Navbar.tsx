@@ -3,6 +3,7 @@ import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import logoKg from "@/assets/logo-kg.png";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { buildWhatsAppUrl, openWhatsApp } from "@/lib/whatsapp";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
