@@ -3,7 +3,7 @@ import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import logoKg from "@/assets/logo-kg.png";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { buildWhatsAppUrl, openWhatsApp } from "@/lib/whatsapp";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -84,16 +84,15 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <button
-            type="button"
-            onClick={() => {
-              setIsOpen(false);
-              openWhatsApp(waMessage);
-            }}
+          <a
+            href={buildWhatsAppUrl(waMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
             className="block w-full cursor-pointer rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-6 py-3 text-center text-sm font-medium text-primary-foreground transition-all duration-300 hover:from-[#7a5c10] hover:to-[#d4bc7c]"
           >
             {t("nav.cta")}
-          </button>
+          </a>
         </div>
       )}
     </nav>
