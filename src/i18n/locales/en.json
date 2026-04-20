@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "areas": "Practice Areas",
+    "differentials": "Why Us",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "CONTACT US"
+  },
+  "hero": {
+    "title_1": "Justice with",
+    "title_faith": "faith",
+    "title_welcoming": "compassion",
+    "title_and": "and",
+    "title_purpose": "purpose",
+    "subtitle": "+15 years of experience in Family & Estate Law, Social Security and Banking Law. Personalized service throughout Brazil.",
+    "cta": "TALK TO A SPECIALIST",
+    "wa_message": "Hello, I would like to schedule a consultation."
+  },
+  "about": {
+    "heading": "Justice with faith, compassion and purpose",
+    "p1_pre": "With",
+    "p1_strong": "15 years of experience",
+    "p1_post": "in the legal market, Dra. Kênia Garcia has built her career on a fundamental pillar: the belief that every person deserves to be treated with dignity, respect and empathy.",
+    "quote": "\"My mission has always been to provide a humanized service, where the client feels welcomed and understood. I believe each case is unique and that, more than offering legal solutions, it is essential to stand by my client at every step of the process.\"",
+    "p2": "Guided by faith and Christian principles, Dra. Kênia sees the practice of law as a divine calling — an opportunity to serve others and bring justice to those who need it most.",
+    "verse": "\"Blessed are those who hunger and thirst for righteousness, for they shall be filled.\" — Matthew 5:6",
+    "name": "Dra. Kênia Garcia"
+  },
+  "areas": {
+    "kicker": "Practice Areas",
+    "heading": "Legal solutions for every moment of your life",
+    "subtitle": "Discover our practice areas and understand how we can help.",
+    "investment_label": "About the investment",
+    "family": {
+      "title": "Family & Estate Law",
+      "subtitle": "Protection for your assets and your family",
+      "description": "Action on matters involving family relationships and estate planning, with sensitivity and strategy.",
+      "investment": "The investment is defined after individual case analysis, considering complexity, urgency and type of service.",
+      "wa": "Hello, I would like to know more about Family Law.",
+      "cta": "Consult about Family Law",
+      "services": [
+        { "name": "Consensual & Contested Divorce", "desc": "Marriage dissolution with asset division and custody" },
+        { "name": "Probate & Inheritance", "desc": "Estate regularization in an agile and secure way" },
+        { "name": "Child Support / Alimony", "desc": "Setting, review or exemption of support payments" },
+        { "name": "Estate Planning", "desc": "Asset protection with wills, donations and family holding" },
+        { "name": "Custody & Visitation Rights", "desc": "Defining the best interest of the child or adolescent" },
+        { "name": "Common-Law Marriage", "desc": "Recognition, dissolution and conversion to marriage" }
+      ]
+    },
+    "banking": {
+      "title": "Banking Law",
+      "subtitle": "Defense against abuses by financial institutions",
+      "description": "Protection of your rights as a banking consumer, with technical analysis of contracts and undue charges.",
+      "investment": "Fees appropriate to the nature of the demand — initial consultation for case assessment at no commitment.",
+      "wa": "Hello, I would like to know more about Banking Law.",
+      "cta": "Consult about Banking Law",
+      "services": [
+        { "name": "Review of Banking Contracts", "desc": "Identification of abusive clauses and excessive interest" },
+        { "name": "Banking Fraud", "desc": "Action against unauthorized payroll loans and scams" },
+        { "name": "Improper Credit Listing", "desc": "Removal of name from defaulter records + compensation" },
+        { "name": "Over-Indebtedness", "desc": "Renegotiation and payment plan under Law 14.181/21" },
+        { "name": "Action for Repetition of Indebitum", "desc": "Restitution of amounts unduly charged" }
+      ]
+    },
+    "social_security": {
+      "title": "Social Security Law",
+      "subtitle": "Get the benefit you deserve",
+      "description": "Comprehensive assistance with social security benefits, from administrative request to judicial appeal.",
+      "investment": "Each social security situation is unique — fees are discussed with full transparency after case evaluation.",
+      "wa": "Hello, I would like to know more about Social Security Law.",
+      "cta": "Consult about Social Security",
+      "services": [
+        { "name": "Retirement", "desc": "By age, contribution time, special and disability" },
+        { "name": "Sickness Benefit & Welfare", "desc": "Disability benefits and social assistance" },
+        { "name": "Death Pension", "desc": "For dependents of the deceased insured" },
+        { "name": "Benefit Review", "desc": "Value correction and review theses" },
+        { "name": "Social Security Planning", "desc": "Simulation and best strategy for your retirement" }
+      ]
+    }
+  },
+  "pillars": {
+    "kicker": "Our Pillars",
+    "heading": "Commitment to defending your rights",
+    "items": [
+      { "title": "Technical Practice", "desc": "Solid legal strategy, based on updated legislation and case law." },
+      { "title": "Humanized Service", "desc": "Welcoming and empathy in delicate moments, with active listening and close monitoring." },
+      { "title": "Legal Security", "desc": "Transparency in guidance and firm defense of your rights at all instances." }
+    ]
+  },
+  "why": {
+    "kicker": "Why Choose Us",
+    "heading": "What makes us different",
+    "items": [
+      { "title": "+15 Years of Experience", "desc": "Consolidated track record with hundreds of cases successfully resolved." },
+      { "title": "Personalized Service", "desc": "Each case is treated with individual attention and tailored strategy." },
+      { "title": "Close Follow-Up", "desc": "Constant communication about the progress of your case." },
+      { "title": "Service Throughout Brazil", "desc": "In-person and online — wherever you are, we are by your side." },
+      { "title": "Total Transparency", "desc": "Clear guidance on costs, deadlines and possibilities from the start." },
+      { "title": "Agile Solutions", "desc": "Processes conducted efficiently, seeking the best resolution in the shortest time." }
+    ]
+  },
+  "faq": {
+    "kicker": "Frequently Asked Questions",
+    "heading": "Clear your doubts",
+    "items": [
+      { "q": "How much does a consultation cost?", "a": "Each case is unique and fees are defined after individual analysis, respecting the Bar Association table and the complexity of the demand. Get in touch for an initial assessment." },
+      { "q": "Are lawsuits very time-consuming?", "a": "Time varies according to complexity and type of action. We work to speed up as much as possible, seeking out-of-court solutions when feasible and closely monitoring proceedings." },
+      { "q": "Can I be sure of the outcome of my case?", "a": "No lawyer can guarantee results. What we guarantee is honest analysis, solid strategy and total dedication to achieve the best possible result." },
+      { "q": "I don't know if I have a right. How do I find out?", "a": "The first step is a consultation to evaluate your situation. Many people discover they have rights they were unaware of. Contact us and let's analyze your case." },
+      { "q": "I'm afraid of going to court and making things worse.", "a": "This is a common concern. That's why we offer transparent guidance on the risks and benefits of each path, so you can make the best decision with security." },
+      { "q": "Do you offer online service?", "a": "Yes! We serve in person and online, throughout Brazil. You can schedule a video consultation with full comfort and security." }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "heading": "Let's talk about your case",
+    "subtitle": "The first step to resolving your legal matter is a conversation. Get in touch and schedule your consultation.",
+    "form_title": "Get in Touch Right Now",
+    "form_subtitle": "Book a Consultation",
+    "name": "Full Name",
+    "email": "Your Best Email",
+    "phone": "Phone/WhatsApp",
+    "message": "Message",
+    "submit": "Request Service",
+    "toast_title": "Redirecting to WhatsApp",
+    "toast_desc": "You will be redirected to send your message.",
+    "wa_intro": "Hello, my name is",
+    "wa_email": "Email",
+    "wa_phone": "Phone",
+    "wa_message": "Message",
+    "card_wa": "WhatsApp",
+    "card_email": "Email",
+    "card_service": "Service",
+    "card_service_desc": "In-person and Online — Throughout Brazil"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
