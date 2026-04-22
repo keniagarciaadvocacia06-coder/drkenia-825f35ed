@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import logoKg from "@/assets/logo-kg.png";
 import WhatsAppButton from "./WhatsAppButton";
-import { buildWhatsAppUrl } from "@/lib/whatsapp";
-import { openWhatsApp } from "@/lib/whatsapp";
+import Navbar from "./Navbar";
+import { buildWhatsAppUrl, openWhatsApp } from "@/lib/whatsapp";
 
 interface ArticleLayoutProps {
   title: string;
@@ -30,17 +30,7 @@ const ArticleLayout = ({ title, description, children }: ArticleLayoutProps) => 
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/30 bg-gradient-to-r from-[#d4b896] to-[#66503d] backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
-          <Link to="/" className="block">
-            <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-20 w-auto" />
-          </Link>
-          <Link to="/" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors text-sm">
-            <ArrowLeft className="w-4 h-4" />
-            Voltar ao início
-          </Link>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Article */}
       <main className="pt-28 pb-16 px-6">
