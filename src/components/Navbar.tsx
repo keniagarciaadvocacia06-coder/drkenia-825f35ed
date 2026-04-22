@@ -5,17 +5,21 @@ import logoKg from "@/assets/logo-kg.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
+import { useLocation, Link } from "react-router-dom";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const navLinks = [
-    { label: t("nav.home"), href: "#inicio" },
-    { label: t("nav.about"), href: "#sobre" },
-    { label: t("nav.areas"), href: "#areas" },
-    { label: t("nav.differentials"), href: "#diferenciais" },
-    { label: t("nav.faq"), href: "#duvidas" },
-    { label: t("nav.contact"), href: "#contato" },
+    { label: t("nav.home"), href: isHome ? "#inicio" : "/" },
+    { label: t("nav.about"), href: isHome ? "#sobre" : "/#sobre" },
+    { label: t("nav.areas"), href: isHome ? "#areas" : "/#areas" },
+    { label: t("nav.differentials"), href: isHome ? "#diferenciais" : "/#diferenciais" },
+    { label: t("nav.faq"), href: isHome ? "#duvidas" : "/#duvidas" },
+    { label: t("nav.contact"), href: isHome ? "#contato" : "/#contato" },
   ];
 
   const waMessage = t("hero.wa_message");
