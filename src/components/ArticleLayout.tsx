@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import logoKg from "@/assets/logo-kg.png";
 import WhatsAppButton from "./WhatsAppButton";
-import { buildWhatsAppUrl } from "@/lib/whatsapp";
-import { openWhatsApp } from "@/lib/whatsapp";
+import Navbar from "./Navbar";
+import { buildWhatsAppUrl, openWhatsApp } from "@/lib/whatsapp";
 
 interface ArticleLayoutProps {
   title: string;
