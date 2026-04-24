@@ -41,12 +41,30 @@
       "wa": "Hello, I would like to know more about Family Law.",
       "cta": "Consult about Family Law",
       "services": [
-        { "name": "Consensual & Contested Divorce", "desc": "Marriage dissolution with asset division and custody" },
-        { "name": "Probate & Inheritance", "desc": "Estate regularization in an agile and secure way" },
-        { "name": "Child Support / Alimony", "desc": "Setting, review or exemption of support payments" },
-        { "name": "Estate Planning", "desc": "Asset protection with wills, donations and family holding" },
-        { "name": "Custody & Visitation Rights", "desc": "Defining the best interest of the child or adolescent" },
-        { "name": "Common-Law Marriage", "desc": "Recognition, dissolution and conversion to marriage" }
+        {
+          "name": "Consensual & Contested Divorce",
+          "desc": "Marriage dissolution with asset division and custody"
+        },
+        {
+          "name": "Probate & Inheritance",
+          "desc": "Estate regularization in an agile and secure way"
+        },
+        {
+          "name": "Child Support / Alimony",
+          "desc": "Setting, review or exemption of support payments"
+        },
+        {
+          "name": "Estate Planning",
+          "desc": "Asset protection with wills, donations and family holding"
+        },
+        {
+          "name": "Custody & Visitation Rights",
+          "desc": "Defining the best interest of the child or adolescent"
+        },
+        {
+          "name": "Common-Law Marriage",
+          "desc": "Recognition, dissolution and conversion to marriage"
+        }
       ]
     },
     "banking": {
@@ -57,11 +75,26 @@
       "wa": "Hello, I would like to know more about Banking Law.",
       "cta": "Consult about Banking Law",
       "services": [
-        { "name": "Review of Banking Contracts", "desc": "Identification of abusive clauses and excessive interest" },
-        { "name": "Banking Fraud", "desc": "Action against unauthorized payroll loans and scams" },
-        { "name": "Improper Credit Listing", "desc": "Removal of name from defaulter records + compensation" },
-        { "name": "Over-Indebtedness", "desc": "Renegotiation and payment plan under Law 14.181/21" },
-        { "name": "Action for Repetition of Indebitum", "desc": "Restitution of amounts unduly charged" }
+        {
+          "name": "Review of Banking Contracts",
+          "desc": "Identification of abusive clauses and excessive interest"
+        },
+        {
+          "name": "Banking Fraud",
+          "desc": "Action against unauthorized payroll loans and scams"
+        },
+        {
+          "name": "Improper Credit Listing",
+          "desc": "Removal of name from defaulter records + compensation"
+        },
+        {
+          "name": "Over-Indebtedness",
+          "desc": "Renegotiation and payment plan under Law 14.181/21"
+        },
+        {
+          "name": "Action for Repetition of Indebitum",
+          "desc": "Restitution of amounts unduly charged"
+        }
       ]
     },
     "social_security": {
@@ -72,11 +105,26 @@
       "wa": "Hello, I would like to know more about Social Security Law.",
       "cta": "Consult about Social Security",
       "services": [
-        { "name": "Retirement", "desc": "By age, contribution time, special and disability" },
-        { "name": "Sickness Benefit & Welfare", "desc": "Disability benefits and social assistance" },
-        { "name": "Death Pension", "desc": "For dependents of the deceased insured" },
-        { "name": "Benefit Review", "desc": "Value correction and review theses" },
-        { "name": "Social Security Planning", "desc": "Simulation and best strategy for your retirement" }
+        {
+          "name": "Retirement",
+          "desc": "By age, contribution time, special and disability"
+        },
+        {
+          "name": "Sickness Benefit & Welfare",
+          "desc": "Disability benefits and social assistance"
+        },
+        {
+          "name": "Death Pension",
+          "desc": "For dependents of the deceased insured"
+        },
+        {
+          "name": "Benefit Review",
+          "desc": "Value correction and review theses"
+        },
+        {
+          "name": "Social Security Planning",
+          "desc": "Simulation and best strategy for your retirement"
+        }
       ]
     }
   },
@@ -84,33 +132,78 @@
     "kicker": "Our Pillars",
     "heading": "Commitment to defending your rights",
     "items": [
-      { "title": "Technical Practice", "desc": "Solid legal strategy, based on updated legislation and case law." },
-      { "title": "Humanized Service", "desc": "Welcoming and empathy in delicate moments, with active listening and close monitoring." },
-      { "title": "Legal Security", "desc": "Transparency in guidance and firm defense of your rights at all instances." }
+      {
+        "title": "Technical Practice",
+        "desc": "Solid legal strategy, based on updated legislation and case law."
+      },
+      {
+        "title": "Humanized Service",
+        "desc": "Welcoming and empathy in delicate moments, with active listening and close monitoring."
+      },
+      {
+        "title": "Legal Security",
+        "desc": "Transparency in guidance and firm defense of your rights at all instances."
+      }
     ]
   },
   "why": {
     "kicker": "Why Choose Us",
     "heading": "What makes us different",
     "items": [
-      { "title": "+15 Years of Experience", "desc": "Consolidated track record with hundreds of cases successfully resolved." },
-      { "title": "Personalized Service", "desc": "Each case is treated with individual attention and tailored strategy." },
-      { "title": "Close Follow-Up", "desc": "Constant communication about the progress of your case." },
-      { "title": "Service Throughout Brazil", "desc": "In-person and online — wherever you are, we are by your side." },
-      { "title": "Total Transparency", "desc": "Clear guidance on costs, deadlines and possibilities from the start." },
-      { "title": "Agile Solutions", "desc": "Processes conducted efficiently, seeking the best resolution in the shortest time." }
+      {
+        "title": "+15 Years of Experience",
+        "desc": "Consolidated track record with hundreds of cases successfully resolved."
+      },
+      {
+        "title": "Personalized Service",
+        "desc": "Each case is treated with individual attention and tailored strategy."
+      },
+      {
+        "title": "Close Follow-Up",
+        "desc": "Constant communication about the progress of your case."
+      },
+      {
+        "title": "Service Throughout Brazil",
+        "desc": "In-person and online — wherever you are, we are by your side."
+      },
+      {
+        "title": "Total Transparency",
+        "desc": "Clear guidance on costs, deadlines and possibilities from the start."
+      },
+      {
+        "title": "Agile Solutions",
+        "desc": "Processes conducted efficiently, seeking the best resolution in the shortest time."
+      }
     ]
   },
   "faq": {
     "kicker": "Frequently Asked Questions",
     "heading": "Clear your doubts",
     "items": [
-      { "q": "How much does a consultation cost?", "a": "Each case is unique and fees are defined after individual analysis, respecting the Bar Association table and the complexity of the demand. Get in touch for an initial assessment." },
-      { "q": "Are lawsuits very time-consuming?", "a": "Time varies according to complexity and type of action. We work to speed up as much as possible, seeking out-of-court solutions when feasible and closely monitoring proceedings." },
-      { "q": "Can I be sure of the outcome of my case?", "a": "No lawyer can guarantee results. What we guarantee is honest analysis, solid strategy and total dedication to achieve the best possible result." },
-      { "q": "I don't know if I have a right. How do I find out?", "a": "The first step is a consultation to evaluate your situation. Many people discover they have rights they were unaware of. Contact us and let's analyze your case." },
-      { "q": "I'm afraid of going to court and making things worse.", "a": "This is a common concern. That's why we offer transparent guidance on the risks and benefits of each path, so you can make the best decision with security." },
-      { "q": "Do you offer online service?", "a": "Yes! We serve in person and online, throughout Brazil. You can schedule a video consultation with full comfort and security." }
+      {
+        "q": "How much does a consultation cost?",
+        "a": "Each case is unique and fees are defined after individual analysis, respecting the Bar Association table and the complexity of the demand. Get in touch for an initial assessment."
+      },
+      {
+        "q": "Are lawsuits very time-consuming?",
+        "a": "Time varies according to complexity and type of action. We work to speed up as much as possible, seeking out-of-court solutions when feasible and closely monitoring proceedings."
+      },
+      {
+        "q": "Can I be sure of the outcome of my case?",
+        "a": "No lawyer can guarantee results. What we guarantee is honest analysis, solid strategy and total dedication to achieve the best possible result."
+      },
+      {
+        "q": "I don't know if I have a right. How do I find out?",
+        "a": "The first step is a consultation to evaluate your situation. Many people discover they have rights they were unaware of. Contact us and let's analyze your case."
+      },
+      {
+        "q": "I'm afraid of going to court and making things worse.",
+        "a": "This is a common concern. That's why we offer transparent guidance on the risks and benefits of each path, so you can make the best decision with security."
+      },
+      {
+        "q": "Do you offer online service?",
+        "a": "Yes! We serve in person and online, throughout Brazil. You can schedule a video consultation with full comfort and security."
+      }
     ]
   },
   "contact": {
@@ -142,13 +235,39 @@
     "google_label": "Google-style reviews",
     "disclaimer": "Real testimonials from served clients. For confidentiality reasons, names and details may be preserved upon request.",
     "items": {
-      "t1": { "date": "2 weeks ago", "area": "Family Law", "text": "Dr. Kênia handled my divorce with great sensitivity and professionalism. I felt welcomed from start to finish. I highly recommend her." },
-      "t2": { "date": "1 month ago", "area": "Estate Law", "text": "Excellent service with my father's inventory. She explained every step clearly and resolved everything quickly. Top-tier professional." },
-      "t3": { "date": "3 weeks ago", "area": "Social Security", "text": "I got my retirement after years of trying. Dr. Kênia was tireless on my social security case. Eternally grateful!" },
-      "t4": { "date": "2 months ago", "area": "Banking Law", "text": "Truly humanized service. She solved a complex banking issue other lawyers said was impossible. Highly recommend." },
-      "t5": { "date": "1 week ago", "area": "Family", "text": "Ethical, dedicated and highly competent. She helped me with shared custody with great strategy. I recommend her to everyone!" },
-      "t6": { "date": "1 month ago", "area": "Estate Law", "text": "Flawless online service, even though I live in another state. Clear communication, deadlines met and excellent results." }
-    }
+      "t1": {
+        "date": "2 weeks ago",
+        "area": "Family Law",
+        "text": "Dr. Kênia handled my divorce with great sensitivity and professionalism. I felt welcomed from start to finish. I highly recommend her."
+      },
+      "t2": {
+        "date": "1 month ago",
+        "area": "Estate Law",
+        "text": "Excellent service with my father's inventory. She explained every step clearly and resolved everything quickly. Top-tier professional."
+      },
+      "t3": {
+        "date": "3 weeks ago",
+        "area": "Social Security",
+        "text": "I got my retirement after years of trying. Dr. Kênia was tireless on my social security case. Eternally grateful!"
+      },
+      "t4": {
+        "date": "2 months ago",
+        "area": "Banking Law",
+        "text": "Truly humanized service. She solved a complex banking issue other lawyers said was impossible. Highly recommend."
+      },
+      "t5": {
+        "date": "1 week ago",
+        "area": "Family",
+        "text": "Ethical, dedicated and highly competent. She helped me with shared custody with great strategy. I recommend her to everyone!"
+      },
+      "t6": {
+        "date": "1 month ago",
+        "area": "Estate Law",
+        "text": "Flawless online service, even though I live in another state. Clear communication, deadlines met and excellent results."
+      }
+    },
+    "see_on_google": "View on Google",
+    "see_all_google": "See all reviews on Google"
   },
   "footer": {
     "rights": "All rights reserved."
