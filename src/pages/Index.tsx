@@ -19,7 +19,6 @@ const Index = () => {
       <PillarsSection />
       <AreasSection />
       <WhyUsSection />
-      <WhyUsSection />
       <TestimonialsSection />
       <FaqSection />
       <ContactSection />
