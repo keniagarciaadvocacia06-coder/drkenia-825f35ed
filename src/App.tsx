@@ -14,15 +14,19 @@ import DireitosGenitor from "./pages/artigos/DireitosGenitor";
 import DanosMorais from "./pages/artigos/DanosMorais";
 import UniaoEstavel from "./pages/artigos/UniaoEstavel";
 import Concubinato from "./pages/artigos/Concubinato";
+import DebugErrorThrower from "./components/DebugErrorThrower";
+import ErrorDebugPopup from "./components/ErrorDebugPopup";
 
 const queryClient = new QueryClient();
 
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
+      <DebugErrorThrower />
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <ErrorDebugPopup />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
