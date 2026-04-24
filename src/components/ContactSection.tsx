@@ -48,6 +48,16 @@ const ContactSection = () => {
           <p className="mx-auto max-w-xl text-base text-muted-foreground md:text-lg">
             {t("contact.subtitle")}
           </p>
+
+          <a
+            href={buildWhatsAppUrl(t("hero.wa_message"))}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-8 py-4 text-base font-bold uppercase tracking-widest text-primary-foreground shadow-lg transition-all hover:scale-105 hover:from-[#7a5c10] hover:to-[#d4bc7c] md:text-lg"
+          >
+            <MessageCircle className="h-5 w-5" strokeWidth={2} />
+            Fale agora pelo WhatsApp
+          </a>
         </div>
 
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
