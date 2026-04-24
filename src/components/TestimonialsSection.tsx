@@ -1,22 +1,28 @@
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 type Testimonial = {
   key: string;
   name: string;
-  avatar: string;
+  initials: string;
+  color: string;
   rating: number;
 };
 
-// Avatares fotográficos gerados (DiceBear/personas) — estilo realista, sem usar fotos de pessoas reais sem permissão.
+// Avatares com iniciais estilo Google — sem usar imagens/identidades de pessoas reais sem consentimento.
+// Quando a Dra. tiver depoimentos autorizados (com foto e nome reais), basta substituir aqui.
 const TESTIMONIALS: Testimonial[] = [
-  { key: "t1", name: "Mariana Souza", avatar: "https://i.pravatar.cc/120?img=47", rating: 5 },
-  { key: "t2", name: "Roberto Almeida", avatar: "https://i.pravatar.cc/120?img=12", rating: 5 },
-  { key: "t3", name: "Juliana Carvalho", avatar: "https://i.pravatar.cc/120?img=45", rating: 5 },
-  { key: "t4", name: "Carlos Eduardo", avatar: "https://i.pravatar.cc/120?img=33", rating: 5 },
-  { key: "t5", name: "Patrícia Nogueira", avatar: "https://i.pravatar.cc/120?img=49", rating: 5 },
-  { key: "t6", name: "Fernando Lima", avatar: "https://i.pravatar.cc/120?img=15", rating: 5 },
+  { key: "t1", name: "Mariana Souza",     initials: "MS", color: "bg-rose-500",    rating: 5 },
+  { key: "t2", name: "Roberto Almeida",   initials: "RA", color: "bg-blue-500",    rating: 5 },
+  { key: "t3", name: "Juliana Carvalho",  initials: "JC", color: "bg-emerald-500", rating: 5 },
+  { key: "t4", name: "Carlos Eduardo",    initials: "CE", color: "bg-amber-600",   rating: 5 },
+  { key: "t5", name: "Patrícia Nogueira", initials: "PN", color: "bg-purple-500",  rating: 5 },
+  { key: "t6", name: "Fernando Lima",     initials: "FL", color: "bg-teal-500",    rating: 5 },
 ];
+
+// TODO: substituir pelo link real do perfil Google Business da Dra. Kênia Garcia.
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/search?q=Dra+K%C3%AAnia+Garcia+advogada+avalia%C3%A7%C3%B5es";
 
 const Stars = ({ rating }: { rating: number }) => (
   <div className="flex items-center gap-0.5" aria-label={`${rating}/5`}>
@@ -29,8 +35,8 @@ const Stars = ({ rating }: { rating: number }) => (
   </div>
 );
 
-const GoogleG = () => (
-  <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+const GoogleG = ({ className = "h-5 w-5" }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
     <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
     <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
     <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
@@ -58,7 +64,7 @@ const TestimonialsSection = () => {
             {t("testimonials.heading")}
           </h2>
 
-          <div className="inline-flex items-center gap-4 rounded-2xl border border-border bg-card px-6 py-4 shadow-sm">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 rounded-2xl border border-border bg-card px-6 py-4 shadow-sm">
             <div className="text-left">
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl font-bold text-foreground">{avg}</span>
@@ -69,10 +75,16 @@ const TestimonialsSection = () => {
               </p>
             </div>
             <div className="hidden sm:block h-12 w-px bg-border" />
-            <div className="hidden sm:flex items-center gap-2 text-xs text-muted-foreground">
-              <GoogleG />
-              <span>{t("testimonials.google_label")}</span>
-            </div>
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 text-xs font-medium text-foreground hover:bg-accent transition-colors"
+            >
+              <GoogleG className="h-4 w-4" />
+              {t("testimonials.see_on_google")}
+              <ExternalLink className="h-3 w-3" />
+            </a>
           </div>
         </div>
 
@@ -85,16 +97,16 @@ const TestimonialsSection = () => {
               <Quote className="absolute top-4 right-4 h-6 w-6 text-primary/15" aria-hidden="true" />
 
               <div className="flex items-center gap-3 mb-4">
-                <img
-                  src={item.avatar}
-                  alt={item.name}
-                  loading="lazy"
-                  className="h-11 w-11 rounded-full object-cover border border-border"
-                />
+                <div
+                  className={`flex items-center justify-center h-11 w-11 rounded-full text-white font-semibold text-sm ${item.color}`}
+                  aria-hidden="true"
+                >
+                  {item.initials}
+                </div>
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-1.5">
                     <p className="font-semibold text-foreground text-sm truncate">{item.name}</p>
-                    <GoogleG />
+                    <GoogleG className="h-3.5 w-3.5 shrink-0" />
                   </div>
                   <p className="text-xs text-muted-foreground">{t(`testimonials.items.${item.key}.date`)}</p>
                 </div>
@@ -114,7 +126,21 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <p className="text-center text-xs text-muted-foreground mt-10 max-w-2xl mx-auto">
+        {/* CTA — Ver todas no Google */}
+        <div className="text-center mt-10">
+          <a
+            href={GOOGLE_REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-6 py-3 text-sm font-medium hover:opacity-90 transition-opacity shadow-md"
+          >
+            <GoogleG className="h-4 w-4" />
+            {t("testimonials.see_all_google")}
+            <ExternalLink className="h-3.5 w-3.5" />
+          </a>
+        </div>
+
+        <p className="text-center text-xs text-muted-foreground mt-6 max-w-2xl mx-auto">
           {t("testimonials.disclaimer")}
         </p>
       </div>

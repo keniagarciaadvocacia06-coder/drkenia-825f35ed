@@ -42,12 +42,30 @@
       "wa": "Bonjour, je souhaiterais en savoir plus sur le Droit de la Famille.",
       "cta": "Consulter sur le Droit de la Famille",
       "services": [
-        { "name": "Divorce à l'amiable et contentieux", "desc": "Dissolution du mariage avec partage des biens et garde des enfants" },
-        { "name": "Succession et partage", "desc": "Régularisation patrimoniale rapide et sécurisée" },
-        { "name": "Pension alimentaire", "desc": "Fixation, révision ou exonération de la pension" },
-        { "name": "Planification successorale", "desc": "Protection patrimoniale par testament, donation et holding familiale" },
-        { "name": "Garde et droit de visite", "desc": "Définition de l'intérêt supérieur de l'enfant ou de l'adolescent" },
-        { "name": "Union libre", "desc": "Reconnaissance, dissolution et conversion en mariage" }
+        {
+          "name": "Divorce à l'amiable et contentieux",
+          "desc": "Dissolution du mariage avec partage des biens et garde des enfants"
+        },
+        {
+          "name": "Succession et partage",
+          "desc": "Régularisation patrimoniale rapide et sécurisée"
+        },
+        {
+          "name": "Pension alimentaire",
+          "desc": "Fixation, révision ou exonération de la pension"
+        },
+        {
+          "name": "Planification successorale",
+          "desc": "Protection patrimoniale par testament, donation et holding familiale"
+        },
+        {
+          "name": "Garde et droit de visite",
+          "desc": "Définition de l'intérêt supérieur de l'enfant ou de l'adolescent"
+        },
+        {
+          "name": "Union libre",
+          "desc": "Reconnaissance, dissolution et conversion en mariage"
+        }
       ]
     },
     "banking": {
@@ -58,11 +76,26 @@
       "wa": "Bonjour, je souhaiterais en savoir plus sur le Droit bancaire.",
       "cta": "Consulter sur le Droit bancaire",
       "services": [
-        { "name": "Révision de contrats bancaires", "desc": "Identification de clauses abusives et de taux d'intérêt excessifs" },
-        { "name": "Fraudes bancaires", "desc": "Action contre les prêts non autorisés et les arnaques" },
-        { "name": "Inscription indue au fichier de crédit", "desc": "Suppression de votre nom et indemnisation" },
-        { "name": "Surendettement", "desc": "Renégociation et plan de paiement selon la loi 14.181/21" },
-        { "name": "Action en répétition de l'indu", "desc": "Restitution des sommes prélevées indûment" }
+        {
+          "name": "Révision de contrats bancaires",
+          "desc": "Identification de clauses abusives et de taux d'intérêt excessifs"
+        },
+        {
+          "name": "Fraudes bancaires",
+          "desc": "Action contre les prêts non autorisés et les arnaques"
+        },
+        {
+          "name": "Inscription indue au fichier de crédit",
+          "desc": "Suppression de votre nom et indemnisation"
+        },
+        {
+          "name": "Surendettement",
+          "desc": "Renégociation et plan de paiement selon la loi 14.181/21"
+        },
+        {
+          "name": "Action en répétition de l'indu",
+          "desc": "Restitution des sommes prélevées indûment"
+        }
       ]
     },
     "social_security": {
@@ -73,11 +106,26 @@
       "wa": "Bonjour, je souhaiterais en savoir plus sur le Droit de la Sécurité sociale.",
       "cta": "Consulter sur la Sécurité sociale",
       "services": [
-        { "name": "Retraite", "desc": "Par âge, durée de cotisation, spéciale ou pour invalidité" },
-        { "name": "Indemnité maladie et BPC/LOAS", "desc": "Prestations d'incapacité et aide sociale" },
-        { "name": "Pension de réversion", "desc": "Pour les ayants droit de l'assuré décédé" },
-        { "name": "Révision des prestations", "desc": "Correction des montants et thèses de révision" },
-        { "name": "Planification de la retraite", "desc": "Simulation et meilleure stratégie pour votre retraite" }
+        {
+          "name": "Retraite",
+          "desc": "Par âge, durée de cotisation, spéciale ou pour invalidité"
+        },
+        {
+          "name": "Indemnité maladie et BPC/LOAS",
+          "desc": "Prestations d'incapacité et aide sociale"
+        },
+        {
+          "name": "Pension de réversion",
+          "desc": "Pour les ayants droit de l'assuré décédé"
+        },
+        {
+          "name": "Révision des prestations",
+          "desc": "Correction des montants et thèses de révision"
+        },
+        {
+          "name": "Planification de la retraite",
+          "desc": "Simulation et meilleure stratégie pour votre retraite"
+        }
       ]
     }
   },
@@ -85,33 +133,78 @@
     "kicker": "Nos piliers",
     "heading": "L'engagement à défendre vos droits",
     "items": [
-      { "title": "Expertise technique", "desc": "Stratégie juridique solide, fondée sur la législation et la jurisprudence à jour." },
-      { "title": "Accompagnement humain", "desc": "Écoute attentive et soutien dans les moments délicats." },
-      { "title": "Sécurité juridique", "desc": "Transparence des conseils et défense ferme de vos droits à toutes les instances." }
+      {
+        "title": "Expertise technique",
+        "desc": "Stratégie juridique solide, fondée sur la législation et la jurisprudence à jour."
+      },
+      {
+        "title": "Accompagnement humain",
+        "desc": "Écoute attentive et soutien dans les moments délicats."
+      },
+      {
+        "title": "Sécurité juridique",
+        "desc": "Transparence des conseils et défense ferme de vos droits à toutes les instances."
+      }
     ]
   },
   "why": {
     "kicker": "Pourquoi nous choisir",
     "heading": "Ce qui fait notre différence",
     "items": [
-      { "title": "+15 ans d'expérience", "desc": "Un parcours solide avec des centaines de dossiers résolus avec succès." },
-      { "title": "Accompagnement personnalisé", "desc": "Chaque dossier est traité avec attention et une stratégie sur mesure." },
-      { "title": "Suivi rapproché", "desc": "Communication constante sur l'avancement de votre dossier." },
-      { "title": "Service dans tout le Brésil", "desc": "Présentiel et en ligne — où que vous soyez, nous sommes à vos côtés." },
-      { "title": "Transparence totale", "desc": "Informations claires sur les coûts, les délais et les possibilités dès le début." },
-      { "title": "Solutions rapides", "desc": "Dossiers conduits avec efficacité, pour la meilleure résolution dans les meilleurs délais." }
+      {
+        "title": "+15 ans d'expérience",
+        "desc": "Un parcours solide avec des centaines de dossiers résolus avec succès."
+      },
+      {
+        "title": "Accompagnement personnalisé",
+        "desc": "Chaque dossier est traité avec attention et une stratégie sur mesure."
+      },
+      {
+        "title": "Suivi rapproché",
+        "desc": "Communication constante sur l'avancement de votre dossier."
+      },
+      {
+        "title": "Service dans tout le Brésil",
+        "desc": "Présentiel et en ligne — où que vous soyez, nous sommes à vos côtés."
+      },
+      {
+        "title": "Transparence totale",
+        "desc": "Informations claires sur les coûts, les délais et les possibilités dès le début."
+      },
+      {
+        "title": "Solutions rapides",
+        "desc": "Dossiers conduits avec efficacité, pour la meilleure résolution dans les meilleurs délais."
+      }
     ]
   },
   "faq": {
     "kicker": "Questions fréquentes",
     "heading": "Vos questions, nos réponses",
     "items": [
-      { "q": "Combien coûte une consultation ?", "a": "Chaque dossier est unique et les honoraires sont définis après une analyse individuelle, dans le respect du barème de l'OAB et de la complexité du dossier. Contactez-nous pour une première évaluation." },
-      { "q": "Les procédures judiciaires sont-elles très longues ?", "a": "La durée varie selon la complexité et le type d'action. Nous travaillons à les accélérer au maximum, en privilégiant les solutions extrajudiciaires lorsque cela est possible." },
-      { "q": "Puis-je avoir la garantie du résultat de mon dossier ?", "a": "Aucun avocat ne peut garantir un résultat. Ce que nous garantissons, c'est une analyse honnête, une stratégie solide et un dévouement total." },
-      { "q": "Je ne sais pas si j'ai un droit. Comment le savoir ?", "a": "La première étape est une consultation pour évaluer votre situation. Beaucoup de personnes découvrent des droits qu'elles ignoraient." },
-      { "q": "J'ai peur d'aller en justice et d'aggraver la situation.", "a": "C'est une crainte fréquente. C'est pourquoi nous proposons une orientation transparente sur les risques et les bénéfices de chaque option." },
-      { "q": "Proposez-vous un service en ligne ?", "a": "Oui ! Nous accompagnons en présentiel et en ligne, dans tout le Brésil. Vous pouvez fixer une consultation par visioconférence en toute simplicité." }
+      {
+        "q": "Combien coûte une consultation ?",
+        "a": "Chaque dossier est unique et les honoraires sont définis après une analyse individuelle, dans le respect du barème de l'OAB et de la complexité du dossier. Contactez-nous pour une première évaluation."
+      },
+      {
+        "q": "Les procédures judiciaires sont-elles très longues ?",
+        "a": "La durée varie selon la complexité et le type d'action. Nous travaillons à les accélérer au maximum, en privilégiant les solutions extrajudiciaires lorsque cela est possible."
+      },
+      {
+        "q": "Puis-je avoir la garantie du résultat de mon dossier ?",
+        "a": "Aucun avocat ne peut garantir un résultat. Ce que nous garantissons, c'est une analyse honnête, une stratégie solide et un dévouement total."
+      },
+      {
+        "q": "Je ne sais pas si j'ai un droit. Comment le savoir ?",
+        "a": "La première étape est une consultation pour évaluer votre situation. Beaucoup de personnes découvrent des droits qu'elles ignoraient."
+      },
+      {
+        "q": "J'ai peur d'aller en justice et d'aggraver la situation.",
+        "a": "C'est une crainte fréquente. C'est pourquoi nous proposons une orientation transparente sur les risques et les bénéfices de chaque option."
+      },
+      {
+        "q": "Proposez-vous un service en ligne ?",
+        "a": "Oui ! Nous accompagnons en présentiel et en ligne, dans tout le Brésil. Vous pouvez fixer une consultation par visioconférence en toute simplicité."
+      }
     ]
   },
   "contact": {
@@ -143,13 +236,39 @@
     "google_label": "Avis style Google",
     "disclaimer": "Témoignages réels de clients accompagnés. Pour des raisons de confidentialité, les noms et détails peuvent être préservés sur demande.",
     "items": {
-      "t1": { "date": "il y a 2 semaines", "area": "Droit de la famille", "text": "Maître Kênia a géré mon divorce avec beaucoup de sensibilité et de professionnalisme. Je me suis sentie accueillie du début à la fin. Je la recommande vivement." },
-      "t2": { "date": "il y a 1 mois", "area": "Successions", "text": "Excellent accompagnement pour la succession de mon père. Elle a expliqué chaque étape clairement et a tout réglé rapidement. Professionnelle de très haut niveau." },
-      "t3": { "date": "il y a 3 semaines", "area": "Sécurité sociale", "text": "J'ai obtenu ma retraite après des années de tentatives. Maître Kênia a été infatigable dans mon dossier. Reconnaissance éternelle !" },
-      "t4": { "date": "il y a 2 mois", "area": "Droit bancaire", "text": "Un accompagnement vraiment humain. Elle a résolu une affaire bancaire complexe que d'autres avocats jugeaient impossible. Je recommande fortement." },
-      "t5": { "date": "il y a 1 semaine", "area": "Famille", "text": "Professionnelle éthique, dévouée et très compétente. Elle m'a aidé pour la garde partagée avec une grande stratégie. Je la recommande à tous !" },
-      "t6": { "date": "il y a 1 mois", "area": "Successions", "text": "Service en ligne impeccable, même en habitant dans un autre État. Communication claire, délais respectés et excellent résultat." }
-    }
+      "t1": {
+        "date": "il y a 2 semaines",
+        "area": "Droit de la famille",
+        "text": "Maître Kênia a géré mon divorce avec beaucoup de sensibilité et de professionnalisme. Je me suis sentie accueillie du début à la fin. Je la recommande vivement."
+      },
+      "t2": {
+        "date": "il y a 1 mois",
+        "area": "Successions",
+        "text": "Excellent accompagnement pour la succession de mon père. Elle a expliqué chaque étape clairement et a tout réglé rapidement. Professionnelle de très haut niveau."
+      },
+      "t3": {
+        "date": "il y a 3 semaines",
+        "area": "Sécurité sociale",
+        "text": "J'ai obtenu ma retraite après des années de tentatives. Maître Kênia a été infatigable dans mon dossier. Reconnaissance éternelle !"
+      },
+      "t4": {
+        "date": "il y a 2 mois",
+        "area": "Droit bancaire",
+        "text": "Un accompagnement vraiment humain. Elle a résolu une affaire bancaire complexe que d'autres avocats jugeaient impossible. Je recommande fortement."
+      },
+      "t5": {
+        "date": "il y a 1 semaine",
+        "area": "Famille",
+        "text": "Professionnelle éthique, dévouée et très compétente. Elle m'a aidé pour la garde partagée avec une grande stratégie. Je la recommande à tous !"
+      },
+      "t6": {
+        "date": "il y a 1 mois",
+        "area": "Successions",
+        "text": "Service en ligne impeccable, même en habitant dans un autre État. Communication claire, délais respectés et excellent résultat."
+      }
+    },
+    "see_on_google": "Voir sur Google",
+    "see_all_google": "Voir tous les avis sur Google"
   },
   "footer": {
     "rights": "Tous droits réservés."

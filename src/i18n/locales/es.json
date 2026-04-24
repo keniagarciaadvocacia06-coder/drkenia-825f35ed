@@ -41,12 +41,30 @@
       "wa": "Hola, me gustaría saber más sobre Derecho de Familia.",
       "cta": "Consultar sobre Familia",
       "services": [
-        { "name": "Divorcio Consensual y Litigioso", "desc": "Disolución del matrimonio con partición de bienes y custodia" },
-        { "name": "Inventario y Partición", "desc": "Regularización patrimonial de forma ágil y segura" },
-        { "name": "Pensión Alimenticia", "desc": "Fijación, revisión o exoneración de alimentos" },
-        { "name": "Planificación Sucesoria", "desc": "Protección patrimonial con testamento, donación y holding familiar" },
-        { "name": "Custodia y Régimen de Visitas", "desc": "Definición del mejor interés del niño o adolescente" },
-        { "name": "Unión de Hecho", "desc": "Reconocimiento, disolución y conversión en matrimonio" }
+        {
+          "name": "Divorcio Consensual y Litigioso",
+          "desc": "Disolución del matrimonio con partición de bienes y custodia"
+        },
+        {
+          "name": "Inventario y Partición",
+          "desc": "Regularización patrimonial de forma ágil y segura"
+        },
+        {
+          "name": "Pensión Alimenticia",
+          "desc": "Fijación, revisión o exoneración de alimentos"
+        },
+        {
+          "name": "Planificación Sucesoria",
+          "desc": "Protección patrimonial con testamento, donación y holding familiar"
+        },
+        {
+          "name": "Custodia y Régimen de Visitas",
+          "desc": "Definición del mejor interés del niño o adolescente"
+        },
+        {
+          "name": "Unión de Hecho",
+          "desc": "Reconocimiento, disolución y conversión en matrimonio"
+        }
       ]
     },
     "banking": {
@@ -57,11 +75,26 @@
       "wa": "Hola, me gustaría saber más sobre Derecho Bancario.",
       "cta": "Consultar sobre Derecho Bancario",
       "services": [
-        { "name": "Revisión de Contratos Bancarios", "desc": "Identificación de cláusulas abusivas e intereses excesivos" },
-        { "name": "Fraudes Bancarios", "desc": "Acción contra préstamos no autorizados y estafas" },
-        { "name": "Inscripción Indebida en Buró", "desc": "Eliminación del nombre de registros de deudores + indemnización" },
-        { "name": "Sobreendeudamiento", "desc": "Renegociación y plan de pago según la Ley 14.181/21" },
-        { "name": "Acción de Repetición de lo Indebido", "desc": "Restitución de valores cobrados indebidamente" }
+        {
+          "name": "Revisión de Contratos Bancarios",
+          "desc": "Identificación de cláusulas abusivas e intereses excesivos"
+        },
+        {
+          "name": "Fraudes Bancarios",
+          "desc": "Acción contra préstamos no autorizados y estafas"
+        },
+        {
+          "name": "Inscripción Indebida en Buró",
+          "desc": "Eliminación del nombre de registros de deudores + indemnización"
+        },
+        {
+          "name": "Sobreendeudamiento",
+          "desc": "Renegociación y plan de pago según la Ley 14.181/21"
+        },
+        {
+          "name": "Acción de Repetición de lo Indebido",
+          "desc": "Restitución de valores cobrados indebidamente"
+        }
       ]
     },
     "social_security": {
@@ -72,11 +105,26 @@
       "wa": "Hola, me gustaría saber más sobre Derecho Previsional.",
       "cta": "Consultar sobre Previsional",
       "services": [
-        { "name": "Jubilación", "desc": "Por edad, tiempo de contribución, especial y por invalidez" },
-        { "name": "Subsidio por Enfermedad y Asistencial", "desc": "Beneficios por incapacidad y asistencia social" },
-        { "name": "Pensión por Fallecimiento", "desc": "Para dependientes del asegurado fallecido" },
-        { "name": "Revisión de Beneficios", "desc": "Corrección de valores y tesis revisionales" },
-        { "name": "Planificación Previsional", "desc": "Simulación y mejor estrategia para su jubilación" }
+        {
+          "name": "Jubilación",
+          "desc": "Por edad, tiempo de contribución, especial y por invalidez"
+        },
+        {
+          "name": "Subsidio por Enfermedad y Asistencial",
+          "desc": "Beneficios por incapacidad y asistencia social"
+        },
+        {
+          "name": "Pensión por Fallecimiento",
+          "desc": "Para dependientes del asegurado fallecido"
+        },
+        {
+          "name": "Revisión de Beneficios",
+          "desc": "Corrección de valores y tesis revisionales"
+        },
+        {
+          "name": "Planificación Previsional",
+          "desc": "Simulación y mejor estrategia para su jubilación"
+        }
       ]
     }
   },
@@ -84,33 +132,78 @@
     "kicker": "Nuestros Pilares",
     "heading": "Compromiso con la defensa de sus derechos",
     "items": [
-      { "title": "Actuación Técnica", "desc": "Estrategia jurídica sólida, fundamentada en la legislación y jurisprudencia actualizada." },
-      { "title": "Atención Humanizada", "desc": "Acogida y empatía en momentos delicados, con escucha activa y acompañamiento cercano." },
-      { "title": "Seguridad Jurídica", "desc": "Transparencia en las orientaciones y defensa firme de sus derechos en todas las instancias." }
+      {
+        "title": "Actuación Técnica",
+        "desc": "Estrategia jurídica sólida, fundamentada en la legislación y jurisprudencia actualizada."
+      },
+      {
+        "title": "Atención Humanizada",
+        "desc": "Acogida y empatía en momentos delicados, con escucha activa y acompañamiento cercano."
+      },
+      {
+        "title": "Seguridad Jurídica",
+        "desc": "Transparencia en las orientaciones y defensa firme de sus derechos en todas las instancias."
+      }
     ]
   },
   "why": {
     "kicker": "Por qué elegirnos",
     "heading": "Lo que nos hace diferentes",
     "items": [
-      { "title": "+15 Años de Experiencia", "desc": "Trayectoria consolidada con cientos de casos resueltos con éxito." },
-      { "title": "Atención Personalizada", "desc": "Cada caso se trata con atención individual y estrategia a medida." },
-      { "title": "Acompañamiento Cercano", "desc": "Comunicación constante sobre el avance de su proceso." },
-      { "title": "Atención en Todo Brasil", "desc": "Presencial y online — donde usted esté, estamos a su lado." },
-      { "title": "Transparencia Total", "desc": "Orientaciones claras sobre costos, plazos y posibilidades desde el inicio." },
-      { "title": "Agilidad en las Soluciones", "desc": "Procesos conducidos con eficiencia, buscando la mejor resolución en el menor tiempo." }
+      {
+        "title": "+15 Años de Experiencia",
+        "desc": "Trayectoria consolidada con cientos de casos resueltos con éxito."
+      },
+      {
+        "title": "Atención Personalizada",
+        "desc": "Cada caso se trata con atención individual y estrategia a medida."
+      },
+      {
+        "title": "Acompañamiento Cercano",
+        "desc": "Comunicación constante sobre el avance de su proceso."
+      },
+      {
+        "title": "Atención en Todo Brasil",
+        "desc": "Presencial y online — donde usted esté, estamos a su lado."
+      },
+      {
+        "title": "Transparencia Total",
+        "desc": "Orientaciones claras sobre costos, plazos y posibilidades desde el inicio."
+      },
+      {
+        "title": "Agilidad en las Soluciones",
+        "desc": "Procesos conducidos con eficiencia, buscando la mejor resolución en el menor tiempo."
+      }
     ]
   },
   "faq": {
     "kicker": "Preguntas Frecuentes",
     "heading": "Aclare sus dudas",
     "items": [
-      { "q": "¿Cuánto cuesta una consulta?", "a": "Cada caso es único y los honorarios se definen tras un análisis individual, respetando la tabla del Colegio de Abogados y la complejidad de la demanda. Contáctenos para una evaluación inicial." },
-      { "q": "¿Los procesos judiciales son muy demorados?", "a": "El tiempo varía según la complejidad y el tipo de acción. Trabajamos para agilizar al máximo, buscando soluciones extrajudiciales cuando sea posible y acompañando de cerca el avance procesal." },
-      { "q": "¿Puedo tener certeza del resultado de mi caso?", "a": "Ningún abogado puede garantizar resultados. Lo que garantizamos es un análisis honesto, estrategia sólida y dedicación total para alcanzar el mejor resultado posible." },
-      { "q": "No sé si tengo derecho. ¿Cómo saberlo?", "a": "El primer paso es una consulta para evaluar su situación. Muchas personas descubren que poseen derechos que desconocían. Contáctenos y analizaremos su caso." },
-      { "q": "Tengo miedo de ir a la justicia y empeorar la situación.", "a": "Es un temor común. Por eso, ofrecemos una orientación transparente sobre los riesgos y beneficios de cada camino, para que usted tome la mejor decisión con seguridad." },
-      { "q": "¿Atienden online?", "a": "¡Sí! Atendemos de forma presencial y online, en todo Brasil. Puede agendar una consulta por videoconferencia con total comodidad y seguridad." }
+      {
+        "q": "¿Cuánto cuesta una consulta?",
+        "a": "Cada caso es único y los honorarios se definen tras un análisis individual, respetando la tabla del Colegio de Abogados y la complejidad de la demanda. Contáctenos para una evaluación inicial."
+      },
+      {
+        "q": "¿Los procesos judiciales son muy demorados?",
+        "a": "El tiempo varía según la complejidad y el tipo de acción. Trabajamos para agilizar al máximo, buscando soluciones extrajudiciales cuando sea posible y acompañando de cerca el avance procesal."
+      },
+      {
+        "q": "¿Puedo tener certeza del resultado de mi caso?",
+        "a": "Ningún abogado puede garantizar resultados. Lo que garantizamos es un análisis honesto, estrategia sólida y dedicación total para alcanzar el mejor resultado posible."
+      },
+      {
+        "q": "No sé si tengo derecho. ¿Cómo saberlo?",
+        "a": "El primer paso es una consulta para evaluar su situación. Muchas personas descubren que poseen derechos que desconocían. Contáctenos y analizaremos su caso."
+      },
+      {
+        "q": "Tengo miedo de ir a la justicia y empeorar la situación.",
+        "a": "Es un temor común. Por eso, ofrecemos una orientación transparente sobre los riesgos y beneficios de cada camino, para que usted tome la mejor decisión con seguridad."
+      },
+      {
+        "q": "¿Atienden online?",
+        "a": "¡Sí! Atendemos de forma presencial y online, en todo Brasil. Puede agendar una consulta por videoconferencia con total comodidad y seguridad."
+      }
     ]
   },
   "contact": {
@@ -142,13 +235,39 @@
     "google_label": "Reseñas estilo Google",
     "disclaimer": "Testimonios reales de clientes atendidos. Por motivos de confidencialidad, los nombres y detalles pueden preservarse a solicitud.",
     "items": {
-      "t1": { "date": "hace 2 semanas", "area": "Derecho de Familia", "text": "La Dra. Kênia llevó mi divorcio con mucha sensibilidad y profesionalismo. Me sentí acogida de principio a fin. La recomiendo sin dudar." },
-      "t2": { "date": "hace 1 mes", "area": "Sucesiones", "text": "Excelente atención en el inventario de mi padre. Explicó cada paso con claridad y resolvió todo rápidamente. Profesional de altísimo nivel." },
-      "t3": { "date": "hace 3 semanas", "area": "Previsional", "text": "Conseguí mi jubilación tras años de intentos. La Dra. Kênia fue incansable en mi caso previsional. ¡Eternamente agradecida!" },
-      "t4": { "date": "hace 2 meses", "area": "Derecho Bancario", "text": "Atención verdaderamente humanizada. Resolvió un caso bancario complejo que otros abogados dijeron imposible. Muy recomendada." },
-      "t5": { "date": "hace 1 semana", "area": "Familia", "text": "Profesional ética, dedicada y muy competente. Me ayudó con la custodia compartida con gran estrategia. ¡La recomiendo a todos!" },
-      "t6": { "date": "hace 1 mes", "area": "Sucesiones", "text": "Atención online impecable, aun viviendo en otro estado. Comunicación clara, plazos cumplidos y excelente resultado." }
-    }
+      "t1": {
+        "date": "hace 2 semanas",
+        "area": "Derecho de Familia",
+        "text": "La Dra. Kênia llevó mi divorcio con mucha sensibilidad y profesionalismo. Me sentí acogida de principio a fin. La recomiendo sin dudar."
+      },
+      "t2": {
+        "date": "hace 1 mes",
+        "area": "Sucesiones",
+        "text": "Excelente atención en el inventario de mi padre. Explicó cada paso con claridad y resolvió todo rápidamente. Profesional de altísimo nivel."
+      },
+      "t3": {
+        "date": "hace 3 semanas",
+        "area": "Previsional",
+        "text": "Conseguí mi jubilación tras años de intentos. La Dra. Kênia fue incansable en mi caso previsional. ¡Eternamente agradecida!"
+      },
+      "t4": {
+        "date": "hace 2 meses",
+        "area": "Derecho Bancario",
+        "text": "Atención verdaderamente humanizada. Resolvió un caso bancario complejo que otros abogados dijeron imposible. Muy recomendada."
+      },
+      "t5": {
+        "date": "hace 1 semana",
+        "area": "Familia",
+        "text": "Profesional ética, dedicada y muy competente. Me ayudó con la custodia compartida con gran estrategia. ¡La recomiendo a todos!"
+      },
+      "t6": {
+        "date": "hace 1 mes",
+        "area": "Sucesiones",
+        "text": "Atención online impecable, aun viviendo en otro estado. Comunicación clara, plazos cumplidos y excelente resultado."
+      }
+    },
+    "see_on_google": "Ver en Google",
+    "see_all_google": "Ver todas las reseñas en Google"
   },
   "footer": {
     "rights": "Todos los derechos reservados."
