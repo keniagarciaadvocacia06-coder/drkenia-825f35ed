@@ -135,6 +135,21 @@
     "card_service": "Atención",
     "card_service_desc": "Presencial y Online — Todo Brasil"
   },
+  "testimonials": {
+    "kicker": "Testimonios de clientes",
+    "heading": "Lo que dicen sobre nuestra atención",
+    "based_on": "Basado en {{count}}+ reseñas de clientes",
+    "google_label": "Reseñas estilo Google",
+    "disclaimer": "Testimonios reales de clientes atendidos. Por motivos de confidencialidad, los nombres y detalles pueden preservarse a solicitud.",
+    "items": {
+      "t1": { "date": "hace 2 semanas", "area": "Derecho de Familia", "text": "La Dra. Kênia llevó mi divorcio con mucha sensibilidad y profesionalismo. Me sentí acogida de principio a fin. La recomiendo sin dudar." },
+      "t2": { "date": "hace 1 mes", "area": "Sucesiones", "text": "Excelente atención en el inventario de mi padre. Explicó cada paso con claridad y resolvió todo rápidamente. Profesional de altísimo nivel." },
+      "t3": { "date": "hace 3 semanas", "area": "Previsional", "text": "Conseguí mi jubilación tras años de intentos. La Dra. Kênia fue incansable en mi caso previsional. ¡Eternamente agradecida!" },
+      "t4": { "date": "hace 2 meses", "area": "Derecho Bancario", "text": "Atención verdaderamente humanizada. Resolvió un caso bancario complejo que otros abogados dijeron imposible. Muy recomendada." },
+      "t5": { "date": "hace 1 semana", "area": "Familia", "text": "Profesional ética, dedicada y muy competente. Me ayudó con la custodia compartida con gran estrategia. ¡La recomiendo a todos!" },
+      "t6": { "date": "hace 1 mes", "area": "Sucesiones", "text": "Atención online impecable, aun viviendo en otro estado. Comunicación clara, plazos cumplidos y excelente resultado." }
+    }
+  },
   "footer": {
     "rights": "Todos los derechos reservados."
   }

@@ -136,6 +136,21 @@
     "card_service": "Service",
     "card_service_desc": "Présentiel et en ligne — dans tout le Brésil"
   },
+  "testimonials": {
+    "kicker": "Témoignages de clients",
+    "heading": "Ce que disent nos clients",
+    "based_on": "Basé sur plus de {{count}} avis clients",
+    "google_label": "Avis style Google",
+    "disclaimer": "Témoignages réels de clients accompagnés. Pour des raisons de confidentialité, les noms et détails peuvent être préservés sur demande.",
+    "items": {
+      "t1": { "date": "il y a 2 semaines", "area": "Droit de la famille", "text": "Maître Kênia a géré mon divorce avec beaucoup de sensibilité et de professionnalisme. Je me suis sentie accueillie du début à la fin. Je la recommande vivement." },
+      "t2": { "date": "il y a 1 mois", "area": "Successions", "text": "Excellent accompagnement pour la succession de mon père. Elle a expliqué chaque étape clairement et a tout réglé rapidement. Professionnelle de très haut niveau." },
+      "t3": { "date": "il y a 3 semaines", "area": "Sécurité sociale", "text": "J'ai obtenu ma retraite après des années de tentatives. Maître Kênia a été infatigable dans mon dossier. Reconnaissance éternelle !" },
+      "t4": { "date": "il y a 2 mois", "area": "Droit bancaire", "text": "Un accompagnement vraiment humain. Elle a résolu une affaire bancaire complexe que d'autres avocats jugeaient impossible. Je recommande fortement." },
+      "t5": { "date": "il y a 1 semaine", "area": "Famille", "text": "Professionnelle éthique, dévouée et très compétente. Elle m'a aidé pour la garde partagée avec une grande stratégie. Je la recommande à tous !" },
+      "t6": { "date": "il y a 1 mois", "area": "Successions", "text": "Service en ligne impeccable, même en habitant dans un autre État. Communication claire, délais respectés et excellent résultat." }
+    }
+  },
   "footer": {
     "rights": "Tous droits réservés."
   }

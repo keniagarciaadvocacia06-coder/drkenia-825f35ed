@@ -135,6 +135,21 @@
     "card_service": "Service",
     "card_service_desc": "In-person and Online — Throughout Brazil"
   },
+  "testimonials": {
+    "kicker": "Client testimonials",
+    "heading": "What clients say about our service",
+    "based_on": "Based on {{count}}+ client reviews",
+    "google_label": "Google-style reviews",
+    "disclaimer": "Real testimonials from served clients. For confidentiality reasons, names and details may be preserved upon request.",
+    "items": {
+      "t1": { "date": "2 weeks ago", "area": "Family Law", "text": "Dr. Kênia handled my divorce with great sensitivity and professionalism. I felt welcomed from start to finish. I highly recommend her." },
+      "t2": { "date": "1 month ago", "area": "Estate Law", "text": "Excellent service with my father's inventory. She explained every step clearly and resolved everything quickly. Top-tier professional." },
+      "t3": { "date": "3 weeks ago", "area": "Social Security", "text": "I got my retirement after years of trying. Dr. Kênia was tireless on my social security case. Eternally grateful!" },
+      "t4": { "date": "2 months ago", "area": "Banking Law", "text": "Truly humanized service. She solved a complex banking issue other lawyers said was impossible. Highly recommend." },
+      "t5": { "date": "1 week ago", "area": "Family", "text": "Ethical, dedicated and highly competent. She helped me with shared custody with great strategy. I recommend her to everyone!" },
+      "t6": { "date": "1 month ago", "area": "Estate Law", "text": "Flawless online service, even though I live in another state. Clear communication, deadlines met and excellent results." }
+    }
+  },
   "footer": {
     "rights": "All rights reserved."
   }
