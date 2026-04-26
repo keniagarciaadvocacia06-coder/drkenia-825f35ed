@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, KeyboardEvent } from "react";
 import { Bug, Minus, X, GripVertical, ImagePlus, Trash2 } from "lucide-react";
 import { prepareDebugImage } from "@/lib/debugImages";
 
-const DEBUG_TOGGLE_KEY = "d";
+const DEBUG_TOGGLE_KEY = "t";
 
 type AttachedImage = {
   id: string;
@@ -27,7 +27,11 @@ export default function ErrorDebugPopup() {
 
   useEffect(() => {
     const handleToggle = (e: globalThis.KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === DEBUG_TOGGLE_KEY) {
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)) {
+        return;
+      }
+      if (!e.ctrlKey && !e.metaKey && !e.altKey && e.key.toLowerCase() === DEBUG_TOGGLE_KEY) {
         e.preventDefault();
         setVisible((current) => !current);
       }
