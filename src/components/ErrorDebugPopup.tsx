@@ -32,12 +32,12 @@ export default function ErrorDebugPopup() {
     for (const file of Array.from(files)) {
       if (!file.type.startsWith("image/")) continue;
       try {
-        const dataUrl = await readFileAsDataUrl(file);
+        const prepared = await prepareDebugImage(file);
         newOnes.push({
           id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
           name: file.name,
-          dataUrl,
-          size: file.size,
+          dataUrl: prepared.dataUrl,
+          size: prepared.size,
         });
       } catch {
         // ignore
