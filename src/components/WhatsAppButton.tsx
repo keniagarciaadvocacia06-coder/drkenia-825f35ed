@@ -1,14 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import draFoto from "@/assets/dra-foto-oficial.png";
+
+const BALLOON_HIDE_DELAY = 12000;
+const BALLOON_REAPPEAR_DELAY = 180000;
 
 const WhatsAppButton = () => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(true);
   const message = t("hero.wa_message");
   const href = buildWhatsAppUrl(message);
+
+  useEffect(() => {
+    const timer = window.setTimeout(
+      () => setOpen((current) => !current),
+      open ? BALLOON_HIDE_DELAY : BALLOON_REAPPEAR_DELAY
+    );
+
+    return () => window.clearTimeout(timer);
+  }, [open]);
 
   return (
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-2 sm:gap-3">
