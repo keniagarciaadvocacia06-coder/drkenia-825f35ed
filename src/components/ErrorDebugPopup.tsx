@@ -11,31 +11,7 @@ type AttachedImage = {
 };
 
 function useIsAdmin() {
-  const [isAdmin, setIsAdmin] = useState<boolean>(() => {
-    if (typeof window === "undefined") return false;
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("debug") === "1") {
-      localStorage.setItem(ADMIN_FLAG_KEY, "1");
-      return true;
-    }
-    return localStorage.getItem(ADMIN_FLAG_KEY) === "1";
-  });
-
-  useEffect(() => {
-    const handler = (e: globalThis.KeyboardEvent) => {
-      if (e.ctrlKey && e.shiftKey && (e.key === "D" || e.key === "d")) {
-        e.preventDefault();
-        const next = !isAdmin;
-        if (next) localStorage.setItem(ADMIN_FLAG_KEY, "1");
-        else localStorage.removeItem(ADMIN_FLAG_KEY);
-        setIsAdmin(next);
-      }
-    };
-    window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
-  }, [isAdmin]);
-
-  return isAdmin;
+  return true;
 }
 
 const readFileAsDataUrl = (file: File): Promise<string> =>
