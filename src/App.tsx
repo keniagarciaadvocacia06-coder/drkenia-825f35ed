@@ -20,11 +20,9 @@ const queryClient = new QueryClient();
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <DebugErrorThrower />
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <ErrorDebugPopup />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
