@@ -1,5 +1,6 @@
-import { useEffect, useState, useRef, KeyboardEvent } from "react";
+import { useState, useRef, KeyboardEvent } from "react";
 import { Bug, Minus, X, GripVertical, ImagePlus, Trash2 } from "lucide-react";
+import { prepareDebugImage } from "@/lib/debugImages";
 
 const ADMIN_FLAG_KEY = "lovable-debug-admin";
 
@@ -13,14 +14,6 @@ type AttachedImage = {
 function useIsAdmin() {
   return true;
 }
-
-const readFileAsDataUrl = (file: File): Promise<string> =>
-  new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(String(reader.result));
-    reader.onerror = () => reject(reader.error);
-    reader.readAsDataURL(file);
-  });
 
 export default function ErrorDebugPopup() {
   const isAdmin = useIsAdmin();
@@ -39,12 +32,12 @@ export default function ErrorDebugPopup() {
     for (const file of Array.from(files)) {
       if (!file.type.startsWith("image/")) continue;
       try {
-        const dataUrl = await readFileAsDataUrl(file);
+        const prepared = await prepareDebugImage(file);
         newOnes.push({
           id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
           name: file.name,
-          dataUrl,
-          size: file.size,
+          dataUrl: prepared.dataUrl,
+          size: prepared.size,
         });
       } catch {
         // ignore
