@@ -1,8 +1,8 @@
-import { useState, useRef, KeyboardEvent } from "react";
+import { useEffect, useState, useRef, KeyboardEvent } from "react";
 import { Bug, Minus, X, GripVertical, ImagePlus, Trash2 } from "lucide-react";
 import { prepareDebugImage } from "@/lib/debugImages";
 
-const ADMIN_FLAG_KEY = "lovable-debug-admin";
+const DEBUG_TOGGLE_KEY = "d";
 
 type AttachedImage = {
   id: string;
@@ -17,6 +17,7 @@ function useIsAdmin() {
 
 export default function ErrorDebugPopup() {
   const isAdmin = useIsAdmin();
+  const [visible, setVisible] = useState(true);
   const [instruction, setInstruction] = useState("");
   const [images, setImages] = useState<AttachedImage[]>([]);
   const [minimized, setMinimized] = useState(false);
@@ -24,7 +25,19 @@ export default function ErrorDebugPopup() {
   const dragRef = useRef<{ startX: number; startY: number; origX: number; origY: number } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  if (!isAdmin) return null;
+  useEffect(() => {
+    const handleToggle = (e: globalThis.KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === DEBUG_TOGGLE_KEY) {
+        e.preventDefault();
+        setVisible((current) => !current);
+      }
+    };
+
+    window.addEventListener("keydown", handleToggle);
+    return () => window.removeEventListener("keydown", handleToggle);
+  }, []);
+
+  if (!isAdmin || !visible) return null;
 
   const handleFiles = async (files: FileList | null) => {
     if (!files || files.length === 0) return;
@@ -108,10 +121,7 @@ export default function ErrorDebugPopup() {
           <Minus className="h-3 w-3" />
         </button>
         <button
-          onClick={() => {
-            localStorage.removeItem(ADMIN_FLAG_KEY);
-            window.location.reload();
-          }}
+          onClick={() => setVisible(false)}
           className="p-1 hover:bg-accent rounded"
           aria-label="Fechar"
         >
