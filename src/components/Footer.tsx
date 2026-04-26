@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { MessageCircle, Mail, MapPin, Instagram, Heart } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Instagram, Heart, Scale, Building2, FileText } from "lucide-react";
 import logoKg from "@/assets/logo-kg.png";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
