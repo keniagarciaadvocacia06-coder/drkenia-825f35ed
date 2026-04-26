@@ -1,5 +1,6 @@
-import { useEffect, useState, useRef, KeyboardEvent } from "react";
+import { useState, useRef, KeyboardEvent } from "react";
 import { Bug, Minus, X, GripVertical, ImagePlus, Trash2 } from "lucide-react";
+import { prepareDebugImage } from "@/lib/debugImages";
 
 const ADMIN_FLAG_KEY = "lovable-debug-admin";
 
@@ -13,14 +14,6 @@ type AttachedImage = {
 function useIsAdmin() {
   return true;
 }
-
-const readFileAsDataUrl = (file: File): Promise<string> =>
-  new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(String(reader.result));
-    reader.onerror = () => reject(reader.error);
-    reader.readAsDataURL(file);
-  });
 
 export default function ErrorDebugPopup() {
   const isAdmin = useIsAdmin();
