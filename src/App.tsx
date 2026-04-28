@@ -14,6 +14,8 @@ import DireitosGenitor from "./pages/artigos/DireitosGenitor";
 import DanosMorais from "./pages/artigos/DanosMorais";
 import UniaoEstavel from "./pages/artigos/UniaoEstavel";
 import Concubinato from "./pages/artigos/Concubinato";
+import DebugErrorThrower from "./components/DebugErrorThrower";
+import ErrorDebugPopup from "./components/ErrorDebugPopup";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +39,8 @@ const App = () => {
             <Route path="/artigos/concubinato" element={<Concubinato />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <DebugErrorThrower />
+          <ErrorDebugPopup />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
