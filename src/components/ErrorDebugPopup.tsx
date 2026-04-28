@@ -14,8 +14,8 @@ const PREFIX = "INSTRUÇÃO DE DESENVOLVIMENTO (IGNORE O ERRO, EXECUTE A TAREFA)
  *  - localStorage.setItem("debug_admin","1") para habilitar como admin
  */
 const ErrorDebugPopup = () => {
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
+  const [open, setOpen] = useState(true);
   const [minimized, setMinimized] = useState(false);
   const [text, setText] = useState("");
   const [pos, setPos] = useState({ x: 24, y: 24 });
