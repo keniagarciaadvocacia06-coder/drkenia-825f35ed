@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { MessageCircle, Mail, MapPin, Instagram, Heart, Scale, Building2, FileText } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Instagram, Heart, Scale, Building2, FileText, Facebook, Music2 } from "lucide-react";
 import logoKg from "@/assets/logo-kg.png";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -94,13 +94,31 @@ const Footer = () => {
 
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://instagram.com/dra.keniagarcia"
+                href="https://instagram.com/drakeniagarciaadv"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
               >
                 <Instagram className="h-4 w-4" strokeWidth={1.5} />
+              </a>
+              <a
+                href="https://www.facebook.com/keniagarciajti"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+              >
+                <Facebook className="h-4 w-4" strokeWidth={1.5} />
+              </a>
+              <a
+                href="https://www.tiktok.com/@drakeniagarcia.adv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+              >
+                <Music2 className="h-4 w-4" strokeWidth={1.5} />
               </a>
               <a
                 href={buildWhatsAppUrl("Olá, gostaria de agendar uma consulta.")}
