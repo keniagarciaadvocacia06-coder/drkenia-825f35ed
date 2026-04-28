@@ -21,29 +21,31 @@ const queryClient = new QueryClient();
 
 const App = () => {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/artigos" element={<Artigos />} />
-            <Route path="/artigos/emancipacao" element={<Emancipacao />} />
-            <Route path="/artigos/guarda-compartilhada" element={<GuardaCompartilhada />} />
-            <Route path="/artigos/comunhao-parcial-de-bens" element={<ComunhaoParcialBens />} />
-            <Route path="/artigos/pensao-socioafetiva" element={<PensaoSocioafetiva />} />
-            <Route path="/artigos/direitos-do-genitor" element={<DireitosGenitor />} />
-            <Route path="/artigos/danos-morais-direito-de-familia" element={<DanosMorais />} />
-            <Route path="/artigos/uniao-estavel" element={<UniaoEstavel />} />
-            <Route path="/artigos/concubinato" element={<Concubinato />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <DebugErrorThrower />
-          <ErrorDebugPopup />
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+    <>
+      <DebugErrorThrower />
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/artigos" element={<Artigos />} />
+              <Route path="/artigos/emancipacao" element={<Emancipacao />} />
+              <Route path="/artigos/guarda-compartilhada" element={<GuardaCompartilhada />} />
+              <Route path="/artigos/comunhao-parcial-de-bens" element={<ComunhaoParcialBens />} />
+              <Route path="/artigos/pensao-socioafetiva" element={<PensaoSocioafetiva />} />
+              <Route path="/artigos/direitos-do-genitor" element={<DireitosGenitor />} />
+              <Route path="/artigos/danos-morais-direito-de-familia" element={<DanosMorais />} />
+              <Route path="/artigos/uniao-estavel" element={<UniaoEstavel />} />
+              <Route path="/artigos/concubinato" element={<Concubinato />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <ErrorDebugPopup />
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </>
   );
 };
 
