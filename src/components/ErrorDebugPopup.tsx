@@ -70,7 +70,7 @@ const ErrorDebugPopup = () => {
     window.addEventListener("mouseup", onUp);
   };
 
-  if (!isAdmin || !open) return null;
+  if (!open) return null;
 
   return (
     <div
