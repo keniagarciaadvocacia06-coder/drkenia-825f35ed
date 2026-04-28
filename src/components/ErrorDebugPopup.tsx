@@ -14,25 +14,11 @@ const PREFIX = "INSTRUÇÃO DE DESENVOLVIMENTO (IGNORE O ERRO, EXECUTE A TAREFA)
  *  - localStorage.setItem("debug_admin","1") para habilitar como admin
  */
 const ErrorDebugPopup = () => {
-  const [isAdmin, setIsAdmin] = useState(true);
   const [open, setOpen] = useState(true);
   const [minimized, setMinimized] = useState(false);
   const [text, setText] = useState("");
   const [pos, setPos] = useState({ x: 24, y: 24 });
   const dragRef = useRef<{ ox: number; oy: number; px: number; py: number } | null>(null);
-
-  useEffect(() => {
-    setIsAdmin(localStorage.getItem(ADMIN_FLAG_KEY) === "1");
-    // Atalho oculto: ?admin=1 habilita; ?admin=0 desabilita
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("admin") === "1") {
-      localStorage.setItem(ADMIN_FLAG_KEY, "1");
-      setIsAdmin(true);
-    } else if (params.get("admin") === "0") {
-      localStorage.removeItem(ADMIN_FLAG_KEY);
-      setIsAdmin(false);
-    }
-  }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
