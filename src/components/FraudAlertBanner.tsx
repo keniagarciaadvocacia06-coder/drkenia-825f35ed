@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AlertTriangle, ChevronDown, ChevronUp, X } from "lucide-react";
 
-const STORAGE_KEY = "fraud-alert-dismissed";
+const STORAGE_KEY = "fraud-alert-dismissed-v2";
 
 const FraudAlertBanner = () => {
   const [visible, setVisible] = useState(true);
@@ -26,7 +26,7 @@ const FraudAlertBanner = () => {
   return (
     <div
       role="alert"
-      className="relative z-[60] w-full border-b border-destructive/40 bg-destructive text-destructive-foreground shadow-md"
+      className="relative z-[60] w-full border-b border-red-700 bg-red-600 text-white shadow-md"
     >
       <div className="container mx-auto px-4 py-2.5">
         <div className="flex items-start gap-3">
@@ -41,7 +41,7 @@ const FraudAlertBanner = () => {
                 <button
                   type="button"
                   onClick={() => setExpanded((v) => !v)}
-                  className="inline-flex items-center gap-1 rounded px-2 py-1 text-xs font-medium hover:bg-destructive-foreground/10"
+                  className="inline-flex items-center gap-1 rounded px-2 py-1 text-xs font-medium hover:bg-white/10"
                   aria-expanded={expanded}
                 >
                   {expanded ? (
@@ -57,7 +57,7 @@ const FraudAlertBanner = () => {
                 <button
                   type="button"
                   onClick={dismiss}
-                  className="rounded p-1 hover:bg-destructive-foreground/10"
+                  className="rounded p-1 hover:bg-white/10"
                   aria-label="Fechar aviso"
                 >
                   <X className="h-4 w-4" />
