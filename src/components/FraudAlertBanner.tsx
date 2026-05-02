@@ -57,7 +57,7 @@ const FraudAlertBanner = () => {
                 <button
                   type="button"
                   onClick={dismiss}
-                  className="rounded p-1 hover:bg-destructive-foreground/10"
+                  className="rounded p-1 hover:bg-white/10"
                   aria-label="Fechar aviso"
                 >
                   <X className="h-4 w-4" />
