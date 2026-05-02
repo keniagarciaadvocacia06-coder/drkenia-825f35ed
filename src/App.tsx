@@ -14,7 +14,6 @@ import DireitosGenitor from "./pages/artigos/DireitosGenitor";
 import DanosMorais from "./pages/artigos/DanosMorais";
 import UniaoEstavel from "./pages/artigos/UniaoEstavel";
 import Concubinato from "./pages/artigos/Concubinato";
-import DebugErrorThrower from "./components/DebugErrorThrower";
 import ErrorDebugPopup from "./components/ErrorDebugPopup";
 import FraudAlertBanner from "./components/FraudAlertBanner";
 
@@ -23,7 +22,6 @@ const queryClient = new QueryClient();
 const App = () => {
   return (
     <>
-      <DebugErrorThrower />
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <Toaster />
