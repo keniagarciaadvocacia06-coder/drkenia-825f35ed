@@ -34,12 +34,10 @@ const FraudAlertBanner = () => {
           <div className="flex-1 text-sm leading-snug">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <p className="font-semibold">
-                ATENÇÃO: Canais oficiais e prevenção ao golpe do falso advogado — praticado por
-                estelionatários que utilizam nome, imagem, número da OAB, dados processuais e
-                documentos para solicitar pagamentos indevidos. WhatsApp/Telefone oficial:{" "}
-                <a href="tel:+5564999881043" className="underline underline-offset-2">
-                  (64) 9988-1043
-                </a>
+                O escritório <strong>KÊNIA GARCIA ADVOCACIA</strong>, por intermédio da Dra. Kênia
+                Garcia, alerta sobre a crescente ocorrência do{" "}
+                <strong>“golpe do falso advogado”</strong>, praticado por estelionatários que
+                utilizam nosso nome.
               </p>
               <div className="flex items-center gap-1">
                 <button
