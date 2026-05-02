@@ -70,33 +70,59 @@ const FraudAlertBanner = () => {
             {expanded && (
               <div className="mt-2 space-y-2 text-xs leading-relaxed opacity-95">
                 <p>
-                  O escritório <strong>KÊNIA GARCIA ADVOCACIA</strong>, por intermédio da Dra. Kênia
-                  Garcia, alerta sobre a crescente ocorrência do <strong>“golpe do falso advogado”</strong>,
-                  praticado por estelionatários que utilizam nome, imagem, número da OAB, dados
-                  processuais e documentos para solicitar pagamentos indevidos sob falsa promessa de
-                  liberação de valores, alvarás, precatórios, RPVs, benefícios previdenciários,
-                  indenizações ou atrasados.
+                  Os criminosos utilizam imagens, número de inscrição na OAB, dados processuais,
+                  documentos, decisões judiciais ou informações aparentemente verdadeiras para
+                  solicitar pagamentos indevidos, especialmente sob a falsa promessa de liberação de
+                  valores, alvarás, precatórios, RPVs, benefícios previdenciários, indenizações,
+                  atrasados ou qualquer vantagem econômica.
                 </p>
                 <p>
-                  A Dra. Kênia Garcia <strong>não solicita pagamentos por números desconhecidos</strong>{" "}
-                  e não autoriza terceiros, supostos funcionários, correspondentes, assessores,
-                  prepostos ou despachantes a requerer Pix, depósitos, transferências, boletos,
-                  custas, taxas ou guias para liberação de qualquer valor.
-                </p>
-                <p>
-                  <strong>Nenhum valor</strong> deve ser pago, transferido ou depositado sem
-                  confirmação direta, pessoal e expressa com a Dra. Kênia Garcia, preferencialmente
-                  por videoconferência, ligação confirmada pelo número oficial ou atendimento
-                  presencial no escritório.
-                </p>
-                <p>
-                  Em caso de dúvida ou suspeita, interrompa imediatamente o contato e confirme
-                  exclusivamente pelo número oficial{" "}
+                  Para fins de segurança e prevenção de fraudes, fica expressamente informado que o
+                  escritório <strong>KÊNIA GARCIA ADVOCACIA</strong>, por intermédio da Dra. Kênia
+                  Garcia, utiliza como canal oficial para confirmação de qualquer informação
+                  financeira o seguinte número de WhatsApp/Telefone:{" "}
                   <a href="tel:+5564999881043" className="font-semibold underline underline-offset-2">
                     (64) 9988-1043
                   </a>
-                  . Pagamentos realizados a terceiros sem essa confirmação serão considerados
-                  praticados por conta e risco do contratante.
+                  .
+                </p>
+                <p>
+                  O(a) CONTRATANTE declara estar ciente de que a Dra. Kênia Garcia e o escritório
+                  Kênia Garcia Advocacia <strong>não solicitam pagamentos por números desconhecidos</strong>,
+                  nem autorizam terceiros, supostos funcionários, correspondentes, assessores,
+                  prepostos ou despachantes a requerer Pix, depósitos, transferências, boletos,
+                  custas, taxas, guias, impostos ou valores para liberação de benefícios, alvarás,
+                  atrasados ou indenizações, sem prévia confirmação pessoal com a própria Dra.
+                  Kênia Garcia.
+                </p>
+                <p>
+                  Fica ajustado que <strong>nenhum valor</strong> deverá ser pago, transferido ou
+                  depositado sem confirmação direta, pessoal e expressa com a Dra. Kênia Garcia,
+                  preferencialmente por videoconferência, ligação confirmada pelo número oficial
+                  acima indicado ou atendimento presencial no escritório.
+                </p>
+                <p>
+                  Em caso de dúvida, suspeita ou recebimento de qualquer solicitação financeira,
+                  o(a) CONTRATANTE deverá interromper imediatamente o contato com o terceiro, não
+                  realizar nenhum pagamento e confirmar a informação exclusivamente pelo número
+                  oficial{" "}
+                  <a href="tel:+5564999881043" className="font-semibold underline underline-offset-2">
+                    (64) 9988-1043
+                  </a>
+                  .
+                </p>
+                <p>
+                  O(a) CONTRATANTE declara, ainda, que foi orientado(a) a não confiar em mensagens
+                  recebidas por números diversos, ainda que contenham foto, nome, logomarca, dados
+                  do processo, documentos, áudios, vídeos ou aparência de legitimidade, pois tais
+                  elementos podem ser utilizados por criminosos para dar credibilidade ao golpe.
+                </p>
+                <p>
+                  Caso o(a) CONTRATANTE realize pagamento a terceiros sem a confirmação pessoal e
+                  expressa da Dra. Kênia Garcia, por meio do canal oficial indicado, tal ato será
+                  considerado praticado por sua conta e risco, não podendo ser imputada
+                  responsabilidade ao escritório ou à advogada contratada por valores entregues a
+                  fraudadores, golpistas ou terceiros estranhos à relação contratual.
                 </p>
               </div>
             )}
