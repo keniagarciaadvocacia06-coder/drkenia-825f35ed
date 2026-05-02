@@ -5,7 +5,7 @@ const STORAGE_KEY = "fraud-alert-dismissed";
 
 const FraudAlertBanner = () => {
   const [visible, setVisible] = useState(true);
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
