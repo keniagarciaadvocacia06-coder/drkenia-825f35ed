@@ -16,6 +16,7 @@ import UniaoEstavel from "./pages/artigos/UniaoEstavel";
 import Concubinato from "./pages/artigos/Concubinato";
 import DebugErrorThrower from "./components/DebugErrorThrower";
 import ErrorDebugPopup from "./components/ErrorDebugPopup";
+import FraudAlertBanner from "./components/FraudAlertBanner";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => {
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <FraudAlertBanner />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/artigos" element={<Artigos />} />
