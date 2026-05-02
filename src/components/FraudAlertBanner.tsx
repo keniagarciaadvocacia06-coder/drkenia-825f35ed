@@ -1,26 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AlertTriangle, ChevronDown, ChevronUp, X } from "lucide-react";
-
-const STORAGE_KEY = "fraud-alert-dismissed";
 
 const FraudAlertBanner = () => {
   const [visible, setVisible] = useState(true);
   const [expanded, setExpanded] = useState(false);
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (sessionStorage.getItem(STORAGE_KEY) === "1") setVisible(false);
-  }, []);
-
   if (!visible) return null;
 
   const dismiss = () => {
     setVisible(false);
-    try {
-      sessionStorage.setItem(STORAGE_KEY, "1");
-    } catch {
-      /* ignore */
-    }
   };
 
   return (
