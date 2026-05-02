@@ -26,7 +26,7 @@ const FraudAlertBanner = () => {
   return (
     <div
       role="alert"
-      className="sticky top-0 z-[60] w-full border-b border-destructive/40 bg-destructive text-destructive-foreground shadow-md"
+      className="relative z-[60] w-full border-b border-destructive/40 bg-destructive text-destructive-foreground shadow-md"
     >
       <div className="container mx-auto px-4 py-2.5">
         <div className="flex items-start gap-3">
@@ -34,10 +34,8 @@ const FraudAlertBanner = () => {
           <div className="flex-1 text-sm leading-snug">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <p className="font-semibold">
-                O escritório <strong>KÊNIA GARCIA ADVOCACIA</strong>, por intermédio da Dra. Kênia
-                Garcia, alerta sobre a crescente ocorrência do{" "}
-                <strong>“golpe do falso advogado”</strong>, praticado por estelionatários que
-                utilizam nosso nome.
+                ⚠️ <strong>KÊNIA GARCIA ADVOCACIA</strong> alerta: cuidado com o{" "}
+                <strong>“golpe do falso advogado”</strong> — estelionatários usam nosso nome.
               </p>
               <div className="flex items-center gap-1">
                 <button
