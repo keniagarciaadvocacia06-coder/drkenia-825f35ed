@@ -1,23 +1,45 @@
 import { MessageCircle, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import draKenia from "@/assets/dra-kenia-enhanced.jpg";
+import { useEffect, useState } from "react";
+import banner1 from "@/assets/banner-1.jpg";
+import banner2 from "@/assets/banner-2.jpg";
+import banner3 from "@/assets/banner-3.jpg";
+import banner4 from "@/assets/banner-4.jpg";
+import banner5 from "@/assets/banner-5.jpg";
+import banner6 from "@/assets/banner-6.jpg";
+import banner7 from "@/assets/banner-7.jpg";
 
 import { openWhatsApp } from "@/lib/whatsapp";
+
+const bannerImages = [banner1, banner2, banner3, banner4, banner5, banner6, banner7];
 
 const HeroSection = () => {
   const { t } = useTranslation();
   const waMessage = t("hero.wa_message");
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % bannerImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="inicio" className="relative overflow-hidden bg-brown-dark pb-16 xl:min-h-screen">
       <div className="pointer-events-none absolute inset-0 hidden xl:block">
         <div className="absolute right-0 top-0 bottom-0 w-[60%] overflow-hidden bg-brown-dark">
-          <img
-            src={draKenia}
-            alt="Dra. Kênia Garcia - Advogada"
-            className="h-full w-full object-cover object-[center_5%] brightness-110"
-            loading="eager"
-          />
+          {bannerImages.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt="Dra. Kênia Garcia - Advogada"
+              className={`absolute inset-0 h-full w-full object-cover object-[center_5%] transition-opacity duration-1000 ${
+                idx === currentImage ? "opacity-100" : "opacity-0"
+              }`}
+              loading={idx === 0 ? "eager" : "lazy"}
+            />
+          ))}
           <div className="absolute inset-0 bg-gradient-to-r from-brown-dark via-brown-dark/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brown-dark/80 to-transparent" />
         </div>
@@ -26,12 +48,17 @@ const HeroSection = () => {
       <div className="relative z-20 mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
         <div className="-mx-6 mb-10 overflow-hidden bg-brown-dark md:-mx-12 lg:-mx-16 xl:hidden">
           <div className="relative h-[520px] md:h-[640px] lg:h-[720px]">
-            <img
-              src={draKenia}
-              alt="Dra. Kênia Garcia - Advogada"
-              className="h-full w-full object-cover object-[center_10%] brightness-110 md:object-[center_15%] lg:object-[center_12%]"
-              loading="eager"
-            />
+            {bannerImages.map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt="Dra. Kênia Garcia - Advogada"
+                className={`absolute inset-0 h-full w-full object-cover object-[center_10%] transition-opacity duration-1000 md:object-[center_15%] lg:object-[center_12%] ${
+                  idx === currentImage ? "opacity-100" : "opacity-0"
+                }`}
+                loading={idx === 0 ? "eager" : "lazy"}
+              />
+            ))}
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brown-dark/65 via-transparent to-transparent" />
           </div>
         </div>
