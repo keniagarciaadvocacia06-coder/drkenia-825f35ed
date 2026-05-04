@@ -9,7 +9,7 @@ const HeroSection = () => {
   const waMessage = t("hero.wa_message");
 
   return (
-    <section id="inicio" className="relative overflow-hidden bg-brown-dark pt-36 pb-16 xl:min-h-screen">
+    <section id="inicio" className="relative overflow-hidden bg-brown-dark pt-20 pb-16 xl:min-h-screen">
       <div className="pointer-events-none absolute inset-0 hidden xl:block">
         <div className="absolute right-0 top-[136px] bottom-0 w-[60%] overflow-hidden bg-brown-dark">
           <img
