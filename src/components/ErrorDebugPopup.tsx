@@ -19,6 +19,7 @@ const ErrorDebugPopup = () => {
   const [minimized, setMinimized] = useState(false);
   const [tab, setTab] = useState<Tab>("instruction");
   const [text, setText] = useState("");
+  const [images, setImages] = useState<string[]>([]);
   const [pos, setPos] = useState({ x: 24, y: 24 });
   const dragRef = useRef<{ ox: number; oy: number; px: number; py: number } | null>(null);
 
