@@ -63,7 +63,16 @@ const ErrorDebugPopup = () => {
 
   const handleInstructionImages = async (files: FileList | null) => {
     if (!files || files.length === 0) return;
-    const urls = await Promise.all(Array.from(files).map((f) => fileToDataUrl(f)));
+    const urls = await Promise.all(
+      Array.from(files).map(async (f) => {
+        try {
+          const { dataUrl } = await prepareDebugImage(f);
+          return dataUrl;
+        } catch {
+          return await fileToDataUrl(f);
+        }
+      }),
+    );
     setImages((prev) => [...prev, ...urls]);
   };
 
