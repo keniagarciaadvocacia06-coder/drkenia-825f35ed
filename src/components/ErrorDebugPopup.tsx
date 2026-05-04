@@ -219,7 +219,7 @@ const ErrorDebugPopup = () => {
                   + Imagens
                   <input
                     type="file"
-                    accept="image/*"
+                    accept="image/*,image/jpeg,image/jpg,image/png,image/webp,.jpg,.jpeg,.png,.webp"
                     multiple
                     style={{ display: "none" }}
                     onChange={(e) => {
