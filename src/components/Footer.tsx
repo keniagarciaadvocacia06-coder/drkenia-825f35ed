@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-24 w-auto" />
+            <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-14 w-auto" />
             <p className="text-sm leading-relaxed text-muted-foreground">
               Advocacia com fé, acolhimento e propósito. +15 anos cuidando de quem mais importa: você.
             </p>
