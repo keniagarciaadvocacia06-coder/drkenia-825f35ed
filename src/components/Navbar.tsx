@@ -27,9 +27,9 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border/30 bg-gradient-to-r from-[#d4b896] to-[#66503d] backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="block">
-          <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-10 w-auto block" />
+          <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-16 w-auto block" />
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">
