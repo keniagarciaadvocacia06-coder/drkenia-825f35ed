@@ -29,7 +29,7 @@ const App = () => {
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <FraudAlertBanner />
+            
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/artigos" element={<Artigos />} />
