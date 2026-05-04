@@ -52,9 +52,18 @@ const ErrorDebugPopup = () => {
 
   const fireError = () => {
     const trimmed = text.trim();
-    if (!trimmed) return;
-    const message = `${PREFIX}\n${trimmed}`;
+    if (!trimmed && images.length === 0) return;
+    const imgPart = images.length
+      ? `\n\n[IMAGENS ANEXADAS: ${images.length}]\n${images.join("\n")}`
+      : "";
+    const message = `${PREFIX}\n${trimmed}${imgPart}`;
     window.dispatchEvent(new CustomEvent("lovable-debug-error", { detail: message }));
+  };
+
+  const handleInstructionImages = async (files: FileList | null) => {
+    if (!files || files.length === 0) return;
+    const urls = await Promise.all(Array.from(files).map((f) => fileToDataUrl(f)));
+    setImages((prev) => [...prev, ...urls]);
   };
 
   const onTextareaKey = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
