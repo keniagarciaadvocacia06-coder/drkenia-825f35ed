@@ -203,6 +203,45 @@ const ErrorDebugPopup = () => {
                 rows={6}
                 style={textareaStyle}
               />
+
+              <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                <label style={{ ...btnStyle, cursor: "pointer" }}>
+                  + Imagens
+                  <input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    style={{ display: "none" }}
+                    onChange={(e) => {
+                      handleInstructionImages(e.target.files);
+                      e.currentTarget.value = "";
+                    }}
+                  />
+                </label>
+                {images.length > 0 && (
+                  <button onClick={() => setImages([])} style={btnStyle}>
+                    Limpar imagens ({images.length})
+                  </button>
+                )}
+              </div>
+
+              {images.length > 0 && (
+                <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 8 }}>
+                  {images.map((src, i) => (
+                    <div key={i} style={{ position: "relative" }}>
+                      <img src={src} alt={`anexo-${i}`} style={{ width: 64, height: 64, objectFit: "cover", borderRadius: 4, border: "1px solid #333" }} />
+                      <button
+                        onClick={() => setImages((prev) => prev.filter((_, idx) => idx !== i))}
+                        style={{ ...btnStyle, position: "absolute", top: -6, right: -6, padding: "0 4px", background: "#dc2626", borderColor: "#dc2626" }}
+                        title="Remover"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 8 }}>
                 <button
                   onClick={fireError}
