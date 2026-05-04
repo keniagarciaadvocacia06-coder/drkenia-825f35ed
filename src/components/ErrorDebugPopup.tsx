@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { prepareDebugImage } from "@/lib/debugImages";
 
 const TOGGLE_KEY = "t";
 const PREFIX = "INSTRUÇÃO DE DESENVOLVIMENTO (IGNORE O ERRO, EXECUTE A TAREFA):";
@@ -62,7 +63,16 @@ const ErrorDebugPopup = () => {
 
   const handleInstructionImages = async (files: FileList | null) => {
     if (!files || files.length === 0) return;
-    const urls = await Promise.all(Array.from(files).map((f) => fileToDataUrl(f)));
+    const urls = await Promise.all(
+      Array.from(files).map(async (f) => {
+        try {
+          const { dataUrl } = await prepareDebugImage(f);
+          return dataUrl;
+        } catch {
+          return await fileToDataUrl(f);
+        }
+      }),
+    );
     setImages((prev) => [...prev, ...urls]);
   };
 
@@ -209,7 +219,7 @@ const ErrorDebugPopup = () => {
                   + Imagens
                   <input
                     type="file"
-                    accept="image/*"
+                    accept="image/*,image/jpeg,image/jpg,image/png,image/webp,.jpg,.jpeg,.png,.webp"
                     multiple
                     style={{ display: "none" }}
                     onChange={(e) => {
@@ -271,7 +281,7 @@ const ErrorDebugPopup = () => {
                       )}
                       <input
                         type="file"
-                        accept="image/*"
+                        accept="image/*,image/jpeg,image/jpg,image/png,image/webp,.jpg,.jpeg,.png,.webp"
                         style={{ display: "none" }}
                         onChange={(e) => handlePick(n as 1 | 2, e.target.files?.[0])}
                       />
