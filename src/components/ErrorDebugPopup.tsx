@@ -281,7 +281,7 @@ const ErrorDebugPopup = () => {
                       )}
                       <input
                         type="file"
-                        accept="image/*"
+                        accept="image/*,image/jpeg,image/jpg,image/png,image/webp,.jpg,.jpeg,.png,.webp"
                         style={{ display: "none" }}
                         onChange={(e) => handlePick(n as 1 | 2, e.target.files?.[0])}
                       />
