@@ -27,9 +27,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/30 bg-gradient-to-r from-[#d4b896] to-[#66503d] backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="block">
-          <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-12 w-auto block" />
+          <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-10 w-auto block" />
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">
@@ -37,20 +37,20 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-base font-medium tracking-wide text-cream transition-colors duration-300 hover:text-primary drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]"
+              className="text-sm font-medium tracking-wide text-cream transition-colors duration-300 hover:text-primary drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]"
             >
               {link.label}
             </a>
           ))}
         </div>
 
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <LanguageSwitcher />
           <a
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex cursor-pointer rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-6 py-2.5 text-sm font-medium tracking-wide text-primary-foreground transition-all duration-300 hover:from-[#7a5c10] hover:to-[#d4bc7c]"
+            className="inline-flex cursor-pointer rounded-sm bg-gradient-to-r from-[#8b6914] to-[#e8d090] px-4 py-1.5 text-sm font-medium tracking-wide text-primary-foreground transition-all duration-300 hover:from-[#7a5c10] hover:to-[#d4bc7c]"
           >
             {t("nav.cta")}
           </a>
