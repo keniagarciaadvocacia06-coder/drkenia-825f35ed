@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import FraudAlertBanner from "@/components/FraudAlertBanner";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import PillarsSection from "@/components/PillarsSection";
@@ -14,6 +15,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
+      <FraudAlertBanner />
       <HeroSection />
       <AboutSection />
       <PillarsSection />
