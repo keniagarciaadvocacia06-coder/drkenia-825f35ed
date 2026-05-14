@@ -132,16 +132,20 @@ const Artigos = () => {
                 className="block overflow-hidden rounded-2xl bg-card border border-border hover:border-primary/50 transition-all hover:shadow-lg group"
               >
                 {artigo.image && (
-                  <div className="w-full h-48 overflow-hidden bg-muted">
+                  <div className="w-full h-48 overflow-hidden bg-muted relative">
                     <img 
                       src={artigo.image} 
                       alt={artigo.title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800";
                       }}
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-1.5 rounded-lg shadow-sm">
+                      <img src={logoKg} alt="Logo" className="h-6 w-auto" />
+                    </div>
                   </div>
                 )}
                 <div className="p-6">
