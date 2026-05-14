@@ -11,7 +11,7 @@ const artigos = [
     slug: "guia-completo-divorcio",
     title: "Divórcio em 2026: tipos, etapas e custos",
     desc: "Guia completo: modalidades, documentos, prazos e como fazer com segurança.",
-    image: "/images/artigos/guia-divorcio.jpg"
+    image: "/images/artigos/dra-kenia-desk.jpg"
   },
   {
     slug: "divorcio-online",
