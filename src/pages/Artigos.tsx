@@ -7,6 +7,48 @@ import Footer from "@/components/Footer";
 import { useEffect } from "react";
 
 const artigos = [
+  {
+    slug: "guia-completo-divorcio",
+    title: "Divórcio em 2026: tipos, etapas e custos",
+    desc: "Guia completo: modalidades, documentos, prazos e como fazer com segurança.",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    slug: "divorcio-online",
+    title: "Divórcio online",
+    desc: "Como se separar com segurança, privacidade e sem sair de casa.",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2959213?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    slug: "divorcio-unilateral",
+    title: "Divórcio sem assinatura do cônjuge",
+    desc: "STJ: é possível pedir o divórcio mesmo sem o consentimento do outro.",
+    image: "https://images.unsplash.com/photo-1589216532372-1c2a367900d9?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    slug: "quanto-custa-divorcio",
+    title: "Quanto custa um divórcio?",
+    desc: "Entenda os custos antes de tomar qualquer decisão.",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    slug: "guarda-dos-filhos",
+    title: "Como funciona a guarda dos filhos",
+    desc: "Tipos de guarda, direitos dos pais e quando pedir mudança na Justiça.",
+    image: "https://images.unsplash.com/photo-1591522810850-58128c5fb089?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    slug: "pensao-retroativa",
+    title: "Pensão alimentícia retroativa",
+    desc: "Quando é possível cobrar valores atrasados e como calcular.",
+    image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    slug: "alimentos-compensatorios",
+    title: "Alimentos compensatórios",
+    desc: "Decisão do TJGO reconhece direito ao reequilíbrio econômico no divórcio.",
+    image: "https://images.unsplash.com/photo-1579621970590-9d624316904b?auto=format&fit=crop&q=80&w=800"
+  },
   { 
     slug: "emancipacao", 
     title: "Emancipação", 
