@@ -68,7 +68,7 @@ const artigos = [
     image: "https://images.unsplash.com/photo-1591522810850-58128c5fb089?auto=format&fit=crop&q=80&w=800"
   },
   { 
-    slug: "comunhao-parcial-de-bens", 
+    slug: "comunhao-parcial-bens", 
     title: "Comunhão Parcial de Bens", 
     desc: "O regime patrimonial mais comum no Brasil.",
     image: "https://images.unsplash.com/photo-1582213726895-32ac44efd557?auto=format&fit=crop&q=80&w=800"
