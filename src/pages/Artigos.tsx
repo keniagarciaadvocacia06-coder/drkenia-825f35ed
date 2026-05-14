@@ -7,14 +7,54 @@ import Footer from "@/components/Footer";
 import { useEffect } from "react";
 
 const artigos = [
-  { slug: "emancipacao", title: "Emancipação", desc: "O que é, tipos e como funciona no Direito Brasileiro." },
-  { slug: "guarda-compartilhada", title: "Guarda Compartilhada", desc: "Direitos, deveres e como funciona na prática." },
-  { slug: "comunhao-parcial-de-bens", title: "Comunhão Parcial de Bens", desc: "O regime patrimonial mais comum no Brasil." },
-  { slug: "pensao-socioafetiva", title: "Pensão Socioafetiva", desc: "Direitos dos filhos afetivos e multiparentalidade." },
-  { slug: "direitos-do-genitor", title: "Direitos do Genitor", desc: "O que a lei garante aos pais após a separação." },
-  { slug: "danos-morais-direito-de-familia", title: "Danos Morais no Direito de Família", desc: "Quando cabe indenização em questões familiares." },
-  { slug: "uniao-estavel", title: "União Estável", desc: "Direitos, deveres e como formalizar." },
-  { slug: "concubinato", title: "Concubinato", desc: "Diferenças para união estável e direitos." },
+  { 
+    slug: "emancipacao", 
+    title: "Emancipação", 
+    desc: "O que é, tipos e como funciona no Direito Brasileiro.",
+    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800"
+  },
+  { 
+    slug: "guarda-compartilhada", 
+    title: "Guarda Compartilhada", 
+    desc: "Direitos, deveres e como funciona na prática.",
+    image: "https://images.unsplash.com/photo-1591522810850-58128c5fb089?auto=format&fit=crop&q=80&w=800"
+  },
+  { 
+    slug: "comunhao-parcial-de-bens", 
+    title: "Comunhão Parcial de Bens", 
+    desc: "O regime patrimonial mais comum no Brasil.",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800"
+  },
+  { 
+    slug: "pensao-socioafetiva", 
+    title: "Pensão Socioafetiva", 
+    desc: "Direitos dos filhos afetivos e multiparentalidade.",
+    image: "https://images.unsplash.com/photo-1536640712247-c45474762887?auto=format&fit=crop&q=80&w=800"
+  },
+  { 
+    slug: "direitos-do-genitor", 
+    title: "Direitos do Genitor", 
+    desc: "O que a lei garante aos pais após a separação.",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+  },
+  { 
+    slug: "danos-morais-direito-de-familia", 
+    title: "Danos Morais no Direito de Família", 
+    desc: "Quando cabe indenização em questões familiares.",
+    image: "https://images.unsplash.com/photo-1453948574633-3348078f9380?auto=format&fit=crop&q=80&w=800"
+  },
+  { 
+    slug: "uniao-estavel", 
+    title: "União Estável", 
+    desc: "Direitos, deveres e como formalizar.",
+    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800"
+  },
+  { 
+    slug: "concubinato", 
+    title: "Concubinato", 
+    desc: "Diferenças para união estável e direitos.",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2959213?auto=format&fit=crop&q=80&w=800"
+  },
 ];
 
 const Artigos = () => {
@@ -41,12 +81,23 @@ const Artigos = () => {
               <Link
                 key={artigo.slug}
                 to={`/artigos/${artigo.slug}`}
-                className="block p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-colors group"
+                className="block overflow-hidden rounded-2xl bg-card border border-border hover:border-primary/50 transition-all hover:shadow-lg group"
               >
+                {artigo.image && (
+                  <div className="w-full h-48 overflow-hidden">
+                    <img 
+                      src={artigo.image} 
+                      alt={artigo.title} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="p-6">
                 <h2 className="font-serif text-xl text-primary group-hover:text-accent transition-colors mb-2">
                   {artigo.title}
                 </h2>
                 <p className="text-muted-foreground text-sm">{artigo.desc}</p>
+                </div>
               </Link>
             ))}
           </div>

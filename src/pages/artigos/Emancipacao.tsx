@@ -4,6 +4,7 @@ const Emancipacao = () => (
   <ArticleLayout
     title="Emancipação: O que é e como funciona no Direito Brasileiro"
     description="Entenda o que é emancipação, quais os tipos, requisitos legais e como funciona o processo de emancipação no Brasil. Dra. Kênia Garcia - Advocacia."
+    image="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800"
   >
     <p>
       A <strong>emancipação</strong> é o instituto jurídico que antecipa a maioridade civil de um adolescente, concedendo-lhe plena capacidade para praticar todos os atos da vida civil antes de completar 18 anos. Prevista no <strong>artigo 5º do Código Civil</strong>, a emancipação pode ocorrer de três formas distintas.

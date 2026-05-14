@@ -10,10 +10,11 @@ import { buildWhatsAppUrl, openWhatsApp } from "@/lib/whatsapp";
 interface ArticleLayoutProps {
   title: string;
   description: string;
+  image?: string;
   children: React.ReactNode;
 }
 
-const ArticleLayout = ({ title, description, children }: ArticleLayoutProps) => {
+const ArticleLayout = ({ title, description, image, children }: ArticleLayoutProps) => {
   useEffect(() => {
     document.title = `${title} | Dra. Kênia Garcia - Advocacia`;
     const meta = document.querySelector('meta[name="description"]');
@@ -36,6 +37,24 @@ const ArticleLayout = ({ title, description, children }: ArticleLayoutProps) => 
       {/* Article */}
       <main className="pt-28 pb-16 px-6">
         <article className="max-w-3xl mx-auto">
+          <Link 
+            to="/artigos" 
+            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mb-8 group"
+          >
+            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            Voltar para Artigos
+          </Link>
+
+          {image && (
+            <div className="w-full h-[300 md:h-[400px] overflow-hidden rounded-2xl mb-8">
+              <img 
+                src={image} 
+                alt={title} 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          )}
+
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">{title}</h1>
           <div className="prose prose-invert prose-lg max-w-none space-y-6 text-foreground/90 leading-relaxed">
             {children}

@@ -4,6 +4,7 @@ const PensaoSocioafetiva = () => (
   <ArticleLayout
     title="Pensão Socioafetiva: Direito dos Filhos Afetivos"
     description="Entenda o que é a pensão socioafetiva, quem tem direito, como funciona e quando é possível requerer alimentos do pai/mãe socioafetivo. Dra. Kênia Garcia."
+    image="https://images.unsplash.com/photo-1536640712247-c45474762887?auto=format&fit=crop&q=80&w=800"
   >
     <p>
       A <strong>pensão socioafetiva</strong> é a obrigação alimentar decorrente do vínculo de parentalidade socioafetiva, ou seja, quando uma pessoa assume o papel de pai ou mãe de uma criança, independentemente de vínculo biológico. O <strong>Direito brasileiro</strong> reconhece a parentalidade socioafetiva como forma legítima de filiação.
