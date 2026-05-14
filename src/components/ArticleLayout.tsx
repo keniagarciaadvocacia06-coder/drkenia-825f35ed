@@ -46,11 +46,11 @@ const ArticleLayout = ({ title, description, image, children }: ArticleLayoutPro
           </Link>
 
           {image && (
-            <div className="w-full h-56 md:h-[400px] overflow-hidden rounded-2xl mb-8 border border-border bg-muted">
+            <div className="w-full h-auto aspect-video md:aspect-[21/9] overflow-hidden rounded-2xl mb-8 border border-border bg-muted">
               <img 
                 src={image} 
                 alt={title} 
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.src = "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800";
