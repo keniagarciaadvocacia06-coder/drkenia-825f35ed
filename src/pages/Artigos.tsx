@@ -129,21 +129,21 @@ const Artigos = () => {
               <Link
                 key={artigo.slug}
                 to={`/artigos/${artigo.slug}`}
-                className="block overflow-hidden rounded-2xl bg-card border border-border hover:border-primary/50 transition-all hover:shadow-lg group"
+                className="block overflow-hidden rounded-2xl bg-card border border-border hover:border-primary/50 transition-all group hover:bg-muted"
               >
                 {artigo.image && (
                   <div className="w-full h-48 overflow-hidden bg-muted relative">
                     <img 
                       src={artigo.image} 
                       alt={artigo.title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800";
                       }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
-                    <div className="absolute top-4 right-4 p-1.5 drop-shadow-md">
+                    <div className="absolute inset-0 bg-black/20" />
+                    <div className="absolute top-4 right-4 p-1.5">
                       <img src={logoKg} alt="Logo" className="h-8 w-auto brightness-0 invert" />
                     </div>
                   </div>
