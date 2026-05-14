@@ -11,55 +11,55 @@ const artigos = [
     slug: "guia-completo-divorcio",
     title: "Divórcio em 2026: tipos, etapas e custos",
     desc: "Guia completo: modalidades, documentos, prazos e como fazer com segurança.",
-    image: "/images/artigos/dra-kenia-desk.jpg"
+    image: "https://images.unsplash.com/photo-1591115765373-520b7a21769b?auto=format&fit=crop&q=80&w=800"
   },
   {
     slug: "divorcio-online",
     title: "Divórcio online",
     desc: "Como se separar com segurança, privacidade e sem sair de casa.",
-    image: "/images/artigos/divorcio-online.jpg"
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
   },
   {
     slug: "divorcio-unilateral",
     title: "Divórcio sem assinatura do cônjuge",
     desc: "STJ: é possível pedir o divórcio mesmo sem o consentimento do outro.",
-    image: "/images/artigos/divorcio-unilateral.jpg"
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
   },
   {
     slug: "quanto-custa-divorcio",
     title: "Quanto custa um divórcio?",
     desc: "Entenda os custos antes de tomar qualquer decisão.",
-    image: "/images/artigos/quanto-custa.jpg"
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800"
   },
   {
     slug: "guarda-dos-filhos",
     title: "Como funciona a guarda dos filhos",
     desc: "Tipos de guarda, direitos dos pais e quando pedir mudança na Justiça.",
-    image: "/images/artigos/dra-kenia-tablet.jpg"
+    image: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&q=80&w=800"
   },
   {
     slug: "pensao-retroativa",
     title: "Pensão alimentícia retroativa",
     desc: "Quando é possível cobrar valores atrasados e como calcular.",
-    image: "/images/artigos/pensao-retroativa.jpg"
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
   },
   {
     slug: "alimentos-compensatorios",
     title: "Alimentos compensatórios",
     desc: "Decisão do TJGO reconhece direito ao reequilíbrio econômico no divórcio.",
-    image: "/images/artigos/dra-kenia-portrait-1.jpg"
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800"
   },
   {
     slug: "pensao-filho-autismo",
     title: "Pensão para filho com autismo",
     desc: "Direitos, necessidades reais e a possibilidade de pensão vitalícia.",
-    image: "/images/artigos/dra-kenia-portrait-2.jpg"
+    image: "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&q=80&w=800"
   },
   { 
     slug: "emancipacao", 
     title: "Emancipação", 
     desc: "O que é, tipos e como funciona no Direito Brasileiro.",
-    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800"
   },
   { 
     slug: "guarda-compartilhada", 
@@ -71,7 +71,7 @@ const artigos = [
     slug: "comunhao-parcial-de-bens", 
     title: "Comunhão Parcial de Bens", 
     desc: "O regime patrimonial mais comum no Brasil.",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1582213726895-32ac44efd557?auto=format&fit=crop&q=80&w=800"
   },
   { 
     slug: "pensao-socioafetiva", 
@@ -83,13 +83,13 @@ const artigos = [
     slug: "direitos-genitor", 
     title: "Direitos do Genitor", 
     desc: "O que a lei garante aos pais após a separação.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1481107561552-06839e944b61?auto=format&fit=crop&q=80&w=800"
   },
   { 
     slug: "danos-morais", 
     title: "Danos Morais no Direito de Família", 
     desc: "Quando cabe indenização em questões familiares.",
-    image: "https://images.unsplash.com/photo-1453948574633-3348078f9380?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800"
   },
   { 
     slug: "uniao-estavel", 
