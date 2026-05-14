@@ -17,6 +17,7 @@ const Navbar = () => {
     { label: t("nav.home"), href: isHome ? "#inicio" : "/" },
     { label: t("nav.about"), href: isHome ? "#sobre" : "/#sobre" },
     { label: t("nav.areas"), href: isHome ? "#areas" : "/#areas" },
+    { label: t("nav.articles"), href: "/artigos" },
     { label: t("nav.differentials"), href: isHome ? "#diferenciais" : "/#diferenciais" },
     { label: t("nav.faq"), href: isHome ? "#duvidas" : "/#duvidas" },
     { label: t("nav.contact"), href: isHome ? "#contato" : "/#contato" },
