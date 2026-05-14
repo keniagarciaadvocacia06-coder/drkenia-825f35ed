@@ -4,7 +4,7 @@ const AlimentosCompensatorios = () => (
   <ArticleLayout
     title="Alimentos compensatórios: ex-esposa volta a receber após decisão do TJGO"
     description="Entenda o que são alimentos compensatórios, como funcionam no divórcio e a decisão do TJGO que reconheceu o direito de ex-cônjuge ao reequilíbrio econômico."
-    image="https://images.unsplash.com/photo-1579621970590-9d624316904b?auto=format&fit=crop&q=80&w=1200"
+    image="/images/artigos/alimentos-compensatorios.jpg"
   >
     <p>
       A Justiça determinou a retomada dos <strong>alimentos compensatórios</strong> à ex-esposa após identificar desequilíbrio econômico no pós-divórcio. Você sabe como funciona esse direito? Muitas mulheres deixam de exercê-lo simplesmente por não saberem que ele existe.
