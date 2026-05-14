@@ -32,13 +32,13 @@ const artigos = [
     image: "https://images.unsplash.com/photo-1536640712247-c45474762887?auto=format&fit=crop&q=80&w=800"
   },
   { 
-    slug: "direitos-do-genitor", 
+    slug: "direitos-genitor", 
     title: "Direitos do Genitor", 
     desc: "O que a lei garante aos pais após a separação.",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
   },
   { 
-    slug: "danos-morais-direito-de-familia", 
+    slug: "danos-morais", 
     title: "Danos Morais no Direito de Família", 
     desc: "Quando cabe indenização em questões familiares.",
     image: "https://images.unsplash.com/photo-1453948574633-3348078f9380?auto=format&fit=crop&q=80&w=800"

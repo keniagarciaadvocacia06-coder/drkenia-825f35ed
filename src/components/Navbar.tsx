@@ -35,13 +35,23 @@ const Navbar = () => {
 
         <div className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium tracking-wide text-cream transition-colors duration-300 hover:text-primary drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]"
-            >
-              {link.label}
-            </a>
+            link.href.startsWith('/') && !link.href.includes('#') ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="text-sm font-medium tracking-wide text-cream transition-colors duration-300 hover:text-primary drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium tracking-wide text-cream transition-colors duration-300 hover:text-primary drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]"
+              >
+                {link.label}
+              </a>
+            )
           ))}
         </div>
 
@@ -81,14 +91,25 @@ const Navbar = () => {
           </div>
 
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="block text-base font-medium text-foreground transition-colors hover:text-primary"
-            >
-              {link.label}
-            </a>
+            link.href.startsWith('/') && !link.href.includes('#') ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                onClick={() => setIsOpen(false)}
+                className="block text-base font-medium text-foreground transition-colors hover:text-primary"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="block text-base font-medium text-foreground transition-colors hover:text-primary"
+              >
+                {link.label}
+              </a>
+            )
           ))}
           <a
             href={waHref}

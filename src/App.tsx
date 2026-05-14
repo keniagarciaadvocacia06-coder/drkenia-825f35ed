@@ -37,8 +37,8 @@ const App = () => {
               <Route path="/artigos/guarda-compartilhada" element={<GuardaCompartilhada />} />
               <Route path="/artigos/comunhao-parcial-de-bens" element={<ComunhaoParcialBens />} />
               <Route path="/artigos/pensao-socioafetiva" element={<PensaoSocioafetiva />} />
-              <Route path="/artigos/direitos-do-genitor" element={<DireitosGenitor />} />
-              <Route path="/artigos/danos-morais-direito-de-familia" element={<DanosMorais />} />
+              <Route path="/artigos/direitos-genitor" element={<DireitosGenitor />} />
+              <Route path="/artigos/danos-morais" element={<DanosMorais />} />
               <Route path="/artigos/uniao-estavel" element={<UniaoEstavel />} />
               <Route path="/artigos/concubinato" element={<Concubinato />} />
               <Route path="*" element={<NotFound />} />
