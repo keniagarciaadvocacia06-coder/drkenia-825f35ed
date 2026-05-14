@@ -49,6 +49,12 @@ const artigos = [
     desc: "Decisão do TJGO reconhece direito ao reequilíbrio econômico no divórcio.",
     image: "/images/artigos/dra-kenia-portrait-1.jpg"
   },
+  {
+    slug: "pensao-filho-autismo",
+    title: "Pensão para filho com autismo",
+    desc: "Direitos, necessidades reais e a possibilidade de pensão vitalícia.",
+    image: "/images/artigos/dra-kenia-portrait-2.jpg"
+  },
   { 
     slug: "emancipacao", 
     title: "Emancipação", 
