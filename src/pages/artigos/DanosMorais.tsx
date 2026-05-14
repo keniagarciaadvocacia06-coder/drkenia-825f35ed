@@ -4,6 +4,7 @@ const DanosMorais = () => (
   <ArticleLayout
     title="Danos Morais no Direito de Família: Quando Cabe Indenização"
     description="Saiba quando é possível pedir indenização por danos morais em questões de família: abandono afetivo, alienação parental, infidelidade e mais."
+    image="https://images.unsplash.com/photo-1453948574633-3348078f9380?auto=format&fit=crop&q=80&w=800"
   >
     <p>
       Os <strong>danos morais no âmbito do Direito de Família</strong> são uma realidade cada vez mais reconhecida pela jurisprudência brasileira. Situações que causam sofrimento psíquico, humilhação ou violação à dignidade no contexto familiar podem gerar o direito à indenização.
