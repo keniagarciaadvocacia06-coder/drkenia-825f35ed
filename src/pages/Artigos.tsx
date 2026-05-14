@@ -143,8 +143,8 @@ const Artigos = () => {
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
-                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-1.5 rounded-lg shadow-sm">
-                      <img src={logoKg} alt="Logo" className="h-6 w-auto" />
+                    <div className="absolute top-4 right-4 p-1.5 drop-shadow-md">
+                      <img src={logoKg} alt="Logo" className="h-8 w-auto brightness-0 invert" />
                     </div>
                   </div>
                 )}
