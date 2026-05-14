@@ -132,7 +132,7 @@ const Artigos = () => {
                 className="block overflow-hidden rounded-2xl bg-card border border-border hover:border-primary/50 transition-all group hover:bg-muted"
               >
                 {artigo.image && (
-                  <div className="w-full h-48 overflow-hidden bg-muted relative">
+                  <div className="w-full h-40 md:h-48 overflow-hidden bg-muted relative">
                     <img 
                       src={artigo.image} 
                       alt={artigo.title} 
