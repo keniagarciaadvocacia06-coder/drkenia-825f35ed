@@ -11,7 +11,7 @@ const artigos = [
     slug: "guia-completo-divorcio",
     title: "Divórcio em 2026: tipos, etapas e custos",
     desc: "Guia completo: modalidades, documentos, prazos e como fazer com segurança.",
-    image: "/images/artigos/guia-divorcio.jpg"
+    image: "/images/artigos/dra-kenia-desk.jpg"
   },
   {
     slug: "divorcio-online",
@@ -35,7 +35,7 @@ const artigos = [
     slug: "guarda-dos-filhos",
     title: "Como funciona a guarda dos filhos",
     desc: "Tipos de guarda, direitos dos pais e quando pedir mudança na Justiça.",
-    image: "/images/artigos/guarda-filhos.jpg"
+    image: "/images/artigos/dra-kenia-tablet.jpg"
   },
   {
     slug: "pensao-retroativa",
@@ -47,7 +47,7 @@ const artigos = [
     slug: "alimentos-compensatorios",
     title: "Alimentos compensatórios",
     desc: "Decisão do TJGO reconhece direito ao reequilíbrio econômico no divórcio.",
-    image: "/images/artigos/alimentos-compensatorios.jpg"
+    image: "/images/artigos/dra-kenia-portrait-1.jpg"
   },
   { 
     slug: "emancipacao", 
