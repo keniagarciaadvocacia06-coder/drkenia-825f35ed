@@ -9,6 +9,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   const scrollTo = (id: string) => (e: React.MouseEvent) => {
+    if (window.location.pathname !== "/") return;
     e.preventDefault();
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
