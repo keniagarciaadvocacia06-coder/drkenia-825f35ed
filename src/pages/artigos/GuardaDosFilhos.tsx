@@ -4,7 +4,7 @@ const GuardaDosFilhos = () => (
   <ArticleLayout
     title="Como funciona a guarda dos filhos: tipos, direitos e mudança na Justiça"
     description="Entenda como funciona a guarda dos filhos, tipos de guarda, direitos dos pais, convivência, pensão e quando é possível pedir mudança na Justiça."
-    image="https://images.unsplash.com/photo-1591522810850-58128c5fb089?auto=format&fit=crop&q=80&w=1200"
+    image="/images/artigos/dra-kenia-tablet.jpg"
   >
     <p>
       A guarda dos filhos é uma das questões mais delicadas quando um casal se separa. Não se trata apenas de “com quem a criança vai morar”, mas de quem participará das decisões importantes da vida dela: escola, saúde, rotina, convivência familiar e proteção emocional.

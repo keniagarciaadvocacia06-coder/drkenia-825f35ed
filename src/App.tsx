@@ -21,6 +21,7 @@ import DivorcioUnilateral from "./pages/artigos/DivorcioUnilateral";
 import AlimentosCompensatorios from "./pages/artigos/AlimentosCompensatorios";
 import PensaoRetroativa from "./pages/artigos/PensaoRetroativa";
 import GuardaDosFilhos from "./pages/artigos/GuardaDosFilhos";
+import PensaoFilhoAutismo from "./pages/artigos/PensaoFilhoAutismo";
 import DebugErrorThrower from "./components/DebugErrorThrower";
 import ErrorDebugPopup from "./components/ErrorDebugPopup";
 import FraudAlertBanner from "./components/FraudAlertBanner";
@@ -55,6 +56,7 @@ const App = () => {
               <Route path="/artigos/alimentos-compensatorios" element={<AlimentosCompensatorios />} />
               <Route path="/artigos/pensao-retroativa" element={<PensaoRetroativa />} />
               <Route path="/artigos/guarda-dos-filhos" element={<GuardaDosFilhos />} />
+              <Route path="/artigos/pensao-filho-autismo" element={<PensaoFilhoAutismo />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <ErrorDebugPopup />
