@@ -6,6 +6,9 @@ const DivorcioOnline = () => (
     description="Entenda como funciona o divórcio online, quem pode fazer, documentos necessários, custos e por que o acompanhamento jurídico é essencial."
     image="/images/artigos/divorcio-online.jpg"
   >
+    <p className="text-xl font-medium text-primary mb-6">
+      Divórcio online: como se separar com segurança, privacidade e sem sair de casa.
+    </p>
     <p>
       Encerrar um casamento nunca é uma decisão simples. Mesmo quando existe respeito entre o casal, surgem dúvidas: quanto vai custar? Demora muito? Preciso ir ao fórum? E se eu não quiser exposição?
     </p>
