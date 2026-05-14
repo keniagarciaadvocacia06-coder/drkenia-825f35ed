@@ -88,9 +88,32 @@ const DivorcioOnline = () => (
       Quando não há acordo entre as partes, quando há disputa sobre bens, pensão, guarda ou convivência, ou quando uma das partes se sente pressionada. Nesses casos, o caminho adequado é o judicial.
     </p>
 
+    <h2 className="font-serif text-2xl text-primary mt-8 mb-4">Divórcio online: simples, mas não pode ser feito de qualquer jeito</h2>
     <p>
-      O divórcio online trouxe facilidade, mas não pode ser feito de qualquer jeito. Um documento mal elaborado pode gerar prejuízos por anos. Antes de assinar, busque orientação jurídica especializada.
+      O divórcio online trouxe facilidade, mas isso não significa que o procedimento deva ser feito sem análise jurídica. Um documento mal elaborado pode gerar problemas futuros, especialmente quando envolve partilha de bens, financiamento, imóvel, empresa, previdência privada, dívidas ou filhos.
     </p>
+    <p>
+      Por isso, antes de assinar qualquer acordo, o ideal é buscar orientação jurídica especializada. O fim de um casamento já é um momento delicado. Com orientação adequada, é possível conduzir esse processo com mais tranquilidade, proteção patrimonial e segurança para todos os envolvidos.
+    </p>
+
+    <div className="mt-12 p-8 bg-accent/5 rounded-2xl border border-accent/20 text-center">
+      <h3 className="font-serif text-2xl text-primary mb-4">Precisa fazer um divórcio online com segurança?</h3>
+      <p className="mb-6">
+        Cada família tem uma história, e cada divórcio precisa ser analisado com cuidado. Antes de tomar qualquer decisão, procure orientação jurídica para entender seus direitos, seus deveres e o melhor caminho para resolver tudo de forma segura.
+      </p>
+      <div className="space-y-2 text-primary font-medium">
+        <p className="text-xl">Kênia Garcia Advocacia</p>
+        <p className="text-sm text-muted-foreground">Atendimento presencial ou online para todo Brasil ou exterior.</p>
+        <div className="flex flex-col items-center gap-2 mt-4">
+          <a href="https://instagram.com/drakeniagarciaadv" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+            Instagram: @drakeniagarciaadv
+          </a>
+          <a href="https://wa.me/5564999881043" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-colors inline-block mt-2">
+            WhatsApp: (64) 9 9988-1043
+          </a>
+        </div>
+      </div>
+    </div>
   </ArticleLayout>
 );
 
