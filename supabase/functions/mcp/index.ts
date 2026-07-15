@@ -7,7 +7,7 @@ import { defineMcp } from "npm:@lovable.dev/mcp-js@0.22.0";
 
 // src/lib/mcp/tools/list-articles.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.22.0";
-import { z } from "npm:zod@^3.25.76";
+import { z } from "npm:zod@^4.4.3";
 
 // src/lib/mcp/articles.ts
 var SITE_URL = "https://https-advocaciak-niagarcia-com-br.lovable.app";
@@ -59,7 +59,7 @@ var list_articles_default = defineTool({
 
 // src/lib/mcp/tools/get-article.ts
 import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.22.0";
-import { z as z2 } from "npm:zod@^3.25.76";
+import { z as z2 } from "npm:zod@^4.4.3";
 var get_article_default = defineTool2({
   name: "get_article",
   title: "Get article",
