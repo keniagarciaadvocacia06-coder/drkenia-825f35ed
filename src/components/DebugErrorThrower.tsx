@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 /**
  * Escuta o evento global "lovable-debug-error" e, ao recebê-lo,
@@ -6,18 +6,24 @@ import { useEffect } from "react";
  * global da Lovable (acionando o botão "Try to Fix").
  *
  * IMPORTANTE: este componente deve ficar FORA de qualquer
- * ErrorBoundary / Suspense / boundary local.
+ * ErrorBoundary / Suspense / boundary local. O erro é INTENCIONAL.
  */
 const DebugErrorThrower = () => {
+  const [message, setMessage] = useState<string | null>(null);
+
   useEffect(() => {
     const handler = (e: Event) => {
       const detail = (e as CustomEvent).detail;
       const msg = typeof detail === "string" ? detail : String(detail ?? "");
-      console.info("Lovable debug instruction received:", msg);
+      setMessage(msg);
     };
     window.addEventListener("lovable-debug-error", handler);
     return () => window.removeEventListener("lovable-debug-error", handler);
   }, []);
+
+  if (message) {
+    throw new Error(message);
+  }
 
   return null;
 };
