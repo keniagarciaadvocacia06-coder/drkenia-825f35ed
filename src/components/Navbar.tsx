@@ -96,7 +96,7 @@ const Navbar = () => {
                 key={link.href}
                 to={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-base font-medium text-foreground transition-colors hover:text-primary"
+                className="block text-base font-medium uppercase text-foreground transition-colors hover:text-primary"
               >
                 {link.label}
               </Link>
@@ -105,7 +105,7 @@ const Navbar = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-base font-medium text-foreground transition-colors hover:text-primary"
+                className="block text-base font-medium uppercase text-foreground transition-colors hover:text-primary"
               >
                 {link.label}
               </a>
