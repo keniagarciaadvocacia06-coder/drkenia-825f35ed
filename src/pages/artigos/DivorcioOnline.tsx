@@ -4,7 +4,7 @@ const DivorcioOnline = () => (
   <ArticleLayout
     title="Divórcio online: como se separar com segurança, privacidade e sem sair de casa"
     description="Entenda como funciona o divórcio online, quem pode fazer, documentos necessários, custos e por que o acompanhamento jurídico é essencial."
-    image="/images/artigos/divorcio-online.jpg"
+    image="/images/artigos/divorcio-online.webp"
   >
     <div className="bg-primary/5 p-8 rounded-2xl border border-primary/10 mb-10">
       <h2 className="font-serif text-2xl text-primary mb-6 text-center">Os 3 pilares do Divórcio Online</h2>

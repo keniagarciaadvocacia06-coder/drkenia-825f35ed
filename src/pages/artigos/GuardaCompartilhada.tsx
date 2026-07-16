@@ -4,7 +4,7 @@ const GuardaCompartilhada = () => (
   <ArticleLayout
     title="Guarda Compartilhada: Direitos, Deveres e Como Funciona"
     description="Saiba como funciona a guarda compartilhada no Brasil, quais os direitos dos pais e da criança, e quando ela é aplicada. Dra. Kênia Garcia - Advocacia."
-    image="https://images.unsplash.com/photo-1591522810850-58128c5fb089?auto=format&fit=crop&q=80&w=800"
+    image="/images/artigos/guarda-filhos.webp"
   >
     <p>
       A <strong>guarda compartilhada</strong> é o regime em que ambos os genitores exercem conjuntamente a responsabilidade legal sobre os filhos menores, dividindo decisões sobre educação, saúde, lazer e bem-estar. Desde a <strong>Lei 13.058/2014</strong>, a guarda compartilhada passou a ser a regra no ordenamento jurídico brasileiro.

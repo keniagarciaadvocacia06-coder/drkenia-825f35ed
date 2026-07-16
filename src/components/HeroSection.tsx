@@ -1,17 +1,32 @@
 import { MessageCircle, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-import banner1 from "@/assets/banner-1.jpg";
-import banner2 from "@/assets/banner-2.jpg";
-import banner3 from "@/assets/banner-3.jpg";
-import banner4 from "@/assets/banner-4.jpg";
-import banner5 from "@/assets/banner-5.jpg";
-import banner6 from "@/assets/banner-6.jpg";
-import banner7 from "@/assets/banner-7.jpg";
+import banner1Desktop from "@/assets/banner-1-desktop.webp";
+import banner1Mobile from "@/assets/banner-1-mobile.webp";
+import banner2Desktop from "@/assets/banner-2-desktop.webp";
+import banner2Mobile from "@/assets/banner-2-mobile.webp";
+import banner3Desktop from "@/assets/banner-3-desktop.webp";
+import banner3Mobile from "@/assets/banner-3-mobile.webp";
+import banner4Desktop from "@/assets/banner-4-desktop.webp";
+import banner4Mobile from "@/assets/banner-4-mobile.webp";
+import banner5Desktop from "@/assets/banner-5-desktop.webp";
+import banner5Mobile from "@/assets/banner-5-mobile.webp";
+import banner6Desktop from "@/assets/banner-6-desktop.webp";
+import banner6Mobile from "@/assets/banner-6-mobile.webp";
+import banner7Desktop from "@/assets/banner-7-desktop.webp";
+import banner7Mobile from "@/assets/banner-7-mobile.webp";
 
 import { openWhatsApp } from "@/lib/whatsapp";
 
-const bannerImages = [banner1, banner2, banner3, banner4, banner5, banner6, banner7];
+const bannerImages = [
+  { desktop: banner1Desktop, mobile: banner1Mobile },
+  { desktop: banner2Desktop, mobile: banner2Mobile },
+  { desktop: banner3Desktop, mobile: banner3Mobile },
+  { desktop: banner4Desktop, mobile: banner4Mobile },
+  { desktop: banner5Desktop, mobile: banner5Mobile },
+  { desktop: banner6Desktop, mobile: banner6Mobile },
+  { desktop: banner7Desktop, mobile: banner7Mobile },
+];
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -36,19 +51,24 @@ const HeroSection = () => {
       <div className="pointer-events-none absolute inset-0 hidden xl:block">
         <div className="absolute right-0 top-0 bottom-0 w-[60%] overflow-hidden bg-brown-dark">
           {bannerImages.slice(0, loadedCount).map((img, idx) => (
-            <img
+            <picture
               key={idx}
-              src={img}
-              alt="Dra. Kênia Garcia - Advogada"
-              width={1400}
-              height={2100}
-              decoding="async"
-              fetchPriority={idx === 0 ? "high" : "low"}
-              className={`absolute inset-0 h-full w-full object-cover object-[center_5%] transition-opacity duration-1000 ${
+              className={`absolute inset-0 block h-full w-full transition-opacity duration-1000 ${
                 idx === currentImage ? "opacity-100" : "opacity-0"
               }`}
-              loading={idx === 0 ? "eager" : "lazy"}
-            />
+            >
+              <source srcSet={img.mobile} media="(max-width: 767px)" />
+              <img
+                src={img.desktop}
+                alt="Dra. Kênia Garcia - Advogada"
+                width={1100}
+                height={1650}
+                decoding="async"
+                {...(idx === 0 ? { fetchpriority: "high" } : { fetchpriority: "low" })}
+                className="h-full w-full object-cover object-[center_5%]"
+                loading={idx === 0 ? "eager" : "lazy"}
+              />
+            </picture>
           ))}
 
           <div className="absolute inset-0 bg-gradient-to-r from-brown-dark via-brown-dark/20 to-transparent" />
@@ -60,19 +80,24 @@ const HeroSection = () => {
         <div className="-mx-6 mb-10 overflow-hidden bg-brown-dark md:-mx-12 lg:-mx-16 xl:hidden">
           <div className="relative h-[520px] md:h-[640px] lg:h-[720px]">
             {bannerImages.slice(0, loadedCount).map((img, idx) => (
-              <img
+              <picture
                 key={idx}
-                src={img}
-                alt="Dra. Kênia Garcia - Advogada"
-                width={1400}
-                height={2100}
-                decoding="async"
-                fetchPriority={idx === 0 ? "high" : "low"}
-                className={`absolute inset-0 h-full w-full object-cover object-[center_10%] transition-opacity duration-1000 md:object-[center_15%] lg:object-[center_12%] ${
+                className={`absolute inset-0 block h-full w-full transition-opacity duration-1000 ${
                   idx === currentImage ? "opacity-100" : "opacity-0"
                 }`}
-                loading={idx === 0 ? "eager" : "lazy"}
-              />
+              >
+                <source srcSet={img.mobile} media="(max-width: 767px)" />
+                <img
+                  src={img.desktop}
+                  alt="Dra. Kênia Garcia - Advogada"
+                  width={1100}
+                  height={1650}
+                  decoding="async"
+                  {...(idx === 0 ? { fetchpriority: "high" } : { fetchpriority: "low" })}
+                  className="h-full w-full object-cover object-[center_10%] md:object-[center_15%] lg:object-[center_12%]"
+                  loading={idx === 0 ? "eager" : "lazy"}
+                />
+              </picture>
             ))}
 
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brown-dark/65 via-transparent to-transparent" />

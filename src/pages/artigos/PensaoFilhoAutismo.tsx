@@ -4,7 +4,7 @@ const PensaoFilhoAutismo = () => (
   <ArticleLayout
     title="Pensão alimentícia para filho com autismo: direitos e necessidades reais"
     description="Entenda como garantir o sustento e as terapias necessárias para o desenvolvimento do seu filho com TEA, incluindo a possibilidade de pensão vitalícia."
-    image="/images/artigos/dra-kenia-portrait-2.jpg"
+    image="/images/artigos/dra-kenia-portrait-2.webp"
   >
     <p>
       Quando o diagnóstico de autismo (TEA) chega, TUDO muda na rotina da família e também no campo jurídico. Muitas mães acreditam que existe um "teto de porcentagem" para a pensão, mas a lei é clara: <strong>o valor deve ser fixado conforme a necessidade real</strong>.

@@ -4,7 +4,7 @@ const DireitosGenitor = () => (
   <ArticleLayout
     title="Direitos do Genitor: O que a Lei Garante aos Pais"
     description="Conheça os direitos do genitor no Direito de Família brasileiro: guarda, visitação, participação nas decisões e proteção contra alienação parental."
-    image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+    image="/images/artigos/divorcio-unilateral.webp"
   >
     <p>
       O <strong>genitor</strong> — pai ou mãe — possui uma série de direitos assegurados pela legislação brasileira, especialmente após situações de separação ou divórcio. Conhecer esses direitos é fundamental para garantir o <strong>melhor interesse da criança</strong> e o exercício pleno da parentalidade.

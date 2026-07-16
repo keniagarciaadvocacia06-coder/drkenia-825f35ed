@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import logoKg from "@/assets/logo-kg.png";
+import logoKg from "@/assets/logo-kg.webp";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border/30 bg-gradient-to-r from-[#d4b896] to-[#66503d] backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:h-24">
         <Link to="/" className="block">
-          <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-10 w-auto block lg:h-20" />
+          <img src={logoKg} alt="KG — Kênia Garcia Advocacia" width={420} height={221} className="h-10 w-auto block lg:h-20" />
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">

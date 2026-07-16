@@ -4,7 +4,7 @@ const QuantoCustaDivorcio = () => (
   <ArticleLayout
     title="Quanto custa um divórcio? Entenda antes de tomar qualquer decisão"
     description="Saiba quem paga os custos do divórcio, quanto custa o divórcio amigável, em cartório, judicial e litigioso, e como pedir gratuidade da justiça."
-    image="/images/artigos/quanto-custa.jpg"
+    image="/images/artigos/quanto-custa.webp"
   >
     <p>
       Pensar em divórcio nunca é simples. Além do desgaste emocional, muitas pessoas ficam preocupadas com uma pergunta comum: <strong>quanto vou gastar para me divorciar?</strong>

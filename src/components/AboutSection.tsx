@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import draKeniaAbout from "@/assets/dra-kenia-about.jpg";
+import draKeniaAbout from "@/assets/dra-kenia-about.webp";
 
 const AboutSection = () => {
   const { t } = useTranslation();

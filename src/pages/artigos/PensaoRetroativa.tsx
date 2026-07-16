@@ -4,7 +4,7 @@ const PensaoRetroativa = () => (
   <ArticleLayout
     title="Pensão alimentícia retroativa: quando é possível cobrar valores atrasados?"
     description="Entenda o que é a pensão alimentícia retroativa, a partir de quando pode ser cobrada, prazo prescricional, cálculo e o que fazer quando o pai nunca pagou."
-    image="/images/artigos/pensao-retroativa.jpg"
+    image="/images/artigos/pensao-retroativa.webp"
   >
     <p>
       Muita gente acredita que a pensão alimentícia só começa a valer depois que o juiz profere a decisão final. Na prática, não é bem assim. Em alguns casos, mesmo que a decisão demore meses para sair, o responsável pode ser obrigado a quitar valores referentes a um período anterior — é a chamada <strong>pensão alimentícia retroativa</strong>.

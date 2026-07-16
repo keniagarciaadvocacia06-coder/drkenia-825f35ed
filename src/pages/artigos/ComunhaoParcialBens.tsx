@@ -4,7 +4,7 @@ const ComunhaoParcialBens = () => (
   <ArticleLayout
     title="Comunhão Parcial de Bens: Entenda o Regime Mais Comum no Brasil"
     description="Saiba como funciona o regime de comunhão parcial de bens, quais bens são partilhados no divórcio e seus direitos. Dra. Kênia Garcia - Advocacia."
-    image="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800"
+    image="/images/artigos/dra-kenia-desk.webp"
   >
     <p>
       A <strong>comunhão parcial de bens</strong> é o regime patrimonial mais comum no Brasil. Quando os cônjuges não fazem pacto antenupcial, este é o regime automaticamente aplicado ao casamento, conforme o <strong>artigo 1.640 do Código Civil</strong>.
