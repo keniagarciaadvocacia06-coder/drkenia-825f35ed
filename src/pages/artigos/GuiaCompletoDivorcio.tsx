@@ -4,7 +4,7 @@ const GuiaCompletoDivorcio = () => (
   <ArticleLayout
     title="Divórcio em 2026: tipos, etapas, custos e como fazer com segurança"
     description="Guia completo sobre divórcio no Brasil: tipos, documentos, custos, prazos, divórcio online e por que a assistência jurídica é indispensável."
-    image="/images/artigos/guia-divorcio.png"
+    image="/images/artigos/guia-divorcio.jpg"
   >
     <p>
       O fim de um casamento nunca é apenas uma assinatura em um papel. Por trás de um divórcio existem dúvidas, medo, preocupação com os filhos e receio de perder direitos. A boa notícia é que, no Brasil, o divórcio pode ser mais simples, rápido e organizado quando há orientação jurídica adequada desde o início.
