@@ -34,12 +34,17 @@ const HeroSection = () => {
               key={idx}
               src={img}
               alt="Dra. Kênia Garcia - Advogada"
+              width={1400}
+              height={2100}
+              decoding="async"
+              fetchPriority={idx === 0 ? "high" : "low"}
               className={`absolute inset-0 h-full w-full object-cover object-[center_5%] transition-opacity duration-1000 ${
                 idx === currentImage ? "opacity-100" : "opacity-0"
               }`}
               loading={idx === 0 ? "eager" : "lazy"}
             />
           ))}
+
           <div className="absolute inset-0 bg-gradient-to-r from-brown-dark via-brown-dark/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brown-dark/80 to-transparent" />
         </div>
