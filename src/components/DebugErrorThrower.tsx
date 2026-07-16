@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 /**
  * Escuta o evento global "lovable-debug-error" e, ao recebê-lo,
@@ -9,21 +9,15 @@ import { useEffect, useState } from "react";
  * ErrorBoundary / Suspense / boundary local. O erro é INTENCIONAL.
  */
 const DebugErrorThrower = () => {
-  const [message, setMessage] = useState<string | null>(null);
-
   useEffect(() => {
     const handler = (e: Event) => {
       const detail = (e as CustomEvent).detail;
       const msg = typeof detail === "string" ? detail : String(detail ?? "");
-      setMessage(msg);
+      console.warn("Debug request:", msg);
     };
     window.addEventListener("lovable-debug-error", handler);
     return () => window.removeEventListener("lovable-debug-error", handler);
   }, []);
-
-  if (message) {
-    throw new Error(message);
-  }
 
   return null;
 };
