@@ -17,13 +17,19 @@ const HeroSection = () => {
   const { t } = useTranslation();
   const waMessage = t("hero.wa_message");
   const [currentImage, setCurrentImage] = useState(0);
+  const [loadedCount, setLoadedCount] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % bannerImages.length);
+      setCurrentImage((prev) => {
+        const next = (prev + 1) % bannerImages.length;
+        setLoadedCount((c) => Math.max(c, next + 1));
+        return next;
+      });
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+
 
   return (
     <section id="inicio" className="relative overflow-hidden bg-brown-dark pb-16 xl:min-h-screen">
