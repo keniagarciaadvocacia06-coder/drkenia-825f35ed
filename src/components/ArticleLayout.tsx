@@ -53,7 +53,7 @@ const ArticleLayout = ({ title, description, image, children }: ArticleLayoutPro
                 height={506}
                 loading="eager"
                 decoding="async"
-                fetchPriority="high"
+                {...{ fetchpriority: "high" }}
                 className="w-full h-auto block"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;

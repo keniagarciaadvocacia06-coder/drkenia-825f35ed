@@ -64,7 +64,7 @@ const HeroSection = () => {
                 width={1100}
                 height={1650}
                 decoding="async"
-                fetchPriority={idx === 0 ? "high" : "low"}
+                {...(idx === 0 ? { fetchpriority: "high" } : { fetchpriority: "low" })}
                 className="h-full w-full object-cover object-[center_5%]"
                 loading={idx === 0 ? "eager" : "lazy"}
               />
@@ -93,7 +93,7 @@ const HeroSection = () => {
                   width={1100}
                   height={1650}
                   decoding="async"
-                  fetchPriority={idx === 0 ? "high" : "low"}
+                  {...(idx === 0 ? { fetchpriority: "high" } : { fetchpriority: "low" })}
                   className="h-full w-full object-cover object-[center_10%] md:object-[center_15%] lg:object-[center_12%]"
                   loading={idx === 0 ? "eager" : "lazy"}
                 />
