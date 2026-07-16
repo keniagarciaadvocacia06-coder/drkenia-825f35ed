@@ -61,8 +61,8 @@ const HeroSection = () => {
               <img
                 src={img.desktop}
                 alt="Dra. Kênia Garcia - Advogada"
-                width={1280}
-                height={1920}
+                width={1696}
+                height={2528}
                 decoding="async"
                 {...(idx === 0 ? { fetchpriority: "high" } : { fetchpriority: "low" })}
                 sizes="(min-width: 1280px) 60vw, 100vw"
@@ -91,8 +91,8 @@ const HeroSection = () => {
                 <img
                   src={img.desktop}
                   alt="Dra. Kênia Garcia - Advogada"
-                  width={1280}
-                  height={1920}
+                  width={1696}
+                  height={2528}
                   decoding="async"
                   {...(idx === 0 ? { fetchpriority: "high" } : { fetchpriority: "low" })}
                   sizes="100vw"
