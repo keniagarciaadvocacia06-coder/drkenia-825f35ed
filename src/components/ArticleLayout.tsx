@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import logoKg from "@/assets/logo-kg.png";
 import WhatsAppButton from "./WhatsAppButton";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { buildWhatsAppUrl, openWhatsApp } from "@/lib/whatsapp";
+import { openWhatsApp } from "@/lib/whatsapp";
 
 interface ArticleLayoutProps {
   title: string;
@@ -50,10 +49,15 @@ const ArticleLayout = ({ title, description, image, children }: ArticleLayoutPro
               <img 
                 src={image} 
                 alt={title} 
+                width={900}
+                height={506}
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
                 className="w-full h-auto block"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.src = "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800";
+                  target.src = "/images/artigos/divorcio-unilateral.webp";
                 }}
               />
             </div>

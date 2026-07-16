@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { MessageCircle, Mail, MapPin, Instagram, Heart, Scale, Building2, FileText, Facebook, Music2 } from "lucide-react";
-import logoKg from "@/assets/logo-kg.png";
+import logoKg from "@/assets/logo-kg.webp";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <img src={logoKg} alt="KG — Kênia Garcia Advocacia" className="h-14 w-auto" />
+            <img src={logoKg} alt="KG — Kênia Garcia Advocacia" width={420} height={221} loading="lazy" decoding="async" className="h-14 w-auto" />
             <p className="text-sm leading-relaxed text-muted-foreground">
               Advocacia com fé, acolhimento e propósito. +15 anos cuidando de quem mais importa: você.
             </p>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import logoKg from "@/assets/logo-kg.png";
+import logoKg from "@/assets/logo-kg.webp";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,97 +11,97 @@ const artigos = [
     slug: "guia-completo-divorcio",
     title: "Divórcio em 2026: tipos, etapas, custos e como fazer com segurança",
     desc: "Guia completo: modalidades, documentos, prazos e como fazer com segurança.",
-    image: "/images/artigos/guia-divorcio.jpg"
+    image: "/images/artigos/guia-divorcio.webp"
   },
   {
     slug: "divorcio-online",
     title: "Divórcio online",
     desc: "Como se separar com segurança, privacidade e sem sair de casa.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/divorcio-online.webp"
   },
   {
     slug: "divorcio-unilateral",
     title: "Divórcio sem assinatura do cônjuge",
     desc: "STJ: é possível pedir o divórcio mesmo sem o consentimento do outro.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/divorcio-unilateral.webp"
   },
   {
     slug: "quanto-custa-divorcio",
     title: "Quanto custa um divórcio?",
     desc: "Entenda os custos antes de tomar qualquer decisão.",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/quanto-custa.webp"
   },
   {
     slug: "guarda-dos-filhos",
     title: "Como funciona a guarda dos filhos",
     desc: "Tipos de guarda, direitos dos pais e quando pedir mudança na Justiça.",
-    image: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/guarda-filhos.webp"
   },
   {
     slug: "pensao-retroativa",
     title: "Pensão alimentícia retroativa",
     desc: "Quando é possível cobrar valores atrasados e como calcular.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/pensao-retroativa.webp"
   },
   {
     slug: "alimentos-compensatorios",
     title: "Alimentos compensatórios",
     desc: "Decisão do TJGO reconhece direito ao reequilíbrio econômico no divórcio.",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/alimentos-compensatorios.webp"
   },
   {
     slug: "pensao-filho-autismo",
     title: "Pensão para filho com autismo",
     desc: "Direitos, necessidades reais e a possibilidade de pensão vitalícia.",
-    image: "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/dra-kenia-portrait-2.webp"
   },
   { 
     slug: "emancipacao", 
     title: "Emancipação", 
     desc: "O que é, tipos e como funciona no Direito Brasileiro.",
-    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/dra-kenia-desk.webp"
   },
   { 
     slug: "guarda-compartilhada", 
     title: "Guarda Compartilhada", 
     desc: "Direitos, deveres e como funciona na prática.",
-    image: "https://images.unsplash.com/photo-1591522810850-58128c5fb089?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/guarda-filhos.webp"
   },
   { 
     slug: "comunhao-parcial-bens", 
     title: "Comunhão Parcial de Bens", 
     desc: "O regime patrimonial mais comum no Brasil.",
-    image: "https://images.unsplash.com/photo-1582213726895-32ac44efd557?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/dra-kenia-desk.webp"
   },
   { 
     slug: "pensao-socioafetiva", 
     title: "Pensão Socioafetiva", 
     desc: "Direitos dos filhos afetivos e multiparentalidade.",
-    image: "https://images.unsplash.com/photo-1536640712247-c45474762887?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/dra-kenia-portrait-1.webp"
   },
   { 
     slug: "direitos-genitor", 
     title: "Direitos do Genitor", 
     desc: "O que a lei garante aos pais após a separação.",
-    image: "https://images.unsplash.com/photo-1481107561552-06839e944b61?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/dra-kenia-tablet.webp"
   },
   { 
     slug: "danos-morais", 
     title: "Danos Morais no Direito de Família", 
     desc: "Quando cabe indenização em questões familiares.",
-    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/divorcio-unilateral.webp"
   },
   { 
     slug: "uniao-estavel", 
     title: "União Estável", 
     desc: "Direitos, deveres e como formalizar.",
-    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/dra-kenia-portrait-2.webp"
   },
   { 
     slug: "concubinato", 
     title: "Concubinato", 
     desc: "Diferenças para união estável e direitos.",
-    image: "https://images.unsplash.com/photo-1521791136064-7986c2959213?auto=format&fit=crop&q=80&w=800"
+    image: "/images/artigos/quanto-custa.webp"
   },
 ];
 
@@ -136,15 +136,19 @@ const Artigos = () => {
                     <img 
                       src={artigo.image} 
                       alt={artigo.title} 
+                      width={900}
+                      height={506}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.src = "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800";
+                        target.src = "/images/artigos/divorcio-unilateral.webp";
                       }}
                     />
                     <div className="absolute inset-0 bg-black/20" />
                     <div className="absolute top-4 right-4 p-1.5">
-                      <img src={logoKg} alt="Logo" className="h-8 w-auto brightness-0 invert" />
+                      <img src={logoKg} alt="Logo" width={420} height={221} loading="lazy" decoding="async" className="h-8 w-auto brightness-0 invert" />
                     </div>
                   </div>
                 )}

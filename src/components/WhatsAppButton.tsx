@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
-import draFoto from "@/assets/dra-foto-oficial.png";
+import draFoto from "@/assets/dra-foto-oficial.webp";
 
 const BALLOON_HIDE_DELAY = 12000;
 const BALLOON_REAPPEAR_DELAY = 180000;
@@ -51,6 +51,10 @@ const WhatsAppButton = () => {
           <img
             src={draFoto}
             alt="Dra."
+            width={112}
+            height={112}
+            loading="lazy"
+            decoding="async"
             className="h-10 w-10 sm:h-14 sm:w-14 flex-shrink-0 rounded-full object-cover ring-2 ring-white"
           />
         </a>

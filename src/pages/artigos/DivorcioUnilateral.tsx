@@ -4,7 +4,7 @@ const DivorcioUnilateral = () => (
   <ArticleLayout
     title="STJ: é possível pedir o divórcio mesmo sem a assinatura do outro cônjuge"
     description="Entenda o divórcio unilateral, a recente decisão do STJ que permite a decretação liminar e como agir quando o outro cônjuge se recusa a assinar."
-    image="/images/artigos/divorcio-unilateral.jpg"
+    image="/images/artigos/divorcio-unilateral.webp"
   >
     <p>
       Você quer se divorciar, mas a outra pessoa se recusa a assinar? Essa dúvida angustia muita gente que já decidiu encerrar o casamento, mas se sente presa porque o outro cônjuge não concorda, não responde, desapareceu — ou usa a recusa como forma de controle emocional.
