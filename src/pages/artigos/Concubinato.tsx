@@ -4,7 +4,7 @@ const Concubinato = () => (
   <ArticleLayout
     title="Concubinato: Diferenças para União Estável e Direitos"
     description="Entenda o que é concubinato, como se diferencia da união estável, e quais são os direitos de quem vive nessa situação. Dra. Kênia Garcia - Advocacia."
-    image="https://images.unsplash.com/photo-1521791136064-7986c2959213?auto=format&fit=crop&q=80&w=800"
+    image="/images/artigos/quanto-custa.webp"
   >
     <p>
       O <strong>concubinato</strong> é a relação não eventual entre pessoas que possuem <strong>impedimento para casar</strong>, conforme definição do artigo 1.727 do Código Civil. Diferente da união estável, o concubinato envolve situações como relacionamento paralelo ao casamento (quando não há separação de fato).

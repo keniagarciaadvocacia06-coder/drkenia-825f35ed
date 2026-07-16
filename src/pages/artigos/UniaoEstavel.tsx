@@ -4,7 +4,7 @@ const UniaoEstavel = () => (
   <ArticleLayout
     title="União Estável: Direitos, Deveres e Como Formalizar"
     description="Entenda o que é união estável, como formalizar, quais os direitos patrimoniais e a diferença para casamento. Dra. Kênia Garcia - Advocacia."
-    image="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800"
+    image="/images/artigos/dra-kenia-portrait-2.webp"
   >
     <p>
       A <strong>união estável</strong> é reconhecida pela Constituição Federal (art. 226, §3º) como entidade familiar. Configura-se pela convivência pública, contínua e duradoura, com o objetivo de constituir família, <strong>sem necessidade de prazo mínimo</strong> ou coabitação.
