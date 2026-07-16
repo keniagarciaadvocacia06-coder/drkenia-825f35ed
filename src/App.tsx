@@ -40,28 +40,31 @@ const App = () => {
           <Sonner />
           <BrowserRouter>
             
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/artigos" element={<Artigos />} />
-              <Route path="/artigos/emancipacao" element={<Emancipacao />} />
-              <Route path="/artigos/guarda-compartilhada" element={<GuardaCompartilhada />} />
-              <Route path="/artigos/comunhao-parcial-de-bens" element={<ComunhaoParcialBens />} />
-              <Route path="/artigos/pensao-socioafetiva" element={<PensaoSocioafetiva />} />
-              <Route path="/artigos/direitos-genitor" element={<DireitosGenitor />} />
-              <Route path="/artigos/danos-morais" element={<DanosMorais />} />
-              <Route path="/artigos/uniao-estavel" element={<UniaoEstavel />} />
-              <Route path="/artigos/concubinato" element={<Concubinato />} />
-              <Route path="/artigos/divorcio-online" element={<DivorcioOnline />} />
-              <Route path="/artigos/guia-completo-divorcio" element={<GuiaCompletoDivorcio />} />
-              <Route path="/artigos/quanto-custa-divorcio" element={<QuantoCustaDivorcio />} />
-              <Route path="/artigos/divorcio-unilateral" element={<DivorcioUnilateral />} />
-              <Route path="/artigos/alimentos-compensatorios" element={<AlimentosCompensatorios />} />
-              <Route path="/artigos/pensao-retroativa" element={<PensaoRetroativa />} />
-              <Route path="/artigos/guarda-dos-filhos" element={<GuardaDosFilhos />} />
-              <Route path="/artigos/pensao-filho-autismo" element={<PensaoFilhoAutismo />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <Suspense fallback={null}>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/artigos" element={<Artigos />} />
+                <Route path="/artigos/emancipacao" element={<Emancipacao />} />
+                <Route path="/artigos/guarda-compartilhada" element={<GuardaCompartilhada />} />
+                <Route path="/artigos/comunhao-parcial-de-bens" element={<ComunhaoParcialBens />} />
+                <Route path="/artigos/pensao-socioafetiva" element={<PensaoSocioafetiva />} />
+                <Route path="/artigos/direitos-genitor" element={<DireitosGenitor />} />
+                <Route path="/artigos/danos-morais" element={<DanosMorais />} />
+                <Route path="/artigos/uniao-estavel" element={<UniaoEstavel />} />
+                <Route path="/artigos/concubinato" element={<Concubinato />} />
+                <Route path="/artigos/divorcio-online" element={<DivorcioOnline />} />
+                <Route path="/artigos/guia-completo-divorcio" element={<GuiaCompletoDivorcio />} />
+                <Route path="/artigos/quanto-custa-divorcio" element={<QuantoCustaDivorcio />} />
+                <Route path="/artigos/divorcio-unilateral" element={<DivorcioUnilateral />} />
+                <Route path="/artigos/alimentos-compensatorios" element={<AlimentosCompensatorios />} />
+                <Route path="/artigos/pensao-retroativa" element={<PensaoRetroativa />} />
+                <Route path="/artigos/guarda-dos-filhos" element={<GuardaDosFilhos />} />
+                <Route path="/artigos/pensao-filho-autismo" element={<PensaoFilhoAutismo />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
             <ErrorDebugPopup />
+
           </BrowserRouter>
         </TooltipProvider>
       </QueryClientProvider>
