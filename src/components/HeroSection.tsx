@@ -53,7 +53,7 @@ const HeroSection = () => {
           {bannerImages.slice(0, loadedCount).map((img, idx) => (
             <picture
               key={idx}
-              className={`absolute inset-0 block h-full w-full transition-opacity duration-1000 ${
+              className={`absolute inset-0 block h-full w-full transition-opacity duration-1000 will-change-[opacity] [transform:translateZ(0)] [backface-visibility:hidden] ${
                 idx === currentImage ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -82,7 +82,7 @@ const HeroSection = () => {
             {bannerImages.slice(0, loadedCount).map((img, idx) => (
               <picture
                 key={idx}
-                className={`absolute inset-0 block h-full w-full transition-opacity duration-1000 ${
+                className={`absolute inset-0 block h-full w-full transition-opacity duration-1000 will-change-[opacity] [transform:translateZ(0)] [backface-visibility:hidden] ${
                   idx === currentImage ? "opacity-100" : "opacity-0"
                 }`}
               >
