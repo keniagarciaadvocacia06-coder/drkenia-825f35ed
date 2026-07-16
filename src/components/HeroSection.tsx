@@ -17,19 +17,25 @@ const HeroSection = () => {
   const { t } = useTranslation();
   const waMessage = t("hero.wa_message");
   const [currentImage, setCurrentImage] = useState(0);
+  const [loadedCount, setLoadedCount] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % bannerImages.length);
+      setCurrentImage((prev) => {
+        const next = (prev + 1) % bannerImages.length;
+        setLoadedCount((c) => Math.max(c, next + 1));
+        return next;
+      });
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+
 
   return (
     <section id="inicio" className="relative overflow-hidden bg-brown-dark pb-16 xl:min-h-screen">
       <div className="pointer-events-none absolute inset-0 hidden xl:block">
         <div className="absolute right-0 top-0 bottom-0 w-[60%] overflow-hidden bg-brown-dark">
-          {bannerImages.map((img, idx) => (
+          {bannerImages.slice(0, loadedCount).map((img, idx) => (
             <img
               key={idx}
               src={img}
@@ -53,7 +59,7 @@ const HeroSection = () => {
       <div className="relative z-20 mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
         <div className="-mx-6 mb-10 overflow-hidden bg-brown-dark md:-mx-12 lg:-mx-16 xl:hidden">
           <div className="relative h-[520px] md:h-[640px] lg:h-[720px]">
-            {bannerImages.map((img, idx) => (
+            {bannerImages.slice(0, loadedCount).map((img, idx) => (
               <img
                 key={idx}
                 src={img}
